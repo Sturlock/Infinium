@@ -15,8 +15,8 @@ namespace Infinium.UI.Quests
 
         public override void UpdateTooltip(GameObject tooltip)
         {
-            Quest quest = GetComponent<QuestItemUI>().GetQuest();
-            tooltip.GetComponent<QuestToolTipUI>().Setup(quest);
+            QuestStatus status = GetComponent<QuestItemUI>().GetQuestStatus();
+            tooltip.GetComponent<QuestToolTipUI>().Setup(status);
         }
     }
 }

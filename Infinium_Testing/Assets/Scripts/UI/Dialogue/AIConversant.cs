@@ -8,7 +8,7 @@ namespace Infinium.Dialogue
     {
         [SerializeField] string AIName;
         [SerializeField] Dialogue dialogue = null;
-        bool near = false;
+        [SerializeField] bool near = false;
         float radius = 3f;
         LayerMask playerLayer;
 

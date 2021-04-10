@@ -1,5 +1,4 @@
 using System;
-using System.Collections;
 using System.Collections.Generic;
 using System.Linq;
 using UnityEngine;
@@ -9,24 +8,29 @@ namespace Infinium.Dialogue
 {
     public class PlayerConversant : MonoBehaviour
     {
-        [SerializeField] string playerName;
+        [SerializeField] private string playerName;
 
-        Dialogue currentDialogue;
-        DialogueNode currentNode = null;
-        AIConversant currentConversant = null;
-        bool isChoosing = false;
-        bool conversing = false;
+        private Dialogue currentDialogue;
+        private DialogueNode currentNode = null;
+        private AIConversant currentConversant = null;
+        private bool isChoosing = false;
+        private bool conversing = false;
 
         public event Action OnConversationUpdate;
-        public void StartDialogue(AIConversant newConversent,Dialogue newDialogue)
+
+        public void StartDialogue(AIConversant newConversent, Dialogue newDialogue)
         {
             conversing = true;
             currentConversant = newConversent;
             currentDialogue = newDialogue;
             currentNode = currentDialogue.GetRootNode();
             TriggerEnterAction();
+            GameObject.FindObjectOfType<ThirdPersonCameraController>().enabled = false;
+            Cursor.lockState = CursorLockMode.None;
+            Cursor.visible = true;
             OnConversationUpdate();
         }
+
         public void Quit()
         {
             conversing = false;
@@ -35,7 +39,7 @@ namespace Infinium.Dialogue
             currentDialogue = null;
             currentNode = null;
             isChoosing = false;
-            
+            GameObject.FindObjectOfType<ThirdPersonCameraController>().enabled = true;
             OnConversationUpdate();
         }
 
@@ -43,15 +47,17 @@ namespace Infinium.Dialogue
         {
             return currentDialogue != null;
         }
+
         public bool IsChoosing()
         {
             return isChoosing;
         }
+
         public bool IsConversing()
         {
             return conversing;
         }
-        
+
         public string GetText()
         {
             if (currentNode == null)
@@ -77,7 +83,6 @@ namespace Infinium.Dialogue
         public IEnumerable<DialogueNode> GetChoices()
         {
             return currentDialogue.GetPlayerChildren(currentNode);
-
         }
 
         public void SelectChoice(DialogueNode chosenNode)
@@ -86,7 +91,6 @@ namespace Infinium.Dialogue
             TriggerEnterAction();
             isChoosing = false;
             Next();
-
         }
 
         public void Next()
@@ -129,15 +133,14 @@ namespace Infinium.Dialogue
             }
         }
 
-        private void TriggerAction (string action)
+        private void TriggerAction(string action)
         {
             if (action == "") return;
 
-            foreach(DialogueTrigger trigger in currentConversant.GetComponents<DialogueTrigger>())
+            foreach (DialogueTrigger trigger in currentConversant.GetComponents<DialogueTrigger>())
             {
                 trigger.Trigger(action);
             }
         }
     }
 }
-

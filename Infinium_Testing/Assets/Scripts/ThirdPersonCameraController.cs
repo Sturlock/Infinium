@@ -32,35 +32,33 @@ public class ThirdPersonCameraController : MonoBehaviour
         PlayerConversant playerConversant = GameObject.FindObjectOfType<PlayerConversant>();
         if(!playerConversant.IsConversing())
         {
-            yaw += Input.GetAxis("Mouse X") * mouseSensitivty;
-            pitch -= Input.GetAxis("Mouse Y") * mouseSensitivty;
-            pitch = Mathf.Clamp(pitch, pitchMinMax.x, pitchMinMax.y);
-
-            currentRotation = Vector3.SmoothDamp(currentRotation,
-                new Vector3(pitch, yaw), ref rotationSmoothVelocity, rotationSmoothTime);
-
-            transform.eulerAngles = currentRotation;
-            transform.position = target.position - transform.forward * dstFromTarget;
+            
             if (Input.GetButton("Fire2"))
             {
                 Cursor.lockState = CursorLockMode.Locked;
                 Cursor.visible = false;
+                yaw += Input.GetAxis("Mouse X") * mouseSensitivty;
+                pitch -= Input.GetAxis("Mouse Y") * mouseSensitivty;
+                pitch = Mathf.Clamp(pitch, pitchMinMax.x, pitchMinMax.y);
+                currentRotation = Vector3.SmoothDamp(currentRotation,
+                    new Vector3(pitch, yaw), ref rotationSmoothVelocity, rotationSmoothTime);
+                transform.eulerAngles = currentRotation;
+                transform.position = target.position - transform.forward * dstFromTarget;
                 return;
             }
             else
             {
                 Cursor.lockState = CursorLockMode.None;
                 Cursor.visible = true;
-                return;
+
+               
             }
             
+
+            transform.eulerAngles = currentRotation;
+            transform.position = target.position - transform.forward * dstFromTarget;
         }
-        else
-        {
-            Cursor.lockState = CursorLockMode.None;
-            Cursor.visible = true;
-            return;
-        }
+        
         
     }
 }

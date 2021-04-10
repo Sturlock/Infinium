@@ -110,6 +110,7 @@ GameObject:
   - component: {fileID: 301948432303803073}
   - component: {fileID: 670104016}
   - component: {fileID: 7490163002221531194}
+  - component: {fileID: 4475304602244561093}
   m_Layer: 0
   m_Name: Character
   m_TagString: Player
@@ -234,7 +235,29 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d46eaef735398854aa1a48209141d4b5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  isChoosing: 0
+  playerName: Sky Senza
+--- !u!114 &4475304602244561093
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1146200187971666381}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: eb38dd2cede8ef940979f84cf46870cc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  statuses:
+  - quest: {fileID: 11400000, guid: 8fb2e87b5af2ad14f9cb339d8f933eb5, type: 2}
+    completedObjectives:
+    - 1
+    - 2
+    - 5
+  - quest: {fileID: 11400000, guid: b250312c1bbd636439ccd6244d3b89f3, type: 2}
+    completedObjectives:
+    - a
+    - b
 --- !u!1 &1384990082903525695
 GameObject:
   m_ObjectHideFlags: 0

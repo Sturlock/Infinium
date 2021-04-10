@@ -30,7 +30,9 @@ namespace Infinium.UI
             playerConversant.OnConversationUpdate += UpdateUI;
             nextButton.onClick.AddListener(() => playerConversant.Next());
             quitButton.onClick.AddListener(() => playerConversant.Quit());
+            
             UpdateUI();
+            
         }
 
         // Update is called once per frame
