@@ -22,7 +22,7 @@ public class ShipController : MonoBehaviour
     [SerializeField] bool sailOne, sailTwo, sailTravel = false;
     [SerializeField] bool noSail = true;
 
-    [Header ("Propultion Settings", order = 2)]
+    [Header ("Propulsion Settings", order = 2)]
     public float turn = 7000f;
     public float disToGround = 17f;
     public float thrusterStrength = 500f;

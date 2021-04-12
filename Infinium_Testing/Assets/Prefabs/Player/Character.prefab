@@ -248,16 +248,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: eb38dd2cede8ef940979f84cf46870cc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  statuses:
-  - quest: {fileID: 11400000, guid: 8fb2e87b5af2ad14f9cb339d8f933eb5, type: 2}
-    completedObjectives:
-    - 1
-    - 2
-    - 5
-  - quest: {fileID: 11400000, guid: b250312c1bbd636439ccd6244d3b89f3, type: 2}
-    completedObjectives:
-    - a
-    - b
 --- !u!1 &1384990082903525695
 GameObject:
   m_ObjectHideFlags: 0
@@ -1208,7 +1198,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 8991986315852120304}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: Target
   m_TagString: Target
   m_Icon: {fileID: 0}

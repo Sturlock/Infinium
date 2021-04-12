@@ -82,7 +82,7 @@ public class PlayerController : MonoBehaviour
                 ref turnSmoothVelocity, turnSmoothTime);
             //Debug.Log(targetRotation);
         }
-
+        
         return inputDir;
     }
 
