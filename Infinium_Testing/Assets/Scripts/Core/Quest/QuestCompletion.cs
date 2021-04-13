@@ -2,17 +2,17 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class QuestCompletion : MonoBehaviour
+namespace Infinium.Quests
 {
-    // Start is called before the first frame update
-    void Start()
+    public class QuestCompletion : MonoBehaviour
     {
-        
-    }
+        [SerializeField] Quest quest;
+        [SerializeField] string objective;
 
-    // Update is called once per frame
-    void Update()
-    {
-        
+        public void CompleteObjective()
+        {
+            QuestList questList = GameObject.FindGameObjectWithTag("Player").GetComponent<QuestList>();
+            questList.CompleteObjective(quest, objective);
+        }
     }
 }
