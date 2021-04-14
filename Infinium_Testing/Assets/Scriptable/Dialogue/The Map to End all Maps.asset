@@ -1,5 +1,31 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
+--- !u!114 &-7204060587254334825
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c12b9ff7e20c77b478d3f6f94022d2eb, type: 3}
+  m_Name: 94641d1e-3d11-46df-a16e-c3cb59ae89c4
+  m_EditorClassIdentifier: 
+  isPlayerSpeaking: 0
+  text: God this map is confusing
+  children: []
+  rect:
+    serializedVersion: 2
+    x: 1013
+    y: 192
+    width: 250
+    height: 100
+  onBeginAction: 
+  onExitAction: 
+  condition:
+    predicate: 
+    parameters: []
 --- !u!114 &-4943565764589566060
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -17,12 +43,15 @@ MonoBehaviour:
   children: []
   rect:
     serializedVersion: 2
-    x: 579
-    y: 382
+    x: 1330
+    y: 353
     width: 250
     height: 100
   onBeginAction: 
   onExitAction: TestObjective
+  condition:
+    predicate: 
+    parameters: []
 --- !u!114 &11400000
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -38,6 +67,7 @@ MonoBehaviour:
   nodes:
   - {fileID: 8379830809416849686}
   - {fileID: -4943565764589566060}
+  - {fileID: -7204060587254334825}
   newNodeOffset: {x: 250, y: 0}
 --- !u!114 &8379830809416849686
 MonoBehaviour:
@@ -57,9 +87,13 @@ MonoBehaviour:
   - 1d60b9c7-4c56-4d0a-b6f2-37114316d571
   rect:
     serializedVersion: 2
-    x: 169
-    y: 390
+    x: 1007
+    y: 352
     width: 250
     height: 100
   onBeginAction: 
   onExitAction: 
+  condition:
+    predicate: HasQuest
+    parameters:
+    - The Quest to end all Quests

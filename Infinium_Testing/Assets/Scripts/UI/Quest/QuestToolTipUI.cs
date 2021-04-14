@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using Infinium.Quests;
 using UnityEngine;
 using TMPro;
+using System;
 
 namespace Infinium.UI.Quests
 {
@@ -12,6 +13,7 @@ namespace Infinium.UI.Quests
         [SerializeField] Transform objectiveContainer;
         [SerializeField] GameObject objectivePrefab;
         [SerializeField] GameObject objectiveIncompletePrefab;
+        [SerializeField] TextMeshProUGUI rewardText;
 
         public void Setup(QuestStatus status)
         {
@@ -21,17 +23,41 @@ namespace Infinium.UI.Quests
             {
                 Destroy(item.gameObject);
             }
-            foreach (string objective in quest.GetObjectives())
+            foreach (var objective in quest.GetObjectives())
             {
                 GameObject prefab = objectiveIncompletePrefab;
-                if (status.IsObjectiveComplete(objective))
+                if (status.IsObjectiveComplete(objective.reference))
                 {
                     prefab = objectivePrefab;
                 }
                 GameObject objectiveInstance = Instantiate(prefab, objectiveContainer);
                 TextMeshProUGUI objectiveText = objectiveInstance.GetComponentInChildren<TextMeshProUGUI>();
-                objectiveText.text = objective;
+                objectiveText.text = objective.description;
             }
+            rewardText.text = GetRewardText(quest);
+        }
+
+        private string GetRewardText(Quest quest)
+        {
+            string rewardText = "";
+            foreach(var reward in quest.GetRewards())
+            {
+                if (rewardText != "")
+                {
+                    rewardText += ", ";
+                }
+                if(reward.number > 1)
+                {
+                    rewardText += reward.number + " ";
+                }
+                //reward += reward.item.GetDisplayName();
+            }
+            if (rewardText == "")
+            {
+                rewardText = "No reward";
+            }
+            rewardText += ".";
+            return rewardText;
         }
     }
 }

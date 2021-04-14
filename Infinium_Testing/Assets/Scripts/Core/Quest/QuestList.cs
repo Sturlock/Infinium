@@ -1,3 +1,4 @@
+using Infinium.Core;
 using System;
 using System.Collections;
 using System.Collections.Generic;
@@ -5,7 +6,7 @@ using UnityEngine;
 
 namespace Infinium.Quests
 {
-    public class QuestList : MonoBehaviour
+    public class QuestList : MonoBehaviour, IPredicateEvaluator
     {
         List<QuestStatus> statuses = new List<QuestStatus>();
         public event Action onUpdate;
@@ -27,11 +28,16 @@ namespace Infinium.Quests
         {
             QuestStatus status = GetQuestStatus(quest);
             status.CompleteObjective(objective);
+            if (status.isComplete())
+            {
+                GiveRewards(quest);
+            }
             if (onUpdate != null)
             {
                 onUpdate();
             }
         }
+
 
         private bool HasQuest(Quest quest)
         {
@@ -53,6 +59,24 @@ namespace Infinium.Quests
                 }
             }
             return null;
+        }
+        private void GiveRewards(Quest quest)
+        {
+            foreach (var reward in quest.GetRewards())
+            {
+                bool success = true; // = GetComponent<Inventory>().AddToFirstEmptySlot(reward.item, reward.number);
+                if (!success)
+                {
+                    //GetComponent<ItemDropper>().DropItem(reward.item, reward.number);
+                }
+            }
+        }
+
+        public bool? Evaluate(string predicate, string[] parameters)
+        {
+            if (predicate != "HasQuest") return null;
+
+            return HasQuest(Quest.GetByName(parameters[0]));
         }
     }
 }

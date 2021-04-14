@@ -1,3 +1,4 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
@@ -13,5 +14,10 @@ public class Inventory : MonoBehaviour
         {
             Debug.Log($"Has Item: {item.GetName()}");
         }
+    }
+
+    internal void AddToFirstEmptySlot(object item, int number)
+    {
+        throw new NotImplementedException();
     }
 }

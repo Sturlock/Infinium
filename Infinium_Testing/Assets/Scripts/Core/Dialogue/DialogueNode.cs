@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEditor;
 using System;
+using Infinium.Core;
 
 namespace Infinium.Dialogue
 {
@@ -19,6 +20,8 @@ namespace Infinium.Dialogue
         string onBeginAction;
         [SerializeField]
         string onExitAction;
+        [SerializeField]
+        Condition condition;
 
         public Rect GetRect()
         {
@@ -44,6 +47,10 @@ namespace Infinium.Dialogue
         public string GetOnExitAction()
         {
             return onExitAction;
+        }
+        public bool CheckCondition(IEnumerable<IPredicateEvaluator> evaluators)
+        {
+            return condition.Check(evaluators);
         }
 
 #if UNITY_EDITOR
@@ -86,6 +93,7 @@ namespace Infinium.Dialogue
             EditorUtility.SetDirty(this);
         }
 
+        
 
 #endif
     }

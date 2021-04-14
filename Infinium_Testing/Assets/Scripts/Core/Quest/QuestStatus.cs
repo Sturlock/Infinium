@@ -38,6 +38,18 @@ namespace Infinium.Quests
             }
             
         }
+
+        public bool isComplete()
+        {
+            foreach (var objective in quest.GetObjectives())
+            {
+                if (!completedObjectives.Contains(objective.reference))
+                {
+                    return false;
+                }
+            }
+            return true;
+        }
     }
 }
 

@@ -8,8 +8,32 @@ namespace Infinium.Quests
     [CreateAssetMenu(fileName = "NewQuest", menuName = "Infinium/Quests", order = 0)]
     public class Quest : ScriptableObject
     {
-        [SerializeField] List<string> objectives = new List<string>();
+        [SerializeField] List<Objectives> objectives = new List<Objectives>();
+        [SerializeField] List<Reward> rewards = new List<Reward>();
 
+        [System.Serializable]
+        class QuestStatusRecord
+        {
+            //Return to Savable Quest Progression to finish
+            //Also build Save System
+            string questName;
+            List<string> completedObjectives;
+        }
+        
+        [System.Serializable]
+        public class Reward
+        {
+            [Min(1)]
+            public int number;
+            //public InventoryItem item;
+            public int gold;
+        }
+        [System.Serializable]
+        public class Objectives
+        {
+            public string reference;
+            public string description;
+        }
         public string GetTitle()
         {
             return name;
@@ -19,14 +43,39 @@ namespace Infinium.Quests
             return objectives.Count;
         }
 
-        public IEnumerable<string> GetObjectives()
+        public IEnumerable<Objectives> GetObjectives()
         {
             return objectives;
         }
 
-        internal bool HasObjective(string objective)
+        public IEnumerable<Reward> GetRewards()
         {
-            return objective.Contains(objective);
+            return rewards;
+        }
+
+        public bool HasObjective(string objectiveRef)
+        {
+            foreach (var objectives in objectives)
+            {
+                if (objectives.reference == objectiveRef)
+                {
+                    return true;
+                }
+            }
+            return false;
+        }
+
+        public static Quest GetByName(string questName)
+        {
+            foreach (Quest quest in Resources.LoadAll<Quest>(""))
+            {
+                if (quest.name == questName)
+                {
+                    return quest;
+                }
+            }
+            return null;
+
         }
     }
 }

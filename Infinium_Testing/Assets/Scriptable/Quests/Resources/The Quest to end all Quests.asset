@@ -13,6 +13,10 @@ MonoBehaviour:
   m_Name: The Quest to end all Quests
   m_EditorClassIdentifier: 
   objectives:
-  - a
-  - b
-  - c
+  - reference: a
+    description: Go to Blah blah
+  - reference: b
+    description: Explore blah blah
+  - reference: c
+    description: Get map of blah blah
+  rewards: []
