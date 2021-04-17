@@ -4,7 +4,14 @@ using UnityEngine;
 
 public class PlayerInventory : MonoBehaviour
 {
-    public List<string> myInventory;
+    public List<Inventory> myInventory;
+
+    public class InvetoryItem
+    {
+        string item;
+        int number;
+
+    }
     // Start is called before the first frame update
     void Start()
     {

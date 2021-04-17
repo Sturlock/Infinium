@@ -19,4 +19,6 @@ MonoBehaviour:
     description: Explore blah blah
   - reference: c
     description: Get map of blah blah
-  rewards: []
+  rewards:
+  - number: 1
+    gold: 0
