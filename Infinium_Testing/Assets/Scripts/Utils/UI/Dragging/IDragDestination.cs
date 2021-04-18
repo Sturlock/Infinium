@@ -8,6 +8,6 @@ namespace Infinium.Core.UI.Dragging
     {
         int MaxAcceptable(T item);
 
-        void AddItem(T item, int number);
+        void AddItems(T item, int number);
     }
 }

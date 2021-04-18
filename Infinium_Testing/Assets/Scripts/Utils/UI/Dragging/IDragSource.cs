@@ -10,6 +10,6 @@ namespace Infinium.Core.UI.Dragging
 
         int GetNumber();
 
-        void RemoveItem(int number);
+        void RemoveItems(int number);
     }
 }

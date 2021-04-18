@@ -33,7 +33,7 @@ namespace Infinium.Core.UI.Dragging
             transform.position = eventData.position;
         }
 
-        public void IEndDragHandler.OnEndDrag(PointerEventData eventData)
+        void IEndDragHandler.OnEndDrag(PointerEventData eventData)
         {
             transform.position = startPos;
             GetComponent<CanvasGroup>().blocksRaycasts = true;
@@ -82,8 +82,8 @@ namespace Infinium.Core.UI.Dragging
             var removedDestinationNumber = destination.GetNumber();
             var removedDestinationItem = destination.GetItem();
 
-            source.RemoveItem(removedSourceNumber);
-            destination.RemoveItem(removedDestinationNumber);
+            source.RemoveItems(removedSourceNumber);
+            destination.RemoveItems(removedDestinationNumber);
 
             var sourceTakeBackNumber = CalculateTakeBack(removedSourceItem, removedSourceNumber, source, destination);
             var destinationTakeBackNumber = CalculateTakeBack(removedDestinationItem, removedDestinationNumber, destination, source);
@@ -98,15 +98,59 @@ namespace Infinium.Core.UI.Dragging
                 destination.AddItems(removedDestinationItem, destinationTakeBackNumber);
                 removedDestinationNumber -= destinationTakeBackNumber;
             }
+
+            if (source.MaxAcceptable(removedDestinationItem) < removedDestinationNumber || 
+                destination.MaxAcceptable(removedSourceItem) < removedSourceNumber)
+            {
+                destination.AddItems(removedDestinationItem, removedDestinationNumber);
+                source.AddItems(removedSourceItem, removedSourceNumber);
+                return;
+            }
+
+            if (removedDestinationNumber > 0)
+            {
+                source.AddItems(removedDestinationItem, removedDestinationNumber);
+            }
+            if(removedSourceNumber > 0)
+            {
+                destination.AddItems(removedSourceItem, removedSourceNumber);
+            }
         }
 
-        private void AttemptSimpleTransfer(IDragDestination<T> destination)
+        private bool AttemptSimpleTransfer(IDragDestination<T> destination)
         {
-            throw new NotImplementedException();
+            var draggingItem = source.GetItem();
+            var draggingNumber = source.GetNumber();
+
+            var acceptable = destination.MaxAcceptable(draggingItem);
+            var toTransfer = Mathf.Min(acceptable, draggingNumber);
+
+            if (toTransfer > 0)
+            {
+                source.RemoveItems(toTransfer);
+                destination.AddItems(draggingItem, toTransfer);
+                return false;
+            }
+
+            return true;
         }
         private int CalculateTakeBack(T removedItem, int removedNumber, IDragContainer<T> removeSource, IDragContainer<T> destination)
         {
-            throw new NotImplementedException();
+            var takeBackNumber = 0;
+            var destinationMaxAcceptable = destination.MaxAcceptable(removedItem);
+
+            if(destinationMaxAcceptable < removedNumber)
+            {
+                takeBackNumber = removedNumber - destinationMaxAcceptable;
+
+                var sourceTakeBackAcceptable = removeSource.MaxAcceptable(removedItem);
+
+                if (sourceTakeBackAcceptable < takeBackNumber)
+                {
+                    return 0;
+                }
+            }
+            return takeBackNumber;
         }
     }
 }

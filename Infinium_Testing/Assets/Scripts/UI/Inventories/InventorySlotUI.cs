@@ -31,7 +31,7 @@ namespace Infinium.UI.Invetories
             return 1;
         }
 
-        public void RemoveItem(int number)
+        public void RemoveItems(int number)
         {
             icon.SetItem(null);
         }
