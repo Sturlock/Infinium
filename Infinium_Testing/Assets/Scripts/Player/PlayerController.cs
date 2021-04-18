@@ -35,6 +35,9 @@ public class PlayerController : MonoBehaviour
     Vector3 footPosition;
     Vector3 forward;
 
+    public float IKUP = .2f;
+    public float IKDOWN = .4f;
+
     void OnDrawGizmos()
     {
         Gizmos.color = Color.yellow;
@@ -101,6 +104,7 @@ public class PlayerController : MonoBehaviour
 
     private void OnAnimatorIK(int layerIndex)
     {
+        
         if (animator)
         {
             animator.SetIKPositionWeight(AvatarIKGoal.LeftFoot, animator.GetFloat("IKLeftFootWeight"));
@@ -109,7 +113,7 @@ public class PlayerController : MonoBehaviour
             animator.SetIKRotationWeight(AvatarIKGoal.RightFoot, animator.GetFloat("IKRightFootWeight"));
           
             //Left Foot
-            ray = new Ray(animator.GetIKPosition(AvatarIKGoal.LeftFoot) + Vector3.up * 0.2f, Vector3.down * 0.4f);
+            ray = new Ray(animator.GetIKPosition(AvatarIKGoal.LeftFoot) + Vector3.up * IKUP, Vector3.down * IKDOWN);
             if (Physics.Raycast(ray, out hit, disToGround + 1f))
             {
                 if (hit.transform.tag == "Walkable")
@@ -119,11 +123,13 @@ public class PlayerController : MonoBehaviour
                     animator.SetIKPosition(AvatarIKGoal.LeftFoot, footPosition);
                     forward = Vector3.ProjectOnPlane(transform.forward, hit.normal);
                     animator.SetIKRotation(AvatarIKGoal.LeftFoot, Quaternion.LookRotation(forward, hit.normal));
+                    
                 }
+                Debug.Log(hit.transform.name);
             }
 
             //Right Foot
-            ray = new Ray(animator.GetIKPosition(AvatarIKGoal.RightFoot) + Vector3.up * 0.2f, Vector3.down * 0.4f);
+            ray = new Ray(animator.GetIKPosition(AvatarIKGoal.RightFoot) + Vector3.up * IKUP, Vector3.down * IKDOWN);
             if (Physics.Raycast(ray, out hit, disToGround + 1f))
             {
                 if (hit.transform.tag == "Walkable")

@@ -68,6 +68,7 @@ public class Transition : MonoBehaviour
         near = Physics.CheckSphere(shipTarget.transform.position, radius, playerLayer);
         if(!controllingShip && (near && Input.GetKeyDown(KeyCode.E)))
         {
+            docking = false;
             controllingShip = true;
             return;
         }
@@ -76,13 +77,17 @@ public class Transition : MonoBehaviour
             controllingShip = false;
             return;
         }
+        
         Test ts = GameObject.FindObjectOfType<Test>();
         bool inRadius = ts.GetInRange();
-        //Debug.Log(inRadius);
+
+        Debug.Log(inRadius);
+
         if (inRadius && (controllingShip && Input.GetKeyDown(KeyCode.E)))
         {
             DockDistance();
             DockRotation();
+            docking = true;
             noSail = true;
             SC.SetNoSail(noSail);
             sailOne = false;
@@ -91,15 +96,18 @@ public class Transition : MonoBehaviour
             SC.SetSailTwo(sailTwo);
             sailTravel = false;
             SC.SetSailTravel(sailTravel);
-            docking = true;
             
             return;
         }
         if (docking)
         {
+            Debug.Log(fractionOfJourney);
             SC.transform.position = Vector3.Lerp(startMarker, endMartker, fractionOfJourney);
             SC.transform.rotation = Quaternion.Slerp(startRotation, endRotation, fractionOfJourney);
-            controllingShip = false;
+            if (SC.gameObject.transform.position == endMartker)
+            {
+                controllingShip = false;
+            }
         }
     }
 
@@ -113,8 +121,9 @@ public class Transition : MonoBehaviour
 
     private void DockDistance()
     {
+        Vector3 plus = new Vector3(-8, 0, 0);
         startMarker = SC.transform.position;
-        endMartker = dockTarget.transform.position;
+        endMartker = dockTarget.transform.position + plus;
         journeyLength = Vector3.Distance(startMarker, endMartker);
     }
 }
