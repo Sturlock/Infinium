@@ -2,14 +2,15 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class ShowHideUI : MonoBehaviour
+public class ShowHideUI_Canvas : MonoBehaviour
 {
     [SerializeField] KeyCode toggleKey = KeyCode.Escape;
     [SerializeField] GameObject uiContainer = null;
+    [SerializeField] public bool retract = false;
     // Start is called before the first frame update
     void Start()
     {
-        uiContainer.SetActive(false);
+        uiContainer = this.gameObject;
     }
 
     // Update is called once per frame
@@ -20,9 +21,9 @@ public class ShowHideUI : MonoBehaviour
             Toggle();
         }
     }
-
     public void Toggle()
     {
-        uiContainer.SetActive(!uiContainer.activeSelf);
+        retract = !retract;
+        uiContainer.GetComponent<Animator>().SetBool("retract", retract);
     }
 }

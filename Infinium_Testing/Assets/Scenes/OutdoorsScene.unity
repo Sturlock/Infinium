@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 2489.4863, g: 2666.1973, b: 4303.9766, a: 1}
+  m_IndirectSpecularColor: {r: 2580.037, g: 2663.5156, b: 3914.6328, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -579,7 +579,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &137178168
 RectTransform:
   m_ObjectHideFlags: 0
@@ -8746,6 +8746,7 @@ GameObject:
   - component: {fileID: 1715179790}
   - component: {fileID: 1715179794}
   - component: {fileID: 1715179793}
+  - component: {fileID: 1715179795}
   - component: {fileID: 1715179792}
   m_Layer: 5
   m_Name: PauseMenuBG
@@ -8823,7 +8824,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1715179788}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: f5ae0559edf526348a8d24a6a7d8a259, type: 3}
   m_Name: 
@@ -8861,6 +8862,21 @@ CanvasGroup:
   m_Interactable: 1
   m_BlocksRaycasts: 1
   m_IgnoreParentGroups: 0
+--- !u!114 &1715179795
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1715179788}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b21bc12e3890a3b46981f41bb9f641b0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  toggleKey: 27
+  uiContainer: {fileID: 0}
+  retract: 0
 --- !u!1 &1720056968 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 6733131554919068902, guid: 2a3f46f2246f66a4f8981e5cea85725a, type: 3}
