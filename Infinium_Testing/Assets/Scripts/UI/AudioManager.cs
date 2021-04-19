@@ -16,7 +16,7 @@ public class AudioManager : MonoBehaviour
     private float backroundFloat, bgsfxFloat, sfxFloat;
 
     //public Sound[] sounds;
-    public int scene = 0;
+    public int scene = 1;
 
     public AudioSource[] BackgroundAudio;
     public AudioSource[] BGsoundeffectAudio;
@@ -24,9 +24,11 @@ public class AudioManager : MonoBehaviour
 
     public static AudioManager Instance;
 
-    void Start()
+    private GameObject[] Go;
+
+    public void Start()
     {
-        scene = SceneManager.GetActiveScene().buildIndex;
+        //scene = SceneManager.GetActiveScene().buildIndex;
         firstPlayInt = PlayerPrefs.GetInt(FirstPlay);
 
         if(firstPlayInt == 0)
@@ -53,39 +55,48 @@ public class AudioManager : MonoBehaviour
             sfxFloat = PlayerPrefs.GetFloat(SoundeffectPref);
             sfxSlider.value = sfxFloat;
         }
-        for (int i = 0; i < BackgroundAudio.Length; i++)
-        {
+        //for (int i = 0; i < BackgroundAudio.Length; i++)
+        //{
             //Debug.Log(i);
-            if (scene == i)
-            {
-                BackgroundAudio[i].Play();
-            }
-            else
-            {
-                BackgroundAudio[i].Stop();
-            }
-        }
-        for (int i = 0; i < BGsoundeffectAudio.Length; i++)
-        {
-            if (scene == i)
-            {
-                BGsoundeffectAudio[i].Play();
-            }
-            else
-            {
-                BGsoundeffectAudio[i].Stop();
-            }
-        }
+        //    if (scene == i)
+        //    {
+        //        BackgroundAudio[i].Play();
+        //    }
+        //    else
+        //    {
+        //        BackgroundAudio[i].Stop();
+        //    }
+        //}
+        //for (int i = 0; i < BGsoundeffectAudio.Length; i++)
+        //{
+        //    if (scene == i)
+        //    {
+        //        BGsoundeffectAudio[i].Play();
+        //    }
+        //    else
+        //    {
+        //        BGsoundeffectAudio[i].Stop();
+        //    }
+        //}
     }
 
     public void Update()
     {
         if (scene != SceneManager.GetActiveScene().buildIndex)
         {
+            Debug.Log("Updating...");
             scene = SceneManager.GetActiveScene().buildIndex;
+            if (GameObject.FindGameObjectWithTag("Settings") != null)
+            {
+                Go = GameObject.FindGameObjectsWithTag("AudioSettings");
+                backgroundSlider = Go[0].GetComponent<Slider>();
+                bgsfxSlider = Go[1].GetComponent<Slider>();
+                sfxSlider = Go[2].GetComponent<Slider>();
+            }
+
             for (int i = 0; i < BackgroundAudio.Length; i++)
             {
-                Debug.Log(i);
+                //Debug.Log(i);
                 if (scene == i)
                 {
                     BackgroundAudio[i].Play();

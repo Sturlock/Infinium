@@ -10,6 +10,8 @@ TagManager:
   - Wheel
   - Ship
   - QuestUI
+  - AudioSettings
+  - Settings
   layers:
   - Default
   - TransparentFX

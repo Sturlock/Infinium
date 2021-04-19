@@ -13,7 +13,7 @@ public class SceneTransition : MonoBehaviour
 
     void Start()
     {
-        StartCoroutine(FadeMixerGroup.StartFade(AM, "MainMaster", fadeTime, 1f));
+        StartCoroutine(FadeMixerGroup.StartFade(AM, "MainMaster", fadeTime, 100f));
         scene = SceneManager.GetActiveScene().buildIndex;
     }
 
