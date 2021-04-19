@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections;
 using System.Collections.Generic;
+using Infinium.Dialogue;
 using UnityEngine;
 
 public class ThirdPersonCameraController : MonoBehaviour
@@ -28,15 +29,36 @@ public class ThirdPersonCameraController : MonoBehaviour
     }
     void LateUpdate()
     {
-        yaw += Input.GetAxis("Mouse X") * mouseSensitivty;
-        pitch -= Input.GetAxis("Mouse Y") * mouseSensitivty;
-        pitch = Mathf.Clamp(pitch, pitchMinMax.x, pitchMinMax.y);
+        PlayerConversant playerConversant = GameObject.FindObjectOfType<PlayerConversant>();
+        if(!playerConversant.IsConversing())
+        {
+            
+            if (Input.GetButton("Fire2"))
+            {
+                Cursor.lockState = CursorLockMode.Locked;
+                Cursor.visible = false;
+                yaw += Input.GetAxis("Mouse X") * mouseSensitivty;
+                pitch -= Input.GetAxis("Mouse Y") * mouseSensitivty;
+                pitch = Mathf.Clamp(pitch, pitchMinMax.x, pitchMinMax.y);
+                currentRotation = Vector3.SmoothDamp(currentRotation,
+                    new Vector3(pitch, yaw), ref rotationSmoothVelocity, rotationSmoothTime);
+                transform.eulerAngles = currentRotation;
+                transform.position = target.position - transform.forward * dstFromTarget;
+                return;
+            }
+            else
+            {
+                Cursor.lockState = CursorLockMode.None;
+                Cursor.visible = true;
 
-        currentRotation = Vector3.SmoothDamp(currentRotation, 
-            new Vector3(pitch, yaw), ref rotationSmoothVelocity, rotationSmoothTime);
+               
+            }
+            
 
-        transform.eulerAngles = currentRotation;
-
-        transform.position = target.position - transform.forward * dstFromTarget;
+            transform.eulerAngles = currentRotation;
+            transform.position = target.position - transform.forward * dstFromTarget;
+        }
+        
+        
     }
 }
