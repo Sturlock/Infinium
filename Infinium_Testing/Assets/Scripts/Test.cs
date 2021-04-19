@@ -56,6 +56,7 @@ public class Test : MonoBehaviour
     {
         if (other.gameObject.GetComponent<DockingClass>())
         {
+            inRange = true;
             dock = other.gameObject;
             //Debug.Log(dock.name);
         }

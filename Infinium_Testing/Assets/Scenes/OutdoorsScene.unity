@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 2570.2188, g: 2655.3516, b: 3910.336, a: 1}
+  m_IndirectSpecularColor: {r: 2568.754, g: 2653.293, b: 3906.5078, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -2136,6 +2136,11 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+--- !u!1 &944617036 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 6390997404123718869, guid: 77ac74c7aebbe924cbf327cfc058e2f8, type: 3}
+  m_PrefabInstance: {fileID: 1852726984638504944}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &969735757
 GameObject:
   m_ObjectHideFlags: 0
@@ -6078,6 +6083,10 @@ PrefabInstance:
       propertyPath: myInventory.Array.data[0]
       value: 
       objectReference: {fileID: 519263114}
+    - target: {fileID: 1374716624275088635, guid: 77ac74c7aebbe924cbf327cfc058e2f8, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 1.0374
+      objectReference: {fileID: 0}
     - target: {fileID: 1852726984992613282, guid: 77ac74c7aebbe924cbf327cfc058e2f8, type: 3}
       propertyPath: m_Name
       value: Overlord
@@ -6134,6 +6143,10 @@ PrefabInstance:
       propertyPath: dockTarget
       value: 
       objectReference: {fileID: 821204675}
+    - target: {fileID: 1852726984992613287, guid: 77ac74c7aebbe924cbf327cfc058e2f8, type: 3}
+      propertyPath: dockingSpeed
+      value: 2
+      objectReference: {fileID: 0}
     - target: {fileID: 3636477537236730015, guid: 77ac74c7aebbe924cbf327cfc058e2f8, type: 3}
       propertyPath: m_LocalPosition.x
       value: -135.35
@@ -6154,6 +6167,14 @@ PrefabInstance:
       propertyPath: m_TagString
       value: Ship
       objectReference: {fileID: 0}
+    - target: {fileID: 5344800731175481172, guid: 77ac74c7aebbe924cbf327cfc058e2f8, type: 3}
+      propertyPath: m_CollisionDetection
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5344800731175481173, guid: 77ac74c7aebbe924cbf327cfc058e2f8, type: 3}
+      propertyPath: helm
+      value: 
+      objectReference: {fileID: 944617036}
     - target: {fileID: 5344800731175481173, guid: 77ac74c7aebbe924cbf327cfc058e2f8, type: 3}
       propertyPath: tPCC
       value: 
@@ -6161,6 +6182,14 @@ PrefabInstance:
     - target: {fileID: 6700616051110604261, guid: 77ac74c7aebbe924cbf327cfc058e2f8, type: 3}
       propertyPath: m_ApplyRootMotion
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6949888368527950919, guid: 77ac74c7aebbe924cbf327cfc058e2f8, type: 3}
+      propertyPath: m_AngularDrag
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6949888368527950919, guid: 77ac74c7aebbe924cbf327cfc058e2f8, type: 3}
+      propertyPath: m_CollisionDetection
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 77ac74c7aebbe924cbf327cfc058e2f8, type: 3}

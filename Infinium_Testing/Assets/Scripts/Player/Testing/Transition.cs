@@ -21,7 +21,7 @@ public class Transition : MonoBehaviour
     [SerializeField] Vector3 endMartker;
     [SerializeField] Quaternion startRotation;
     [SerializeField] Quaternion endRotation;
-
+    float fractionOfJourney;
     public bool docking;
 
     [Header("Ship Interaction", order = 2)]
@@ -63,7 +63,7 @@ public class Transition : MonoBehaviour
         sailTravel = SC.GetSailTravel();
         float distCoverd = (Time.time - startTime) * dockingSpeed;
         //float distCoverd = Vector3.Distance(SC.transform.position, startMarker);
-        float fractionOfJourney = distCoverd / journeyLength;
+        fractionOfJourney = distCoverd / journeyLength;
 
         near = Physics.CheckSphere(shipTarget.transform.position, radius, playerLayer);
         if(!controllingShip && (near && Input.GetKeyDown(KeyCode.E)))
@@ -99,18 +99,29 @@ public class Transition : MonoBehaviour
             
             return;
         }
+
+        
+
+    }
+
+    void FixedUpdate()
+    {
         if (docking)
         {
             Debug.Log(fractionOfJourney);
             SC.transform.position = Vector3.Lerp(startMarker, endMartker, fractionOfJourney);
             SC.transform.rotation = Quaternion.Slerp(startRotation, endRotation, fractionOfJourney);
-            if (SC.gameObject.transform.position == endMartker)
-            {
-                controllingShip = false;
-            }
+            
         }
     }
 
+    void LateUpdate()
+    {
+        if (fractionOfJourney == 1)
+        {
+            controllingShip = false;
+        }
+    }
     private void DockRotation()
     {
         startRotation = SC.transform.rotation;
@@ -121,7 +132,7 @@ public class Transition : MonoBehaviour
 
     private void DockDistance()
     {
-        Vector3 plus = new Vector3(-8, 0, 0);
+        Vector3 plus = new Vector3(-6.5f, 0, 0);
         startMarker = SC.transform.position;
         endMartker = dockTarget.transform.position + plus;
         journeyLength = Vector3.Distance(startMarker, endMartker);

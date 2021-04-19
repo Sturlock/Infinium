@@ -10,6 +10,7 @@ public class ShipController : MonoBehaviour
     [Header ("Properties", order = 0)]
     public ThirdPersonCameraController tPCC;
     GameObject wheel = null;
+    [SerializeField] GameObject helm;
     public List<GameObject> springs;
     public Rigidbody rb;
     public GameObject prop;
@@ -84,11 +85,9 @@ public class ShipController : MonoBehaviour
         controlling = transition.GetShip();
         if (controlling)
         {
-            float setX = wheel.transform.position.x;
-            float setZ = wheel.transform.position.z;
-            GameObject player = GameObject.FindGameObjectWithTag("Player");
-            player.GetComponent<Rigidbody>().MovePosition(new Vector3(setX, player.transform.position.y, setZ));
             
+            
+
             #region Gears
             tPCC.target = GameObject.FindGameObjectWithTag("Wheel").transform;
             //gearing the speed up
@@ -173,6 +172,12 @@ public class ShipController : MonoBehaviour
 
     void FixedUpdate()
     {
+        if (controlling)
+        {
+            GameObject player = GameObject.FindGameObjectWithTag("Player");
+            player.GetComponent<Rigidbody>().MovePosition(helm.transform.position);
+            player.GetComponent<Rigidbody>().useGravity = false;
+        }
         rb.AddForceAtPosition(speed, prop.transform.position);
         if (controlling) {rb.AddTorque(Time.deltaTime * transform.TransformDirection(Vector3.up) * Input.GetAxis("Horizontal") * turn * 100f); }
         
