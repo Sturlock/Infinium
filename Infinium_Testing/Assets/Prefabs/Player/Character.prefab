@@ -107,7 +107,6 @@ GameObject:
   - component: {fileID: 6285130512894516900}
   - component: {fileID: 8991986317026318536}
   - component: {fileID: -1461720939236690170}
-  - component: {fileID: 301948432303803073}
   - component: {fileID: 670104016}
   - component: {fileID: 7490163002221531194}
   - component: {fileID: 4475304602244561093}
@@ -193,22 +192,7 @@ Rigidbody:
   m_IsKinematic: 0
   m_Interpolate: 0
   m_Constraints: 80
-  m_CollisionDetection: 0
---- !u!114 &301948432303803073
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1146200187971666381}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: a2a57ce2664fd3f4cbb7919b10576fea, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  maxGroundAngle: 0
-  maxClimbAngle: 140
-  maxStairsAngle: 50
+  m_CollisionDetection: 1
 --- !u!136 &670104016
 CapsuleCollider:
   m_ObjectHideFlags: 0

@@ -35,6 +35,9 @@ public class PlayerController : MonoBehaviour
     Vector3 footPosition;
     Vector3 forward;
 
+    public float IKUP = .2f;
+    public float IKDOWN = .4f;
+
     void OnDrawGizmos()
     {
         Gizmos.color = Color.yellow;
@@ -53,8 +56,9 @@ public class PlayerController : MonoBehaviour
     void Update()
     {
         controlling = transition.GetShip();
-        if (!controlling) 
+        if (!controlling)
         {
+            rb.useGravity = true;
             cam.GetComponent<ThirdPersonCameraController>().target = GameObject.FindGameObjectWithTag("Target").transform;
             cam.GetComponent<ThirdPersonCameraController>().dstFromTarget = 4f;
             input = new Vector2(Input.GetAxisRaw("Horizontal"), Input.GetAxisRaw("Vertical"));
@@ -69,6 +73,7 @@ public class PlayerController : MonoBehaviour
             float animationSpeedPercent = ((running) ? 1 : .5f) * inputDir.magnitude;
             animator.SetFloat("speedPercent", animationSpeedPercent, speedSmoothTime, Time.deltaTime);
         }
+        else animator.SetFloat("speedPercent", 0f);
     }
 
     private Vector2 LookRotation()
@@ -101,6 +106,7 @@ public class PlayerController : MonoBehaviour
 
     private void OnAnimatorIK(int layerIndex)
     {
+        
         if (animator)
         {
             animator.SetIKPositionWeight(AvatarIKGoal.LeftFoot, animator.GetFloat("IKLeftFootWeight"));
@@ -109,24 +115,26 @@ public class PlayerController : MonoBehaviour
             animator.SetIKRotationWeight(AvatarIKGoal.RightFoot, animator.GetFloat("IKRightFootWeight"));
           
             //Left Foot
-            ray = new Ray(animator.GetIKPosition(AvatarIKGoal.LeftFoot) + Vector3.up * 0.2f, Vector3.down * 0.4f);
+            ray = new Ray(animator.GetIKPosition(AvatarIKGoal.LeftFoot) + Vector3.up * IKUP, Vector3.down * IKDOWN);
             if (Physics.Raycast(ray, out hit, disToGround + 1f))
             {
-                if (hit.transform.tag == "Walkable")
+                if (hit.transform.tag == "Walkable" || hit.transform.tag == "Ship")
                 {
                     footPosition = hit.point;
                     footPosition.y += disToGround;
                     animator.SetIKPosition(AvatarIKGoal.LeftFoot, footPosition);
                     forward = Vector3.ProjectOnPlane(transform.forward, hit.normal);
                     animator.SetIKRotation(AvatarIKGoal.LeftFoot, Quaternion.LookRotation(forward, hit.normal));
+                    
                 }
+                Debug.Log(hit.transform.name);
             }
 
             //Right Foot
-            ray = new Ray(animator.GetIKPosition(AvatarIKGoal.RightFoot) + Vector3.up * 0.2f, Vector3.down * 0.4f);
+            ray = new Ray(animator.GetIKPosition(AvatarIKGoal.RightFoot) + Vector3.up * IKUP, Vector3.down * IKDOWN);
             if (Physics.Raycast(ray, out hit, disToGround + 1f))
             {
-                if (hit.transform.tag == "Walkable")
+                if (hit.transform.tag == "Walkable" || hit.transform.tag == "Ship")
                 {
                     footPosition = hit.point;
                     footPosition.y += disToGround;
