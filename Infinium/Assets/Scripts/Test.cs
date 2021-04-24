@@ -62,7 +62,6 @@ public class Test : MonoBehaviour
         }
          
     }
-
     void OnTriggerExit(Collider other)
     {
         if (other.gameObject.GetComponent<DockingClass>())

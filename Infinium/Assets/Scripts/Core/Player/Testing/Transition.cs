@@ -26,6 +26,7 @@ public class Transition : MonoBehaviour
 
     [Header("Ship Interaction", order = 2)]
     [SerializeField] ShipController SC;
+    [SerializeField] Test dock;
     [SerializeField] bool noSail = false;
     [SerializeField] bool sailOne, sailTwo, sailTravel;
 
@@ -42,6 +43,10 @@ public class Transition : MonoBehaviour
     {
         return controllingShip;
     }
+    public bool GetDocking()
+    {
+        return docking;
+    }
     public void isShip(bool newIsShip)
     {
         controllingShip = newIsShip;
@@ -49,7 +54,7 @@ public class Transition : MonoBehaviour
     void Start()
     {
         SC = FindObjectOfType<ShipController>();
-        
+        dock = GetComponentInChildren<Test>();
         playerLayer = LayerMask.GetMask("Player");
         cam = GameObject.FindGameObjectWithTag("MainCamera");
     }
@@ -100,7 +105,7 @@ public class Transition : MonoBehaviour
             return;
         }
 
-        
+        dockTarget = dock.GetDock();
 
     }
 
@@ -127,12 +132,11 @@ public class Transition : MonoBehaviour
         startRotation = SC.transform.rotation;
         endRotation = dockTarget.transform.rotation;
         Debug.Log(endRotation);
-        
     }
 
     private void DockDistance()
     {
-        Vector3 plus = new Vector3(-6.5f, 0, 0);
+        Vector3 plus = new Vector3(-7.5f, 0, 0);
         startMarker = SC.transform.position;
         endMartker = dockTarget.transform.position + plus;
         journeyLength = Vector3.Distance(startMarker, endMartker);

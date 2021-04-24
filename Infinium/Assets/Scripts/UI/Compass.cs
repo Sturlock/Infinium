@@ -22,7 +22,7 @@ public class Compass : MonoBehaviour
     {
         compassUnit = compassImage.rectTransform.rect.width / 360f;
         player = GameObject.FindGameObjectWithTag("MainCamera").transform;
-        AddQuestMarker(one);
+        //AddQuestMarker(one);
         //AddQuestMarker(two);
         //AddQuestMarker(three);
     }

@@ -7,6 +7,7 @@ public class ShipController : MonoBehaviour
 {
     Transition transition;
     bool controlling;
+    bool docking;
     [Header ("Properties", order = 0)]
     public ThirdPersonCameraController tPCC;
     GameObject wheel = null;
@@ -70,7 +71,8 @@ public class ShipController : MonoBehaviour
     #endregion
     void Awake()
     {
-        transition = GameObject.FindObjectOfType<Transition>();
+        transition = FindObjectOfType<Transition>();
+        tPCC = FindObjectOfType<ThirdPersonCameraController>();
     }
     // Start is called before the first frame update
     void Start()
@@ -83,10 +85,9 @@ public class ShipController : MonoBehaviour
     void Update()
     {
         controlling = transition.GetShip();
+        docking = transition.GetDocking();
         if (controlling)
         {
-            
-            
 
             #region Gears
             tPCC.target = GameObject.FindGameObjectWithTag("Wheel").transform;
@@ -180,17 +181,24 @@ public class ShipController : MonoBehaviour
         }
         rb.AddForceAtPosition(speed, prop.transform.position);
         if (controlling) {rb.AddTorque(Time.deltaTime * transform.TransformDirection(Vector3.up) * Input.GetAxis("Horizontal") * turn * 100f); }
-        
-        foreach (GameObject spring in springs)
+        if (!docking)
         {
-            //////////////// DO NOT CHANGE!!!!!!
-            RaycastHit hit;
-            if (Physics.Raycast(spring.transform.position, transform.TransformDirection(Vector3.down), out hit, disToGround))
+            foreach (GameObject spring in springs)
             {
-                rb.AddForceAtPosition(Time.deltaTime * transform.TransformDirection(Vector3.up) * Mathf.Pow(disToGround - hit.distance, 4) / disToGround * 90f, spring.transform.position);
+                //////////////// DO NOT CHANGE!!!!!!
+                RaycastHit hit;
+                if (Physics.Raycast(spring.transform.position, transform.TransformDirection(Vector3.down), out hit, disToGround))
+                {
+                    Vector3 springForce = Time.deltaTime * transform.TransformDirection(Vector3.up) * Mathf.Pow(disToGround - hit.distance, 4) / disToGround * 50f;
+                    rb.AddForceAtPosition(springForce, spring.transform.position);
+
+                    //Debug.Log(springForce);
+                }
+                //Debug.Log(hit.disToGround);
             }
-            //Debug.Log(hit.disToGround);
         }
+        else rb.useGravity = false;
+        
         rb.AddForce(-Time.deltaTime * transform.TransformVector(Vector3.right) * transform.InverseTransformVector(rb.velocity).x * (thrusterStrength * 10f));
     }
 }

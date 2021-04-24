@@ -7,6 +7,10 @@ TagManager:
   - Wheel
   - Ship
   - Target
+  - Walkable
+  - Docking
+  - Settings
+  - AudioSettings
   layers:
   - Default
   - TransparentFX
@@ -19,7 +23,7 @@ TagManager:
   - PostProcessing
   - Not in Reflection
   - Player
-  - 
+  - Ship
   - 
   - 
   - 
