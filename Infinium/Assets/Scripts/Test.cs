@@ -3,7 +3,7 @@ using UnityEngine;
 public class Test : MonoBehaviour
 {
     private SphereCollider sc;
-    public float raduis = 40f;
+    public float raduis = 15f;
     [SerializeField] private GameObject dock;
     public bool inRange;
     private float distanceToTarget;

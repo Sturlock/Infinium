@@ -26,6 +26,7 @@ public class Transition : MonoBehaviour
 
     [Header("Ship Interaction", order = 2)]
     [SerializeField] ShipController SC;
+    Rigidbody shipRidged;
     [SerializeField] Test dock;
     [SerializeField] bool noSail = false;
     [SerializeField] bool sailOne, sailTwo, sailTravel;
@@ -57,16 +58,19 @@ public class Transition : MonoBehaviour
         dock = GetComponentInChildren<Test>();
         playerLayer = LayerMask.GetMask("Player");
         cam = GameObject.FindGameObjectWithTag("MainCamera");
+        shipRidged = SC.rb;
     }
 
     // Update is called once per frame
     void Update()
     {
+        //Getting Gears
         noSail = SC.GetNoSail();
         sailOne = SC.GetSailOne();
         sailTwo = SC.GetSailTwo();
         sailTravel = SC.GetSailTravel();
         float distCoverd = (Time.time - startTime) * dockingSpeed;
+        
         //float distCoverd = Vector3.Distance(SC.transform.position, startMarker);
         fractionOfJourney = distCoverd / journeyLength;
 
@@ -113,18 +117,29 @@ public class Transition : MonoBehaviour
     {
         if (docking)
         {
+            shipRidged.isKinematic = true;
+
             Debug.Log(fractionOfJourney);
-            SC.transform.position = Vector3.Lerp(startMarker, endMartker, fractionOfJourney);
-            SC.transform.rotation = Quaternion.Slerp(startRotation, endRotation, fractionOfJourney);
-            
+            shipRidged.MovePosition(Vector3.Lerp(startMarker, endMartker, fractionOfJourney));
+            shipRidged.MoveRotation(Quaternion.Slerp(startRotation, endRotation, fractionOfJourney));
         }
     }
 
     void LateUpdate()
     {
-        if (fractionOfJourney == 1)
+        //if (fractionOfJourney >= 1)
+        //{
+        //    controllingShip = false;
+        //}
+        if (docking)
         {
-            controllingShip = false;
+            if (Vector3.Distance(SC.transform.position, dockTarget.transform.position) <= 9)
+            {
+               
+                controllingShip = false;
+                docking = false;
+                
+            }
         }
     }
     private void DockRotation()

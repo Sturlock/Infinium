@@ -169,18 +169,26 @@ public class ShipController : MonoBehaviour
         #endregion
     }
 
-    
+
 
     void FixedUpdate()
     {
         if (controlling)
         {
             GameObject player = GameObject.FindGameObjectWithTag("Player");
+            player.GetComponent<Rigidbody>().isKinematic = true;
+            player.GetComponent<Rigidbody>().detectCollisions = false;
             player.GetComponent<Rigidbody>().MovePosition(helm.transform.position);
             player.GetComponent<Rigidbody>().useGravity = false;
         }
-        rb.AddForceAtPosition(speed, prop.transform.position);
-        if (controlling) {rb.AddTorque(Time.deltaTime * transform.TransformDirection(Vector3.up) * Input.GetAxis("Horizontal") * turn * 100f); }
+        if (controlling && !docking)
+        {
+            //Ship Force applying
+            rb.AddForceAtPosition(speed, prop.transform.position);
+            rb.AddTorque(Time.deltaTime * transform.TransformDirection(Vector3.up) * Input.GetAxis("Horizontal") * turn * 100f);
+
+        }
+
         if (!docking)
         {
             foreach (GameObject spring in springs)
@@ -196,9 +204,10 @@ public class ShipController : MonoBehaviour
                 }
                 //Debug.Log(hit.disToGround);
             }
+            rb.AddForce(-Time.deltaTime * transform.TransformVector(Vector3.right) * transform.InverseTransformVector(rb.velocity).x * (thrusterStrength * 10f));
         }
         else rb.useGravity = false;
         
-        rb.AddForce(-Time.deltaTime * transform.TransformVector(Vector3.right) * transform.InverseTransformVector(rb.velocity).x * (thrusterStrength * 10f));
+        
     }
 }

@@ -58,7 +58,11 @@ public class PlayerController : MonoBehaviour
         controlling = transition.GetShip();
         if (!controlling)
         {
+            rb.isKinematic = false;
+            rb.detectCollisions = true;
             rb.useGravity = true;
+            
+
             cam.GetComponent<ThirdPersonCameraController>().target = GameObject.FindGameObjectWithTag("Target").transform;
             cam.GetComponent<ThirdPersonCameraController>().dstFromTarget = 4f;
             input = new Vector2(Input.GetAxisRaw("Horizontal"), Input.GetAxisRaw("Vertical"));
@@ -98,7 +102,6 @@ public class PlayerController : MonoBehaviour
         movement = input * targetSpeed * Time.fixedDeltaTime ;
         rb.AddForce(movement);
         //cc.Move(input * Time.fixedDeltaTime * targetSpeed );
-
         Vector3 v = rb.velocity;
         v.x = Mathf.Clamp(rb.velocity.x, -6f, 6f);
         rb.velocity = v;
