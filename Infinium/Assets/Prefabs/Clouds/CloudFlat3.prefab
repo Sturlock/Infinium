@@ -93,7 +93,7 @@ MeshCollider:
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 4
-  m_Convex: 1
+  m_Convex: 0
   m_CookingOptions: 30
   m_Mesh: {fileID: -8694678258286280256, guid: 452b0f68cb5690442999c79649db5a12, type: 3}
 --- !u!1 &1123388703440182691
@@ -157,7 +157,7 @@ LODGroup:
     fadeTransitionWidth: 0
     renderers:
     - renderer: {fileID: 5917346174193798603}
-  - screenRelativeHeight: 0.064907774
+  - screenRelativeHeight: 0.25375423
     fadeTransitionWidth: 0
     renderers:
     - renderer: {fileID: 6650941096710377844}

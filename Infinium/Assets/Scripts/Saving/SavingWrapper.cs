@@ -8,8 +8,8 @@ namespace Infinium.Saving
     {
         [SerializeField] KeyCode SaveButton;
         [SerializeField] KeyCode LoadButton;
-        const string defaultSaveFile = "Save";
-
+        const string defaultSaveFile = "saveGame";
+        
         void Update()
         {
             if (Input.GetKeyDown(SaveButton))
