@@ -30,19 +30,19 @@ namespace Infinium.Saving
         void Update()
         {
             if (Application.IsPlaying(gameObject)) return;
+            if (string.IsNullOrEmpty(gameObject.scene.path)) return;
 #if UNITY_EDITOR
             SerializedObject serializedObject = 
                 new SerializedObject(this);
             SerializedProperty property = 
                 serializedObject.FindProperty("uniqueIdentifier");
             
-#endif
-            print("Editing");
-            if (property.stringValue == "")
+            if (string.IsNullOrEmpty(property.stringValue))
             {
-                uniqueIdentifier = System.Guid.NewGuid().ToString();
+                property.stringValue = System.Guid.NewGuid().ToString();
+                serializedObject.ApplyModifiedProperties();
             }
         }
-
+#endif
     }
 }
