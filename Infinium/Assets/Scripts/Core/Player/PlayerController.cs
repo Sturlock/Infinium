@@ -2,8 +2,9 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using Infinium.Saving;
 [RequireComponent(typeof(Rigidbody))]
-public class PlayerController : MonoBehaviour
+public class PlayerController : MonoBehaviour, ISaveable
 {
     [SerializeField] bool controlling;
     [SerializeField] Transition transition;
@@ -148,5 +149,18 @@ public class PlayerController : MonoBehaviour
                 }
             }
         }
+    }
+
+    public object CaptureState()
+    {
+        return new SerializableVector3(transform.position);
+    }
+
+    public void RestoreState(object state)
+    {
+        SerializableVector3 position = (SerializableVector3)state;
+        
+        transform.position = position.ToVector();
+        
     }
 }

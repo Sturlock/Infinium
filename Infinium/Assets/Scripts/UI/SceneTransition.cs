@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.Audio;
 using UnityEngine.SceneManagement;
+using Infinium.Saving;
 
 public class SceneTransition : MonoBehaviour
 {
@@ -40,8 +41,12 @@ public class SceneTransition : MonoBehaviour
     {
         fade.SetTrigger("Start");
         StartCoroutine(FadeMixerGroup.StartFade(AM,"MainMaster", fadeTime, 0f));
+        SavingWrapper savingWrapper = FindObjectOfType<SavingWrapper>();
         yield return new WaitForSeconds(fadeTime + 1f);
-        SceneManager.LoadScene(sceneIndex);
+        SceneManager.LoadSceneAsync(sceneIndex);
+
+        savingWrapper.Load();
+        
     }
 
 }

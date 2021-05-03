@@ -9,18 +9,33 @@ namespace Infinium.Saving
         [SerializeField] KeyCode SaveButton;
         [SerializeField] KeyCode LoadButton;
         const string defaultSaveFile = "saveGame";
-        
+
+        void Start()
+        {
+            
+        }
+
         void Update()
         {
             if (Input.GetKeyDown(SaveButton))
             {
-                GetComponent<SavingSystem>().Save(defaultSaveFile);
+                Save();
             }
             if (Input.GetKeyDown(LoadButton))
             {
-                GetComponent<SavingSystem>().Load(defaultSaveFile);
+                Load();
             }
-           
+
+        }
+
+        public void Load()
+        {
+            GetComponent<SavingSystem>().Load(defaultSaveFile);
+        }
+
+        public void Save()
+        {
+            GetComponent<SavingSystem>().Save(defaultSaveFile);
         }
     }
 }

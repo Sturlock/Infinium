@@ -1,32 +1,5 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
---- !u!114 &777605211
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 300620589330608780}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 42cf166048d6fca4db7c8afe187e15d7, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  myInventory:
-  - {fileID: 0}
---- !u!114 &4236161860441451422
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 300620589330608780}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: f19c1fe3438e901419c72f40dcdcd910, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  uniqueIdentifier: 
 --- !u!1 &1852726984992613282
 GameObject:
   m_ObjectHideFlags: 0
@@ -37,6 +10,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1852726984992613286}
   - component: {fileID: 1852726984992613287}
+  - component: {fileID: 4031377475983878282}
   m_Layer: 0
   m_Name: Overlord
   m_TagString: Untagged
@@ -95,19 +69,19 @@ MonoBehaviour:
   near: 0
   controllingShip: 0
   radius: 1.85
---- !u!114 &5684858201391185960
+--- !u!114 &4031377475983878282
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 5344800731175481171}
+  m_GameObject: {fileID: 1852726984992613282}
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: f19c1fe3438e901419c72f40dcdcd910, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  uniqueIdentifier: 
+  uniqueIdentifier: Overlord
 --- !u!1001 &847831400944087873
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -321,11 +295,6 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 9656c0e5be1c7fb4cac5898692b92fd0, type: 3}
---- !u!1 &300620589330608780 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 1146200187971666381, guid: 9656c0e5be1c7fb4cac5898692b92fd0, type: 3}
-  m_PrefabInstance: {fileID: 847831400944087873}
-  m_PrefabAsset: {fileID: 0}
 --- !u!4 &3636477537236730015 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 4157745115602842590, guid: 9656c0e5be1c7fb4cac5898692b92fd0, type: 3}
@@ -928,11 +897,6 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 8a658de89237e3c49b68e4ac6ec4b9bc, type: 3}
---- !u!1 &5344800731175481171 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 6024336985946725212, guid: 8a658de89237e3c49b68e4ac6ec4b9bc, type: 3}
-  m_PrefabInstance: {fileID: 1852726985129489423}
-  m_PrefabAsset: {fileID: 0}
 --- !u!4 &5344800731175481177 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 6024336985946725206, guid: 8a658de89237e3c49b68e4ac6ec4b9bc, type: 3}
@@ -943,7 +907,7 @@ MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 6024336985946725210, guid: 8a658de89237e3c49b68e4ac6ec4b9bc, type: 3}
   m_PrefabInstance: {fileID: 1852726985129489423}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 5344800731175481171}
+  m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 9ef88e530bccc004282c3a9398ffcaf4, type: 3}
