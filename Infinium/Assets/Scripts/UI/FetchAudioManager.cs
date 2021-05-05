@@ -5,8 +5,9 @@ using UnityEngine;
 public class FetchAudioManager : MonoBehaviour
 {
     // Start is called before the first frame update
-    public void Start()
+    public IEnumerator Start()
     {
+        yield return new WaitForSeconds(.5f);
         FindObjectOfType<AudioManager>().Start();
         //FindObjectOfType<AudioManager>().UpdateSound();
     }

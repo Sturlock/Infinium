@@ -47,6 +47,7 @@ MonoBehaviour:
   fade: {fileID: 6378330090148926222}
   scene: 0
   fadeTime: 1
+  AM: {fileID: 24100000, guid: 1245f6861cab1524591422bbeb6724ba, type: 2}
 --- !u!1 &6291868912084658197
 GameObject:
   m_ObjectHideFlags: 0
@@ -136,6 +137,7 @@ GameObject:
   - component: {fileID: 6336675482478082772}
   - component: {fileID: 1995570006639077317}
   - component: {fileID: 6378330090148926222}
+  - component: {fileID: 1341341946}
   m_Layer: 0
   m_Name: Fade
   m_TagString: Untagged
@@ -182,7 +184,7 @@ Canvas:
   m_SortingBucketNormalizedSize: 0
   m_AdditionalShaderChannelsFlag: 0
   m_SortingLayerID: 0
-  m_SortingOrder: 0
+  m_SortingOrder: 1
   m_TargetDisplay: 0
 --- !u!114 &653909746973267376
 MonoBehaviour:
@@ -232,9 +234,9 @@ CanvasGroup:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 7130016547004961234}
   m_Enabled: 1
-  m_Alpha: 1
-  m_Interactable: 1
-  m_BlocksRaycasts: 1
+  m_Alpha: 0
+  m_Interactable: 0
+  m_BlocksRaycasts: 0
   m_IgnoreParentGroups: 0
 --- !u!95 &6378330090148926222
 Animator:
@@ -255,3 +257,15 @@ Animator:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorControllerStateOnDisable: 0
+--- !u!114 &1341341946
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7130016547004961234}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 650c013730c770e46835bd50ceb678e8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 

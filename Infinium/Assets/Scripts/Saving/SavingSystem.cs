@@ -1,12 +1,34 @@
+using System.Collections;
 using System.Collections.Generic;
 using System.IO;
 using System.Runtime.Serialization.Formatters.Binary;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 namespace Infinium.Saving
 {
     public class SavingSystem : MonoBehaviour
     {
+
+        public IEnumerator LoadLastScene(string saveFile)
+        {
+            //Get State
+            Dictionary<string, object> state = LoadFile(saveFile);
+            if (state.ContainsKey("lastSceneBuildIndex"))
+            {
+                int buildIndex = (int)state["lastSceneBuildIndex"];
+                print(buildIndex);
+                //Load Last Scene
+                if (buildIndex != SceneManager.GetActiveScene().buildIndex)
+                {
+                    yield return SceneManager.LoadSceneAsync(buildIndex);
+                }
+            }
+            
+            //Restore State
+            RestoreState(state);
+        }
+
         public void Save(string saveFile)
         {
             Dictionary<string, object> state = LoadFile(saveFile);
@@ -19,6 +41,7 @@ namespace Infinium.Saving
             //Loading out Dictionary from a string to object,
             //that state gets used to restore the state
             RestoreState(LoadFile(saveFile));
+            print("loading to " + saveFile);
         }
 
         private void SaveFile(string saveFile, object state)
@@ -52,6 +75,7 @@ namespace Infinium.Saving
             {
                 state[saveable.GetUniqueIdentifier()] = saveable.CaptureState();
             }
+            state["lastSceneBuildIndex"] = SceneManager.GetActiveScene().buildIndex;
         }
 
         private void RestoreState(Dictionary<string, object> state)
