@@ -13,7 +13,7 @@ public class AudioManager : MonoBehaviour
 
     private int firstPlayInt;
     public Slider backgroundSlider, bgsfxSlider, sfxSlider;
-    private float backroundFloat, bgsfxFloat, sfxFloat;
+    [SerializeField] private float backroundFloat, bgsfxFloat, sfxFloat;
 
     //public Sound[] sounds;
     public int scene = 1;
