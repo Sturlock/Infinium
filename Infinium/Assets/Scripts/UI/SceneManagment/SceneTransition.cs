@@ -64,7 +64,7 @@ namespace Infinium.SceneManagement
 	        yield return new WaitForSeconds(fadeTime + 1f);
 	        
 	        yield return SceneManager.LoadSceneAsync(sceneIndex);
-	        savingWrapper.Load();
+	        //savingWrapper.Load();
 	    }
 	
 	    public void ContinueGame()
