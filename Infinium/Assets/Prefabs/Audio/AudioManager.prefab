@@ -53,6 +53,9 @@ MonoBehaviour:
   backgroundSlider: {fileID: 0}
   bgsfxSlider: {fileID: 0}
   sfxSlider: {fileID: 0}
+  backroundFloat: 0
+  bgsfxFloat: 0
+  sfxFloat: 0
   scene: 1
   BackgroundAudio:
   - {fileID: 6598105899191683482}

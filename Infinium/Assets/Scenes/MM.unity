@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 3635.8848, g: 5261.328, b: 8876.609, a: 1}
+  m_IndirectSpecularColor: {r: 3620.1113, g: 5231.3164, b: 8816.203, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -239,18 +239,6 @@ MonoBehaviour:
       - m_Target: {fileID: 70647566}
         m_TargetAssemblyTypeName: PlayAnimation, Assembly-CSharp
         m_MethodName: onClick
-        m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
-      - m_Target: {fileID: 4343120768091711498, guid: ad4ca41cff19ce143af82a70507c1607, type: 3}
-        m_TargetAssemblyTypeName: UnityEngine.AudioSource, UnityEngine
-        m_MethodName: Play
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -2158,6 +2146,31 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 990263770}
   m_CullTransparentMesh: 1
+--- !u!1 &1010371936 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 5337893642615007108, guid: d8a9b4e5f4c1e0644bc4d3669952d47e, type: 3}
+  m_PrefabInstance: {fileID: 1659054730}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &1010371939
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1010371936}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 19f0989a085b2aa42ba43576350ce95a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  titleButton: {fileID: 70647567}
+  buttons:
+  - {fileID: 1978577540}
+  - {fileID: 2093864088}
+  - {fileID: 391041738}
+  - {fileID: 807474227}
+  titleAudio: {fileID: 8300000, guid: d3e758caf159ae74bbc79197d8944970, type: 3}
+  buttonAudio: {fileID: 8300000, guid: d23ee4612e501ad4ba75218877284206, type: 3}
 --- !u!1 &1029656091
 GameObject:
   m_ObjectHideFlags: 0
