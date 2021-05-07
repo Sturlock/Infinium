@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 3632.4512, g: 5256.914, b: 8866.922, a: 1}
+  m_IndirectSpecularColor: {r: 3611.67, g: 5219.297, b: 8795.305, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -618,7 +618,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 1
+  m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 50, y: -30, z: 0}
 --- !u!1 &163440409
 GameObject:
@@ -1263,7 +1263,7 @@ RectTransform:
   - {fileID: 1102937771}
   - {fileID: 2095166092}
   m_Father: {fileID: 0}
-  m_RootOrder: 2
+  m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
@@ -2328,6 +2328,63 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1029656091}
   m_CullTransparentMesh: 1
+--- !u!1001 &1054112591
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 4238135438609582845, guid: 80b8f3dea61014342b45b34aa9bd53f4, type: 3}
+      propertyPath: m_Name
+      value: SceneTransition
+      objectReference: {fileID: 0}
+    - target: {fileID: 5448818987056060711, guid: 80b8f3dea61014342b45b34aa9bd53f4, type: 3}
+      propertyPath: m_RootOrder
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5448818987056060711, guid: 80b8f3dea61014342b45b34aa9bd53f4, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5448818987056060711, guid: 80b8f3dea61014342b45b34aa9bd53f4, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5448818987056060711, guid: 80b8f3dea61014342b45b34aa9bd53f4, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5448818987056060711, guid: 80b8f3dea61014342b45b34aa9bd53f4, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5448818987056060711, guid: 80b8f3dea61014342b45b34aa9bd53f4, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5448818987056060711, guid: 80b8f3dea61014342b45b34aa9bd53f4, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5448818987056060711, guid: 80b8f3dea61014342b45b34aa9bd53f4, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5448818987056060711, guid: 80b8f3dea61014342b45b34aa9bd53f4, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5448818987056060711, guid: 80b8f3dea61014342b45b34aa9bd53f4, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5448818987056060711, guid: 80b8f3dea61014342b45b34aa9bd53f4, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 80b8f3dea61014342b45b34aa9bd53f4, type: 3}
 --- !u!1 &1102937770
 GameObject:
   m_ObjectHideFlags: 0
@@ -2575,7 +2632,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 3
+  m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1254106929
 GameObject:
@@ -2984,6 +3041,17 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1471993418}
   m_CullTransparentMesh: 1
+--- !u!114 &1497368714 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 6634901401202821867, guid: 80b8f3dea61014342b45b34aa9bd53f4, type: 3}
+  m_PrefabInstance: {fileID: 1054112591}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4f54d35d297be3142b5b695f7c332117, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1576221156
 GameObject:
   m_ObjectHideFlags: 0
@@ -3151,7 +3219,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5337893642615007110, guid: d8a9b4e5f4c1e0644bc4d3669952d47e, type: 3}
       propertyPath: m_RootOrder
-      value: 4
+      value: 5
       objectReference: {fileID: 0}
     - target: {fileID: 5337893642615007110, guid: d8a9b4e5f4c1e0644bc4d3669952d47e, type: 3}
       propertyPath: m_LocalPosition.x
@@ -3828,7 +3896,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 6634901401202821867, guid: 80b8f3dea61014342b45b34aa9bd53f4, type: 3}
+      - m_Target: {fileID: 1497368714}
         m_TargetAssemblyTypeName: Infinium.SceneManagement.SceneTransition, Assembly-CSharp
         m_MethodName: onClick
         m_Mode: 1
@@ -4161,7 +4229,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 0
+  m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &2093864086
 GameObject:
