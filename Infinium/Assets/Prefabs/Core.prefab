@@ -10,6 +10,7 @@ GameObject:
   m_Component:
   - component: {fileID: 5337893642615007110}
   - component: {fileID: 5337893642615007111}
+  - component: {fileID: 8322808130312272136}
   m_Layer: 0
   m_Name: Core
   m_TagString: Untagged
@@ -44,3 +45,31 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   persistentObjectPrefab: {fileID: 5729630110793053226, guid: 9574150978b4d644fbd4fea1a351df8f, type: 3}
+--- !u!114 &8322808130312272136
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5337893642615007108}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 19f0989a085b2aa42ba43576350ce95a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  titleButton: {fileID: 0}
+  buttons:
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  titleAudio: {fileID: 8300000, guid: d3e758caf159ae74bbc79197d8944970, type: 3}
+  buttonAudio: {fileID: 8300000, guid: d23ee4612e501ad4ba75218877284206, type: 3}
+  volume: 0.5

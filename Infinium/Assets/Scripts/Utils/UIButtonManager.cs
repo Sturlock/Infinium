@@ -22,15 +22,18 @@ public class UIButtonManager : MonoBehaviour
         titleSource.volume = volume;
 
         titleButton.onClick.AddListener(() => titleSource.Play());
-       
+
         foreach (Button bt in buttons)
         {
-            AudioSource audioSource;
-            audioSource = bt.gameObject.AddComponent<AudioSource>();
-            audioSource.clip = buttonAudio;
-            audioSource.volume = volume;
+            if (bt != null)
+            {
+                AudioSource audioSource;
+                audioSource = bt.gameObject.AddComponent<AudioSource>();
+                audioSource.clip = buttonAudio;
+                audioSource.volume = volume;
 
-            bt.onClick.AddListener(() => audioSource.Play());
+                bt.onClick.AddListener(() => audioSource.Play());
+            }
         }
     }
 

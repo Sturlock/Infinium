@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 3635.8848, g: 5261.328, b: 8693.219, a: 1}
+  m_IndirectSpecularColor: {r: 3632.4512, g: 5256.914, b: 8866.922, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -239,18 +239,6 @@ MonoBehaviour:
       - m_Target: {fileID: 70647566}
         m_TargetAssemblyTypeName: PlayAnimation, Assembly-CSharp
         m_MethodName: onClick
-        m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
-      - m_Target: {fileID: 4343120768091711498, guid: ad4ca41cff19ce143af82a70507c1607, type: 3}
-        m_TargetAssemblyTypeName: UnityEngine.AudioSource, UnityEngine
-        m_MethodName: Play
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -3205,6 +3193,54 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 8322808130312272136, guid: d8a9b4e5f4c1e0644bc4d3669952d47e, type: 3}
+      propertyPath: titleButton
+      value: 
+      objectReference: {fileID: 70647567}
+    - target: {fileID: 8322808130312272136, guid: d8a9b4e5f4c1e0644bc4d3669952d47e, type: 3}
+      propertyPath: buttons.Array.data[0]
+      value: 
+      objectReference: {fileID: 807474227}
+    - target: {fileID: 8322808130312272136, guid: d8a9b4e5f4c1e0644bc4d3669952d47e, type: 3}
+      propertyPath: buttons.Array.data[1]
+      value: 
+      objectReference: {fileID: 1978577540}
+    - target: {fileID: 8322808130312272136, guid: d8a9b4e5f4c1e0644bc4d3669952d47e, type: 3}
+      propertyPath: buttons.Array.data[2]
+      value: 
+      objectReference: {fileID: 2093864088}
+    - target: {fileID: 8322808130312272136, guid: d8a9b4e5f4c1e0644bc4d3669952d47e, type: 3}
+      propertyPath: buttons.Array.data[3]
+      value: 
+      objectReference: {fileID: 391041738}
+    - target: {fileID: 8322808130312272136, guid: d8a9b4e5f4c1e0644bc4d3669952d47e, type: 3}
+      propertyPath: buttons.Array.data[4]
+      value: 
+      objectReference: {fileID: 1754224121}
+    - target: {fileID: 8322808130312272136, guid: d8a9b4e5f4c1e0644bc4d3669952d47e, type: 3}
+      propertyPath: buttons.Array.data[5]
+      value: 
+      objectReference: {fileID: 941571067}
+    - target: {fileID: 8322808130312272136, guid: d8a9b4e5f4c1e0644bc4d3669952d47e, type: 3}
+      propertyPath: buttons.Array.data[6]
+      value: 
+      objectReference: {fileID: 631393118}
+    - target: {fileID: 8322808130312272136, guid: d8a9b4e5f4c1e0644bc4d3669952d47e, type: 3}
+      propertyPath: buttons.Array.data[7]
+      value: 
+      objectReference: {fileID: 332743652}
+    - target: {fileID: 8322808130312272136, guid: d8a9b4e5f4c1e0644bc4d3669952d47e, type: 3}
+      propertyPath: buttons.Array.data[8]
+      value: 
+      objectReference: {fileID: 764024203}
+    - target: {fileID: 8322808130312272136, guid: d8a9b4e5f4c1e0644bc4d3669952d47e, type: 3}
+      propertyPath: buttons.Array.data[9]
+      value: 
+      objectReference: {fileID: 1820382844}
+    - target: {fileID: 8322808130312272136, guid: d8a9b4e5f4c1e0644bc4d3669952d47e, type: 3}
+      propertyPath: buttons.Array.data[10]
+      value: 
+      objectReference: {fileID: 1471993420}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: d8a9b4e5f4c1e0644bc4d3669952d47e, type: 3}
 --- !u!1 &1734885137
