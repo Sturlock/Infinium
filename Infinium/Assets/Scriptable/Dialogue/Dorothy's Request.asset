@@ -1,6 +1,6 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
---- !u!114 &-9190445229323018795
+--- !u!114 &-8932774664388180369
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -10,23 +10,27 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: c12b9ff7e20c77b478d3f6f94022d2eb, type: 3}
-  m_Name: 833b6832-2310-47f5-8408-a298bbc409fc
+  m_Name: ad650c7a-fab3-40a0-bb85-c69922cccf4d
   m_EditorClassIdentifier: 
   isPlayerSpeaking: 0
-  text: Good luck young man!
-  children: []
+  text: Would you be a dear and fetch me some?
+  children:
+  - cea5f736-6ad1-4b59-8ba5-f6da361f370c
+  - 5fd6b3c2-6caf-4b66-8528-99ced58ef4a4
+  - 3966e914-3142-4fbd-a169-340427d63a7a
+  - 06c8e909-81f9-4324-9db2-0457c211c949
   rect:
     serializedVersion: 2
-    x: 3006
+    x: 1934
     y: 254
     width: 250
     height: 100
   onBeginAction: 
-  onExitAction: GiveQuest
+  onExitAction: 
   condition:
     predicate: 
     parameters: []
---- !u!114 &-7334350661558618920
+--- !u!114 &-8637548346344579805
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -36,51 +40,24 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: c12b9ff7e20c77b478d3f6f94022d2eb, type: 3}
-  m_Name: 250093fc-1232-4b95-ae16-59c9db0cf55c
+  m_Name: 04708f27-04b2-411e-bd98-9d6e3e736f60
   m_EditorClassIdentifier: 
-  isPlayerSpeaking: 0
-  text: My name is Sir Billingham!
+  isPlayerSpeaking: 1
+  text: Sure Grandma, what do you need?
   children:
-  - 33b38b0d-385f-4faa-abdd-6a323ce0717c
+  - 867595d3-8c2b-4a40-bcca-6b5bc6cdfbb9
   rect:
     serializedVersion: 2
-    x: 1022
-    y: 382
+    x: 508
+    y: 212
     width: 250
     height: 100
   onBeginAction: 
-  onExitAction: TextAIExit
-  condition:
-    predicate: 
-    parameters: []
---- !u!114 &-7146998197378381053
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: c12b9ff7e20c77b478d3f6f94022d2eb, type: 3}
-  m_Name: 2dd982b6-4b6b-462a-b3a2-767155af8f4e
-  m_EditorClassIdentifier: 
-  isPlayerSpeaking: 1
-  text: Sure! What do you need?
-  children:
-  - 33b38b0d-385f-4faa-abdd-6a323ce0717c
-  rect:
-    serializedVersion: 2
-    x: 702
-    y: 617
-    width: 250
-    height: 100
-  onBeginAction: TestSelection
   onExitAction: 
   condition:
     predicate: 
     parameters: []
---- !u!114 &-6448747166700725094
+--- !u!114 &-8503285697329768255
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -90,77 +67,23 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: c12b9ff7e20c77b478d3f6f94022d2eb, type: 3}
-  m_Name: c4ac71be-8487-4feb-b451-e5a6dd5b390b
-  m_EditorClassIdentifier: 
-  isPlayerSpeaking: 1
-  text: Better be a reward!
-  children:
-  - 8cecc490-d7eb-4d05-b2be-ff7aba0e2568
-  rect:
-    serializedVersion: 2
-    x: 2216
-    y: 253
-    width: 250
-    height: 100
-  onBeginAction: TestSelection
-  onExitAction: 
-  condition:
-    predicate: 
-    parameters: []
---- !u!114 &-6077484322763565357
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: c12b9ff7e20c77b478d3f6f94022d2eb, type: 3}
-  m_Name: ec0a5719-8958-471a-9117-2ef321e2effd
+  m_Name: 5cb871bd-9820-45fc-84e2-b5de880535eb
   m_EditorClassIdentifier: 
   isPlayerSpeaking: 0
-  text: Ah well cant be helped
+  text: Thank you so much, deary.
   children: []
   rect:
     serializedVersion: 2
-    x: 1955
-    y: 679
+    x: 3118
+    y: 121
     width: 250
     height: 100
   onBeginAction: 
-  onExitAction: TestCloseText
-  condition:
-    predicate: 
-    parameters: []
---- !u!114 &-3434124568966069452
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: c12b9ff7e20c77b478d3f6f94022d2eb, type: 3}
-  m_Name: 72df64f0-eadf-4754-9f49-6949c6ecfd01
-  m_EditorClassIdentifier: 
-  isPlayerSpeaking: 1
-  text: No can do. Sorry
-  children:
-  - ec0a5719-8958-471a-9117-2ef321e2effd
-  rect:
-    serializedVersion: 2
-    x: 1602
-    y: 641
-    width: 250
-    height: 100
-  onBeginAction: TestSelection
   onExitAction: 
   condition:
     predicate: 
     parameters: []
---- !u!114 &-3095070323522568472
+--- !u!114 &-6823129928220636727
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -170,26 +93,24 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: c12b9ff7e20c77b478d3f6f94022d2eb, type: 3}
-  m_Name: 33b38b0d-385f-4faa-abdd-6a323ce0717c
+  m_Name: 9395c3c1-10af-4925-9bed-8108c5e7c5ba
   m_EditorClassIdentifier: 
-  isPlayerSpeaking: 0
-  text: I require someone to do a bit of exploring and you like the right kind of
-    chap
+  isPlayerSpeaking: 1
+  text: Sure, I can do that.
   children:
-  - 9a9db481-8fe3-4528-b449-c5aa761b4d8d
-  - 72df64f0-eadf-4754-9f49-6949c6ecfd01
+  - 5cb871bd-9820-45fc-84e2-b5de880535eb
   rect:
     serializedVersion: 2
-    x: 1295
-    y: 515
+    x: 2811
+    y: 213
     width: 250
     height: 100
   onBeginAction: 
-  onExitAction: TextAIExit
+  onExitAction: 
   condition:
     predicate: 
     parameters: []
---- !u!114 &-2186321180120672896
+--- !u!114 &-6461470901429854629
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -199,19 +120,133 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: c12b9ff7e20c77b478d3f6f94022d2eb, type: 3}
-  m_Name: fa90a15d-fc4b-4102-bebf-818017126d44
+  m_Name: 8f6f193c-d067-4337-92b2-e53eb8b4c1d9
   m_EditorClassIdentifier: 
-  isPlayerSpeaking: 1
-  text: And Who might you be?
+  isPlayerSpeaking: 0
+  text: Well I'm currently cleaning my house. If I find anything you might like its
+    yours. Not to mention you'll get a slice of apple crumble.
   children:
-  - 250093fc-1232-4b95-ae16-59c9db0cf55c
+  - d98e706f-e7a9-40c2-b966-d09c549d9484
+  - 9395c3c1-10af-4925-9bed-8108c5e7c5ba
   rect:
     serializedVersion: 2
-    x: 680
-    y: 424
+    x: 2530
+    y: 299
     width: 250
     height: 100
-  onBeginAction: TestSelection
+  onBeginAction: 
+  onExitAction: 
+  condition:
+    predicate: 
+    parameters: []
+--- !u!114 &-6016825282079092018
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c12b9ff7e20c77b478d3f6f94022d2eb, type: 3}
+  m_Name: 37222f90-e68d-42e8-be40-d00beaf34a65
+  m_EditorClassIdentifier: 
+  isPlayerSpeaking: 0
+  text: Well you see, I was thinking about baking something delicious, the only thing
+    is I missing some apples!
+  children:
+  - 867595d3-8c2b-4a40-bcca-6b5bc6cdfbb9
+  - 1cdedc21-24c0-4827-a799-cfc049e3aa7e
+  rect:
+    serializedVersion: 2
+    x: 1381
+    y: 251
+    width: 250
+    height: 100
+  onBeginAction: 
+  onExitAction: 
+  condition:
+    predicate: 
+    parameters: []
+--- !u!114 &-4221882878090949076
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c12b9ff7e20c77b478d3f6f94022d2eb, type: 3}
+  m_Name: 44f9b966-38ee-45b6-9fbd-cc1d1fb87995
+  m_EditorClassIdentifier: 
+  isPlayerSpeaking: 1
+  text: I'm sure you can manage by yourself.
+  children:
+  - c67b6ec9-8976-4f6d-9f23-6555023d9c1c
+  rect:
+    serializedVersion: 2
+    x: 497
+    y: 368
+    width: 250
+    height: 100
+  onBeginAction: 
+  onExitAction: 
+  condition:
+    predicate: 
+    parameters: []
+--- !u!114 &-3934553332853576880
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c12b9ff7e20c77b478d3f6f94022d2eb, type: 3}
+  m_Name: 6213fcee-a518-4696-ae97-58ec89f0bc2e
+  m_EditorClassIdentifier: 
+  isPlayerSpeaking: 0
+  text: Hello there sunshine, I don't suppose you could help your grandmother?
+  children:
+  - 44f9b966-38ee-45b6-9fbd-cc1d1fb87995
+  - 04708f27-04b2-411e-bd98-9d6e3e736f60
+  - d2485c5e-d450-4660-9182-fa7e3c983b3e
+  rect:
+    serializedVersion: 2
+    x: 19
+    y: 396
+    width: 250
+    height: 100
+  onBeginAction: 
+  onExitAction: 
+  condition:
+    predicate: 
+    parameters: []
+--- !u!114 &-3734063752497818825
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c12b9ff7e20c77b478d3f6f94022d2eb, type: 3}
+  m_Name: 559faecb-a9ca-4442-b5e5-b7859b8bfc97
+  m_EditorClassIdentifier: 
+  isPlayerSpeaking: 1
+  text: Sorry Grandma, I'm not in the mood.
+  children:
+  - af4e518a-706b-4fa1-aa63-5a25f3d91ad0
+  rect:
+    serializedVersion: 2
+    x: 1079
+    y: 450
+    width: 250
+    height: 100
+  onBeginAction: 
   onExitAction: 
   condition:
     predicate: 
@@ -226,26 +261,30 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: f1e1761072c2d9e48acf0d38f54a64c5, type: 3}
-  m_Name: The Quest to Blah Blah
+  m_Name: Dorothy's Request
   m_EditorClassIdentifier: 
   nodes:
-  - {fileID: 4281579959273116444}
-  - {fileID: -2186321180120672896}
-  - {fileID: -7146998197378381053}
-  - {fileID: -7334350661558618920}
-  - {fileID: -3095070323522568472}
-  - {fileID: 4087560160456308941}
-  - {fileID: -3434124568966069452}
-  - {fileID: 2056410776043086393}
-  - {fileID: -6448747166700725094}
-  - {fileID: 3315528610847781812}
-  - {fileID: 9072769294231707280}
-  - {fileID: 1137089236367099185}
-  - {fileID: -6077484322763565357}
-  - {fileID: 8918214515466073139}
-  - {fileID: -9190445229323018795}
+  - {fileID: -3934553332853576880}
+  - {fileID: -4221882878090949076}
+  - {fileID: 450387380656623551}
+  - {fileID: -8637548346344579805}
+  - {fileID: 6923309115627549085}
+  - {fileID: 7294988708978390834}
+  - {fileID: 740186294279714864}
+  - {fileID: 9080997649066959609}
+  - {fileID: -3734063752497818825}
+  - {fileID: -6016825282079092018}
+  - {fileID: 5050809787336219731}
+  - {fileID: -8932774664388180369}
+  - {fileID: 8714042912675709701}
+  - {fileID: 5847973007125392640}
+  - {fileID: 7697873789795011010}
+  - {fileID: -8503285697329768255}
+  - {fileID: -6461470901429854629}
+  - {fileID: 4202349237013347241}
+  - {fileID: -6823129928220636727}
   newNodeOffset: {x: 250, y: 0}
---- !u!114 &1137089236367099185
+--- !u!114 &450387380656623551
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -255,79 +294,26 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: c12b9ff7e20c77b478d3f6f94022d2eb, type: 3}
-  m_Name: adb7169c-cdc0-4ef4-9a3e-0a6b8afb09b5
-  m_EditorClassIdentifier: 
-  isPlayerSpeaking: 1
-  text: Done! See ya later!
-  children:
-  - 833b6832-2310-47f5-8408-a298bbc409fc
-  rect:
-    serializedVersion: 2
-    x: 2755
-    y: 254
-    width: 250
-    height: 100
-  onBeginAction: TestSelection
-  onExitAction: 
-  condition:
-    predicate: 
-    parameters: []
---- !u!114 &2056410776043086393
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: c12b9ff7e20c77b478d3f6f94022d2eb, type: 3}
-  m_Name: 13ec6476-6b83-4f75-94c9-5e2b28fed4c4
+  m_Name: c67b6ec9-8976-4f6d-9f23-6555023d9c1c
   m_EditorClassIdentifier: 
   isPlayerSpeaking: 0
-  text: The caves of blah blah
+  text: I could, but it would help me greatly if you did, I'm not as young as I once
+    was.
   children:
-  - c4ac71be-8487-4feb-b451-e5a6dd5b390b
-  - 42ed919b-669d-4b10-bc94-bb67fdeeea2e
+  - 1cdedc21-24c0-4827-a799-cfc049e3aa7e
+  - 559faecb-a9ca-4442-b5e5-b7859b8bfc97
   rect:
     serializedVersion: 2
-    x: 1924
-    y: 419
+    x: 770
+    y: 369
     width: 250
     height: 100
   onBeginAction: 
-  onExitAction: TextAIExit
-  condition:
-    predicate: 
-    parameters: []
---- !u!114 &3315528610847781812
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: c12b9ff7e20c77b478d3f6f94022d2eb, type: 3}
-  m_Name: 42ed919b-669d-4b10-bc94-bb67fdeeea2e
-  m_EditorClassIdentifier: 
-  isPlayerSpeaking: 1
-  text: That far too dangours! Not happening
-  children:
-  - 107dfafd-edc6-4fa5-9363-0afde663ddb3
-  rect:
-    serializedVersion: 2
-    x: 2214
-    y: 572
-    width: 250
-    height: 100
-  onBeginAction: TestSelection
   onExitAction: 
   condition:
     predicate: 
     parameters: []
---- !u!114 &4087560160456308941
+--- !u!114 &740186294279714864
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -337,52 +323,26 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: c12b9ff7e20c77b478d3f6f94022d2eb, type: 3}
-  m_Name: 9a9db481-8fe3-4528-b449-c5aa761b4d8d
-  m_EditorClassIdentifier: 
-  isPlayerSpeaking: 1
-  text: Sure, Where am I headed?
-  children:
-  - 13ec6476-6b83-4f75-94c9-5e2b28fed4c4
-  rect:
-    serializedVersion: 2
-    x: 1639
-    y: 386
-    width: 250
-    height: 100
-  onBeginAction: TestSelection
-  onExitAction: 
-  condition:
-    predicate: 
-    parameters: []
---- !u!114 &4281579959273116444
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: c12b9ff7e20c77b478d3f6f94022d2eb, type: 3}
-  m_Name: a1e218ac-4d98-4a4e-8c22-9306653f7bad
+  m_Name: af4e518a-706b-4fa1-aa63-5a25f3d91ad0
   m_EditorClassIdentifier: 
   isPlayerSpeaking: 0
-  text: A word Sir?
+  text: Well I be! You certainly know how to disapoint an old woman. Be off with
+    you then.
   children:
-  - fa90a15d-fc4b-4102-bebf-818017126d44
-  - 2dd982b6-4b6b-462a-b3a2-767155af8f4e
+  - 3966e914-3142-4fbd-a169-340427d63a7a
+  - d98e706f-e7a9-40c2-b966-d09c549d9484
   rect:
     serializedVersion: 2
-    x: 287
-    y: 519
+    x: 2919
+    y: 625
     width: 250
     height: 100
-  onBeginAction: TestRootEntry
+  onBeginAction: 
   onExitAction: 
   condition:
     predicate: 
     parameters: []
---- !u!114 &8918214515466073139
+--- !u!114 &4202349237013347241
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -392,23 +352,23 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: c12b9ff7e20c77b478d3f6f94022d2eb, type: 3}
-  m_Name: 107dfafd-edc6-4fa5-9363-0afde663ddb3
+  m_Name: d98e706f-e7a9-40c2-b966-d09c549d9484
   m_EditorClassIdentifier: 
-  isPlayerSpeaking: 0
-  text: Thats a shame. Goodbye
+  isPlayerSpeaking: 1
+  text: All this for an antique and tart? No thankyou.
   children: []
   rect:
     serializedVersion: 2
-    x: 2527
-    y: 601
+    x: 2848
+    y: 449
     width: 250
     height: 100
   onBeginAction: 
-  onExitAction: TestCloseText
+  onExitAction: 
   condition:
     predicate: 
     parameters: []
---- !u!114 &9072769294231707280
+--- !u!114 &5050809787336219731
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -418,21 +378,180 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: c12b9ff7e20c77b478d3f6f94022d2eb, type: 3}
-  m_Name: 8cecc490-d7eb-4d05-b2be-ff7aba0e2568
+  m_Name: cea5f736-6ad1-4b59-8ba5-f6da361f370c
   m_EditorClassIdentifier: 
   isPlayerSpeaking: 0
-  text: 'Yes! 25G '
+  text: Because of my bad knee its difficult to climb the hill to purchace some apples
+    from the market.
   children:
-  - 05d95157-7f95-4694-95ee-6adf1e229524
-  - adb7169c-cdc0-4ef4-9a3e-0a6b8afb09b5
+  - 37222f90-e68d-42e8-be40-d00beaf34a65
   rect:
     serializedVersion: 2
-    x: 2487
-    y: 254
+    x: 1665
+    y: 251
     width: 250
     height: 100
   onBeginAction: 
-  onExitAction: TextAIExit
+  onExitAction: 
+  condition:
+    predicate: 
+    parameters: []
+--- !u!114 &5847973007125392640
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c12b9ff7e20c77b478d3f6f94022d2eb, type: 3}
+  m_Name: 3966e914-3142-4fbd-a169-340427d63a7a
+  m_EditorClassIdentifier: 
+  isPlayerSpeaking: 1
+  text: Really? You can't go get them yourself. Pathetic.
+  children: []
+  rect:
+    serializedVersion: 2
+    x: 2230
+    y: 433
+    width: 250
+    height: 100
+  onBeginAction: 
+  onExitAction: 
+  condition:
+    predicate: 
+    parameters: []
+--- !u!114 &6923309115627549085
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c12b9ff7e20c77b478d3f6f94022d2eb, type: 3}
+  m_Name: d2485c5e-d450-4660-9182-fa7e3c983b3e
+  m_EditorClassIdentifier: 
+  isPlayerSpeaking: 1
+  text: Ugh, I don't have time for you
+  children:
+  - af4e518a-706b-4fa1-aa63-5a25f3d91ad0
+  rect:
+    serializedVersion: 2
+    x: 486
+    y: 510
+    width: 250
+    height: 100
+  onBeginAction: 
+  onExitAction: 
+  condition:
+    predicate: 
+    parameters: []
+--- !u!114 &7294988708978390834
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c12b9ff7e20c77b478d3f6f94022d2eb, type: 3}
+  m_Name: 867595d3-8c2b-4a40-bcca-6b5bc6cdfbb9
+  m_EditorClassIdentifier: 
+  isPlayerSpeaking: 0
+  text: I knew you were my favourite grandchild for a reason.
+  children: []
+  rect:
+    serializedVersion: 2
+    x: 1047
+    y: 212
+    width: 250
+    height: 100
+  onBeginAction: 
+  onExitAction: 
+  condition:
+    predicate: 
+    parameters: []
+--- !u!114 &7697873789795011010
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c12b9ff7e20c77b478d3f6f94022d2eb, type: 3}
+  m_Name: 06c8e909-81f9-4324-9db2-0457c211c949
+  m_EditorClassIdentifier: 
+  isPlayerSpeaking: 1
+  text: Will I get a little somthing in return?
+  children:
+  - 8f6f193c-d067-4337-92b2-e53eb8b4c1d9
+  rect:
+    serializedVersion: 2
+    x: 2223
+    y: 298
+    width: 250
+    height: 100
+  onBeginAction: 
+  onExitAction: 
+  condition:
+    predicate: 
+    parameters: []
+--- !u!114 &8714042912675709701
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c12b9ff7e20c77b478d3f6f94022d2eb, type: 3}
+  m_Name: 5fd6b3c2-6caf-4b66-8528-99ced58ef4a4
+  m_EditorClassIdentifier: 
+  isPlayerSpeaking: 1
+  text: Of course Grandma, I'll go get them now.
+  children:
+  - 5cb871bd-9820-45fc-84e2-b5de880535eb
+  rect:
+    serializedVersion: 2
+    x: 2223
+    y: 166
+    width: 250
+    height: 100
+  onBeginAction: 
+  onExitAction: 
+  condition:
+    predicate: 
+    parameters: []
+--- !u!114 &9080997649066959609
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c12b9ff7e20c77b478d3f6f94022d2eb, type: 3}
+  m_Name: 1cdedc21-24c0-4827-a799-cfc049e3aa7e
+  m_EditorClassIdentifier: 
+  isPlayerSpeaking: 1
+  text: What do you need help with?
+  children: []
+  rect:
+    serializedVersion: 2
+    x: 1073
+    y: 333
+    width: 250
+    height: 100
+  onBeginAction: 
+  onExitAction: 
   condition:
     predicate: 
     parameters: []

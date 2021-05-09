@@ -10,16 +10,18 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 92b2b1f750487f145b37d82918315127, type: 3}
-  m_Name: Dorothy's Request
+  m_Name: MarketMadness
   m_EditorClassIdentifier: 
   objectives:
-  - reference: Get some Appless
-    description: Dorothy has a bad knee and would like you to get some apples from
-      the market.
-  - reference: Return
-    description: now you've got the apple, it might be time to return to Dorothy
+  - reference: Talk to Parent
+    description: Perphaps asking the man might reveal clues to the whereabouts to
+      his kid.
+  - reference: Locate the child
+    description: His dad says he likes to explore caves, see if you can find him
+      in one.
+  - reference: Return the Kid
+    description: Now that you've found the kid, better drop them off to dad.
   rewards:
   - number: 1
-  - number: 1
-  gold: 75
-  experiance: 150
+  gold: 50
+  experiance: 50
