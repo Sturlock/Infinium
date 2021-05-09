@@ -1063,11 +1063,11 @@ GameObject:
   - component: {fileID: 1331279293465024420}
   - component: {fileID: 1331279293465024421}
   - component: {fileID: 1331279293465024423}
+  - component: {fileID: 1331279293465024418}
   - component: {fileID: 1331279293465024430}
   - component: {fileID: 1331279293465024417}
   - component: {fileID: 1331279293465024416}
   - component: {fileID: 1331279293465024419}
-  - component: {fileID: 1331279293465024418}
   - component: {fileID: 1374215304803914468}
   - component: {fileID: 1531315454412933290}
   m_Layer: 10
@@ -1144,6 +1144,32 @@ Animator:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorControllerStateOnDisable: 0
+--- !u!114 &1331279293465024418
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2213746435277981153}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ebf5bbbf737fcb44aa56d52097880fc4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  controlling: 0
+  transition: {fileID: 0}
+  input: {x: 0, y: 0}
+  movement: {x: 0, y: 0, z: 0}
+  walkSpeed: 2
+  runSpeed: 6
+  turnSmoothTime: 0.2
+  speedSmoothTime: 0.1
+  disToGround: 0.05
+  layer:
+    serializedVersion: 2
+    m_Bits: 0
+  IKUP: 0.2
+  IKDOWN: 0.4
 --- !u!114 &1331279293465024430
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1195,33 +1221,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   playerName: Hoffman
---- !u!114 &1331279293465024418
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2213746435277981153}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ebf5bbbf737fcb44aa56d52097880fc4, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  controlling: 0
-  transition: {fileID: 0}
-  input: {x: 0, y: 0}
-  movement: {x: 0, y: 0, z: 0}
-  walkSpeed: 2
-  runSpeed: 6
-  turnSmoothTime: 0.2
-  speedSmoothTime: 0.1
-  disToGround: 0.05
-  layer:
-    serializedVersion: 2
-    m_Bits: 0
-  IKUP: 0.2
-  IKDOWN: 0.4
-  stamina: 0
 --- !u!114 &1374215304803914468
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1235,7 +1234,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   stamaina: 100
-  currentStamina: 0
+  currentStamina: 100
+  regen: 1
 --- !u!114 &1531315454412933290
 MonoBehaviour:
   m_ObjectHideFlags: 0

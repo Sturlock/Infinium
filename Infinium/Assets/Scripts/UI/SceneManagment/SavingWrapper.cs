@@ -3,16 +3,23 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.Audio;
+using UnityEngine.UI;
 
 namespace Infinium.SceneManagement
 {
     public class SavingWrapper : MonoBehaviour
     {
-        [SerializeField] KeyCode SaveButton;
-        [SerializeField] KeyCode LoadButton;
+        Button save, load;
+        [SerializeField] KeyCode saveButton, loadButton;
         const string defaultSaveFile = "saveGame";
 
         [SerializeField] float fadeInTime = 0.2f;
+
+        void Start()
+        {
+            save = GameObject.FindGameObjectWithTag("Save").GetComponent<Button>();
+            load = GameObject.FindGameObjectWithTag("Load").GetComponent<Button>();
+        }
 
         public IEnumerator LoadLastSave()
         {
@@ -25,15 +32,18 @@ namespace Infinium.SceneManagement
 
         void Update()
         {
-            if (Input.GetKeyDown(SaveButton))
+
+            save.onClick.AddListener(() => Save());
+            load.onClick.AddListener(() => Load());
+
+            if (Input.GetKeyDown(saveButton))
             {
                 Save();
             }
-            if (Input.GetKeyDown(LoadButton))
+            if (Input.GetKeyDown(loadButton))
             {
                 Load();
             }
-
         }
 
         public void Load()

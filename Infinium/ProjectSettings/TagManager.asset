@@ -11,6 +11,9 @@ TagManager:
   - Docking
   - Settings
   - AudioSettings
+  - Terrain
+  - Save
+  - Load
   layers:
   - Default
   - TransparentFX
