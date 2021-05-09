@@ -65,12 +65,30 @@ public class PlayerController : MonoBehaviour, ISaveable
             
 
             cam.GetComponent<ThirdPersonCameraController>().target = GameObject.FindGameObjectWithTag("Target").transform;
-            cam.GetComponent<ThirdPersonCameraController>().dstFromTarget = 4f;
+            cam.GetComponent<ThirdPersonCameraController>().dstFromTarget = 3f;
             input = new Vector2(Input.GetAxisRaw("Horizontal"), Input.GetAxisRaw("Vertical"));
             Vector2 inputDir = LookRotation();
 
             bool running = Input.GetKey(KeyCode.LeftShift);
             targetSpeed = ((running) ? runSpeed : walkSpeed) * inputDir.magnitude;
+            //Debug.Log(targetSpeed);
+            if (targetSpeed == 0)
+            {
+                animator.SetBool("IsWalking", false);
+                animator.SetBool("IsRunning", false);
+            }
+            else if (targetSpeed == 2) //walk
+            {
+                animator.SetBool("IsWalking", true);
+                animator.SetBool("IsRunning", false);
+            }
+            else if (targetSpeed == 6) //run
+            {
+                animator.SetBool("IsRunning", true);
+                animator.SetBool("IsWalking", false);
+            }
+
+
             currentSpeed = Mathf.SmoothDamp(currentSpeed, targetSpeed, ref speedSmoothVelocity, speedSmoothTime);
 
             transform.Translate(transform.forward * currentSpeed * Time.deltaTime, Space.World);
