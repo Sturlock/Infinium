@@ -3,6 +3,8 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using Infinium.Saving;
+using Infinium.Core;
+
 [RequireComponent(typeof(Rigidbody))]
 public class PlayerController : MonoBehaviour, ISaveable
 {
@@ -38,6 +40,7 @@ public class PlayerController : MonoBehaviour, ISaveable
 
     public float IKUP = .2f;
     public float IKDOWN = .4f;
+    public int stamina;
 
     void OnDrawGizmos()
     {
@@ -53,6 +56,7 @@ public class PlayerController : MonoBehaviour, ISaveable
         animator = GetComponent<Animator>();
         rb = GetComponent<Rigidbody>();
         cameraT = Camera.main.transform;
+        
     }
     void Update()
     {
@@ -62,39 +66,27 @@ public class PlayerController : MonoBehaviour, ISaveable
             rb.isKinematic = false;
             rb.detectCollisions = true;
             rb.useGravity = true;
-            
 
+            stamina = GetComponent<Stamina>().GetStamina();
             cam.GetComponent<ThirdPersonCameraController>().target = GameObject.FindGameObjectWithTag("Target").transform;
-            cam.GetComponent<ThirdPersonCameraController>().dstFromTarget = 3f;
+            cam.GetComponent<ThirdPersonCameraController>().dstFromTarget = 4f;
             input = new Vector2(Input.GetAxisRaw("Horizontal"), Input.GetAxisRaw("Vertical"));
             Vector2 inputDir = LookRotation();
 
             bool running = Input.GetKey(KeyCode.LeftShift);
-            targetSpeed = ((running) ? runSpeed : walkSpeed) * inputDir.magnitude;
-            //Debug.Log(targetSpeed);
-            if (targetSpeed == 0)
-            {
-                animator.SetBool("IsWalking", false);
-                animator.SetBool("IsRunning", false);
-            }
-            else if (targetSpeed == 2) //walk
-            {
-                animator.SetBool("IsWalking", true);
-                animator.SetBool("IsRunning", false);
-            }
-            else if (targetSpeed == 6) //run
-            {
-                animator.SetBool("IsRunning", true);
-                animator.SetBool("IsWalking", false);
-            }
-
-
+            
+            targetSpeed = ((running && stamina > 0) ? runSpeed : walkSpeed) * inputDir.magnitude;
             currentSpeed = Mathf.SmoothDamp(currentSpeed, targetSpeed, ref speedSmoothVelocity, speedSmoothTime);
 
             transform.Translate(transform.forward * currentSpeed * Time.deltaTime, Space.World);
 
-            float animationSpeedPercent = ((running) ? 1 : .5f) * inputDir.magnitude;
+            float animationSpeedPercent = ((running && stamina > 0) ? 1 : .5f) * inputDir.magnitude;
             animator.SetFloat("speedPercent", animationSpeedPercent, speedSmoothTime, Time.deltaTime);
+            if (running && targetSpeed == runSpeed)
+            {
+                GetComponent<Stamina>().UseStamina(running, 1);
+            }
+
         }
         else animator.SetFloat("speedPercent", 0f);
     }

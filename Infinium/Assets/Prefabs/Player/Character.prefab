@@ -105,9 +105,11 @@ GameObject:
   m_Component:
   - component: {fileID: 4157745115602842590}
   - component: {fileID: 6285130512894516900}
-  - component: {fileID: 8991986317026318536}
   - component: {fileID: -1461720939236690170}
   - component: {fileID: 670104016}
+  - component: {fileID: 8991986317026318536}
+  - component: {fileID: 4311280882449170861}
+  - component: {fileID: 3961093185132607178}
   - component: {fileID: 7490163002221531194}
   - component: {fileID: 4475304602244561093}
   - component: {fileID: 897619683812245929}
@@ -155,32 +157,6 @@ Animator:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorControllerStateOnDisable: 0
---- !u!114 &8991986317026318536
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1146200187971666381}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ebf5bbbf737fcb44aa56d52097880fc4, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  controlling: 0
-  transition: {fileID: 0}
-  input: {x: 0, y: 0}
-  movement: {x: 0, y: 0, z: 0}
-  walkSpeed: 2
-  runSpeed: 6
-  turnSmoothTime: 0.2
-  speedSmoothTime: 0.1
-  disToGround: 0.05
-  layer:
-    serializedVersion: 2
-    m_Bits: 183
-  IKUP: 0.2
-  IKDOWN: 0.4
 --- !u!54 &-1461720939236690170
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -211,6 +187,59 @@ CapsuleCollider:
   m_Height: 1.7089711
   m_Direction: 1
   m_Center: {x: 0, y: 0.88551444, z: 0}
+--- !u!114 &8991986317026318536
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1146200187971666381}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ebf5bbbf737fcb44aa56d52097880fc4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  controlling: 0
+  transition: {fileID: 0}
+  input: {x: 0, y: 0}
+  movement: {x: 0, y: 0, z: 0}
+  walkSpeed: 2
+  runSpeed: 6
+  turnSmoothTime: 0.2
+  speedSmoothTime: 0.1
+  disToGround: 0.05
+  layer:
+    serializedVersion: 2
+    m_Bits: 183
+  IKUP: 0.2
+  IKDOWN: 0.4
+--- !u!114 &4311280882449170861
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1146200187971666381}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 796b2d494d139b347a61ce4a71c27081, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  stamaina: 100
+  currentStamina: 0
+--- !u!114 &3961093185132607178
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1146200187971666381}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ce584ed428eec3543b2a7fda8dfa19df, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  health: 100
 --- !u!114 &7490163002221531194
 MonoBehaviour:
   m_ObjectHideFlags: 0
