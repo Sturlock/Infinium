@@ -13,13 +13,13 @@ MonoBehaviour:
   m_Name: Dorothy's Request
   m_EditorClassIdentifier: 
   objectives:
-  - reference: Get some Apples
+  - reference: Get some Appless
     description: Dorothy has a bad knee and would like you to get some apples from
       the market.
-  - reference: 'Golden '
-    description: 
-  - reference: Things I do for apples
-    description: Sail your ship to Tarsier's Beacon to pick up the shipment of apples
-  rewards: []
+  - reference: Return
+    description: now you've got the apple, it might be time to return to Dorothy
+  rewards:
+  - number: 1
+  - number: 1
   gold: 75
   experiance: 150

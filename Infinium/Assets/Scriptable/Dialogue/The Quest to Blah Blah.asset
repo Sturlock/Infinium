@@ -23,6 +23,9 @@ MonoBehaviour:
     height: 100
   onBeginAction: 
   onExitAction: GiveQuest
+  condition:
+    predicate: 
+    parameters: []
 --- !u!114 &-7334350661558618920
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -47,6 +50,9 @@ MonoBehaviour:
     height: 100
   onBeginAction: 
   onExitAction: TextAIExit
+  condition:
+    predicate: 
+    parameters: []
 --- !u!114 &-7146998197378381053
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -71,6 +77,9 @@ MonoBehaviour:
     height: 100
   onBeginAction: TestSelection
   onExitAction: 
+  condition:
+    predicate: 
+    parameters: []
 --- !u!114 &-6448747166700725094
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -95,6 +104,9 @@ MonoBehaviour:
     height: 100
   onBeginAction: TestSelection
   onExitAction: 
+  condition:
+    predicate: 
+    parameters: []
 --- !u!114 &-6077484322763565357
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -118,6 +130,9 @@ MonoBehaviour:
     height: 100
   onBeginAction: 
   onExitAction: TestCloseText
+  condition:
+    predicate: 
+    parameters: []
 --- !u!114 &-3434124568966069452
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -142,6 +157,9 @@ MonoBehaviour:
     height: 100
   onBeginAction: TestSelection
   onExitAction: 
+  condition:
+    predicate: 
+    parameters: []
 --- !u!114 &-3095070323522568472
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -168,6 +186,9 @@ MonoBehaviour:
     height: 100
   onBeginAction: 
   onExitAction: TextAIExit
+  condition:
+    predicate: 
+    parameters: []
 --- !u!114 &-2186321180120672896
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -192,6 +213,9 @@ MonoBehaviour:
     height: 100
   onBeginAction: TestSelection
   onExitAction: 
+  condition:
+    predicate: 
+    parameters: []
 --- !u!114 &11400000
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -245,6 +269,9 @@ MonoBehaviour:
     height: 100
   onBeginAction: TestSelection
   onExitAction: 
+  condition:
+    predicate: 
+    parameters: []
 --- !u!114 &2056410776043086393
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -270,6 +297,9 @@ MonoBehaviour:
     height: 100
   onBeginAction: 
   onExitAction: TextAIExit
+  condition:
+    predicate: 
+    parameters: []
 --- !u!114 &3315528610847781812
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -294,6 +324,9 @@ MonoBehaviour:
     height: 100
   onBeginAction: TestSelection
   onExitAction: 
+  condition:
+    predicate: 
+    parameters: []
 --- !u!114 &4087560160456308941
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -318,6 +351,9 @@ MonoBehaviour:
     height: 100
   onBeginAction: TestSelection
   onExitAction: 
+  condition:
+    predicate: 
+    parameters: []
 --- !u!114 &4281579959273116444
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -337,12 +373,15 @@ MonoBehaviour:
   - 2dd982b6-4b6b-462a-b3a2-767155af8f4e
   rect:
     serializedVersion: 2
-    x: 309
-    y: 632
+    x: 287
+    y: 519
     width: 250
     height: 100
   onBeginAction: TestRootEntry
   onExitAction: 
+  condition:
+    predicate: 
+    parameters: []
 --- !u!114 &8918214515466073139
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -366,6 +405,9 @@ MonoBehaviour:
     height: 100
   onBeginAction: 
   onExitAction: TestCloseText
+  condition:
+    predicate: 
+    parameters: []
 --- !u!114 &9072769294231707280
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -391,3 +433,6 @@ MonoBehaviour:
     height: 100
   onBeginAction: 
   onExitAction: TextAIExit
+  condition:
+    predicate: 
+    parameters: []
