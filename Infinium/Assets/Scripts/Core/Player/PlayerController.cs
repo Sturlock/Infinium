@@ -22,7 +22,7 @@ public class PlayerController : MonoBehaviour, ISaveable
     float targetSpeed;
     public float turnSmoothTime = 0.2f;
     float turnSmoothVelocity;
-
+    bool running;
     public float speedSmoothTime = 0.1f;
     float speedSmoothVelocity;
     float currentSpeed;
@@ -40,7 +40,8 @@ public class PlayerController : MonoBehaviour, ISaveable
 
     public float IKUP = .2f;
     public float IKDOWN = .4f;
-    public int stamina;
+    Stamina stamina;
+    Health health;
 
     void OnDrawGizmos()
     {
@@ -53,6 +54,8 @@ public class PlayerController : MonoBehaviour, ISaveable
     void Start()
     {
         cam = GameObject.FindGameObjectWithTag("MainCamera");
+        stamina = GetComponent<Stamina>();
+        health = GetComponent<Health>();
         animator = GetComponent<Animator>();
         rb = GetComponent<Rigidbody>();
         cameraT = Camera.main.transform;
@@ -67,26 +70,23 @@ public class PlayerController : MonoBehaviour, ISaveable
             rb.detectCollisions = true;
             rb.useGravity = true;
 
-            stamina = GetComponent<Stamina>().GetStamina();
+            
             cam.GetComponent<ThirdPersonCameraController>().target = GameObject.FindGameObjectWithTag("Target").transform;
             cam.GetComponent<ThirdPersonCameraController>().dstFromTarget = 4f;
             input = new Vector2(Input.GetAxisRaw("Horizontal"), Input.GetAxisRaw("Vertical"));
             Vector2 inputDir = LookRotation();
 
-            bool running = Input.GetKey(KeyCode.LeftShift);
+            running = Input.GetKey(KeyCode.LeftShift);
+            print("Running is " + running);
             
-            targetSpeed = ((running && stamina > 0) ? runSpeed : walkSpeed) * inputDir.magnitude;
+            targetSpeed = ((running && stamina.GetStamina() > 0) ? runSpeed : walkSpeed) * inputDir.magnitude;
             currentSpeed = Mathf.SmoothDamp(currentSpeed, targetSpeed, ref speedSmoothVelocity, speedSmoothTime);
 
             transform.Translate(transform.forward * currentSpeed * Time.deltaTime, Space.World);
 
-            float animationSpeedPercent = ((running && stamina > 0) ? 1 : .5f) * inputDir.magnitude;
+            float animationSpeedPercent = ((running && stamina.GetStamina() > 0) ? 1 : .5f) * inputDir.magnitude;
             animator.SetFloat("speedPercent", animationSpeedPercent, speedSmoothTime, Time.deltaTime);
-            if (running && targetSpeed == runSpeed)
-            {
-                GetComponent<Stamina>().UseStamina(running, 1);
-            }
-
+            
         }
         else animator.SetFloat("speedPercent", 0f);
     }
@@ -108,6 +108,18 @@ public class PlayerController : MonoBehaviour, ISaveable
 
     void FixedUpdate()
     {
+        if (running && targetSpeed == runSpeed)
+        {
+            stamina.UseStamina(running, 1);
+        }
+        if (!running)
+        {
+            stamina.regen = true;
+            StartCoroutine(stamina.RegenStamina());
+        }
+
+        running = Input.GetKey(KeyCode.LeftShift);
+
         //Moving the Player around
         movement = Vector3.zero;
         movement = input * targetSpeed * Time.fixedDeltaTime ;

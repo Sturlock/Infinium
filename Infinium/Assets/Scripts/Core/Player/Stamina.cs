@@ -12,7 +12,7 @@ namespace Infinium.Core
 		[SerializeField] int currentStamina;
 
 		WaitForSeconds regenTick = new WaitForSeconds(.01f);
-		Coroutine regen;
+		public bool regen = false;
 
 		public int GetStamina()
         {
@@ -22,35 +22,40 @@ namespace Infinium.Core
         void Start()
         {
 			currentStamina = stamaina;
-        }
+			regen = false;
+		}
         public void UseStamina(bool usingStaminia, int amount)
 	    {
 			if (currentStamina - amount >= 0 && usingStaminia)
 			{
-				currentStamina -= amount;
-				if (regen != null)
-				{
-					StopCoroutine(RegenStamina());
-				}
-
-			}
-			else if(currentStamina + amount <= 100 && !usingStaminia)
-			{
-				regen = StartCoroutine(RegenStamina());
+                if (regen)
+                {
+                    StopCoroutine(RegenStamina());
+					regen = false;
+                }
+                currentStamina -= amount;
+				
 			}
 		}
 
-		private IEnumerator RegenStamina()
+		public IEnumerator RegenStamina()
         {
 			yield return new WaitForSeconds(2);
+			
+			if (regen)
+			{
+				while(currentStamina < stamaina)
+	            {
+					currentStamina += stamaina / 100;
+					yield return regenTick;
 
-			while(currentStamina < stamaina)
-            {
-				currentStamina += stamaina / 100;
-				yield return regenTick;
+				}
+				regen = false;
+
 			}
-			regen = null;
-        }
+			
+
+		}
 
         public object CaptureState()
         {
