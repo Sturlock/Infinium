@@ -16,12 +16,17 @@ public class UIButtonManager : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        AudioSource titleSource;
-        titleSource = titleButton.gameObject.AddComponent<AudioSource>();
-        titleSource.clip = titleAudio;
-        titleSource.volume = volume;
+        if (titleButton != null)
+        {
+            AudioSource titleSource;
+            titleSource = titleButton.gameObject.AddComponent<AudioSource>();
+            titleSource.clip = titleAudio;
+            titleSource.volume = volume;
+            titleButton.onClick.AddListener(() => titleSource.Play());
+        }
+        
 
-        titleButton.onClick.AddListener(() => titleSource.Play());
+        
 
         foreach (Button bt in buttons)
         {
