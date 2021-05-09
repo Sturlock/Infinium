@@ -23,7 +23,7 @@ MonoBehaviour:
     m_OverrideState: 0
     m_Value: 0
   exposure:
-    m_OverrideState: 1
+    m_OverrideState: 0
     m_Value: -0.5
   multiplier:
     m_OverrideState: 0
@@ -101,7 +101,7 @@ MonoBehaviour:
     max: 1
   aerosolTint:
     m_OverrideState: 0
-    m_Value: {r: 0.9, g: 0.9, b: 0.9, a: 1}
+    m_Value: {r: 0.5981132, g: 0.7888124, b: 1, a: 1}
     hdr: 0
     showAlpha: 0
     showEyeDropper: 1
@@ -116,21 +116,21 @@ MonoBehaviour:
     max: 1
   numberOfBounces:
     m_OverrideState: 0
-    m_Value: 8
+    m_Value: 10
     min: 1
     max: 10
   groundTint:
     m_OverrideState: 1
-    m_Value: {r: 0.2647561, g: 0.38852674, b: 0.6320754, a: 1}
+    m_Value: {r: 0.18584904, g: 0.37839314, b: 0.5, a: 1}
     hdr: 0
     showAlpha: 0
     showEyeDropper: 0
   groundColorTexture:
-    m_OverrideState: 0
-    m_Value: {fileID: 0}
+    m_OverrideState: 1
+    m_Value: {fileID: 8900000, guid: f35337c0950a8944396309a544e76999, type: 3}
   groundEmissionTexture:
     m_OverrideState: 0
-    m_Value: {fileID: 8900000, guid: 3f0398c209161394fb5e9f214a965331, type: 3}
+    m_Value: {fileID: 8900000, guid: f35337c0950a8944396309a544e76999, type: 3}
   groundEmissionMultiplier:
     m_OverrideState: 0
     m_Value: 10000
@@ -140,13 +140,13 @@ MonoBehaviour:
     m_Value: {x: 0, y: 0, z: 0}
   spaceEmissionTexture:
     m_OverrideState: 1
-    m_Value: {fileID: 8900000, guid: 6b2755fbe3e06bd4283a3bb347327f0d, type: 3}
+    m_Value: {fileID: 8900000, guid: f35337c0950a8944396309a544e76999, type: 3}
   spaceEmissionMultiplier:
     m_OverrideState: 1
-    m_Value: 3000
+    m_Value: 5000
     min: 0
   spaceRotation:
-    m_OverrideState: 0
+    m_OverrideState: 1
     m_Value: {x: 0, y: 0, z: 0}
   colorSaturation:
     m_OverrideState: 0
@@ -324,15 +324,15 @@ MonoBehaviour:
     m_Value: 14
   multiplier:
     m_OverrideState: 1
-    m_Value: 1
+    m_Value: 2974.5
     min: 0
   upperHemisphereLuxValue:
     m_OverrideState: 0
-    m_Value: 2.028872
+    m_Value: 1.5918213
     min: 0
   upperHemisphereLuxColor:
     m_OverrideState: 0
-    m_Value: {x: 0.21489152, y: 0.42335442, z: 0.5}
+    m_Value: {x: 0.22333428, y: 0.38407782, z: 0.5}
   desiredLuxValue:
     m_OverrideState: 1
     m_Value: 25000
@@ -348,12 +348,12 @@ MonoBehaviour:
     m_Value: 0
   hdriSky:
     m_OverrideState: 1
-    m_Value: {fileID: 8900000, guid: 6b2755fbe3e06bd4283a3bb347327f0d, type: 3}
+    m_Value: {fileID: 8900000, guid: f35337c0950a8944396309a544e76999, type: 3}
   enableDistortion:
-    m_OverrideState: 0
+    m_OverrideState: 1
     m_Value: 1
   procedural:
-    m_OverrideState: 0
+    m_OverrideState: 1
     m_Value: 1
   flowmap:
     m_OverrideState: 0
@@ -595,7 +595,7 @@ MonoBehaviour:
     showEyeDropper: 1
   tint:
     m_OverrideState: 1
-    m_Value: {r: 0.16452472, g: 0.4519103, b: 0.745283, a: 1}
+    m_Value: {r: 0.21867208, g: 0.8317893, b: 0.990566, a: 1}
     hdr: 1
     showAlpha: 0
     showEyeDropper: 1
@@ -624,7 +624,7 @@ MonoBehaviour:
     m_Value: 683.16
   meanFreePath:
     m_OverrideState: 1
-    m_Value: 500
+    m_Value: 10000
     min: 1
   enableVolumetricFog:
     m_OverrideState: 1
