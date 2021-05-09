@@ -13,9 +13,9 @@ MonoBehaviour:
   m_Name: PrefabPalette-Default
   m_EditorClassIdentifier: 
   prefabs:
-  - gameObject: {fileID: 8785165741712640905, guid: 244e29320238bad45afc5895f0db9f82, type: 3}
+  - gameObject: {fileID: 5312363629405037617, guid: 244e29320238bad45afc5895f0db9f82, type: 3}
     settings:
-      m_Strength: 50
+      m_Strength: 100
       m_RotationRangeMin: {x: 0, y: 0, z: 0}
       m_RotationRangeMax: {x: 0, y: 0, z: 0}
       m_ScaleRangeMin: {x: 1, y: 1, z: 1}
@@ -29,7 +29,23 @@ MonoBehaviour:
       m_YScaleBool: 0
       m_ZScaleBool: 0
     name: Tree1
-  - gameObject: {fileID: 5233854360799498702, guid: e6229ef800e796d45858ce1ab65d8404, type: 3}
+  - gameObject: {fileID: 9003744321832828351, guid: c1061bba929cc79478bf53f3b47cd089, type: 3}
+    settings:
+      m_Strength: 100
+      m_RotationRangeMin: {x: 0, y: 0, z: 0}
+      m_RotationRangeMax: {x: 0, y: 0, z: 0}
+      m_ScaleRangeMin: {x: 1, y: 1, z: 1}
+      m_ScaleRangeMax: {x: 1, y: 1, z: 1}
+      m_UniformScale: {x: 1, y: 1}
+      m_UniformBool: 0
+      m_XRotationBool: 0
+      m_YRotationBool: 0
+      m_ZRotationBool: 0
+      m_XScaleBool: 0
+      m_YScaleBool: 0
+      m_ZScaleBool: 0
+    name: Grass2 1
+  - gameObject: {fileID: 6097833346615870802, guid: e6229ef800e796d45858ce1ab65d8404, type: 3}
     settings:
       m_Strength: 50
       m_RotationRangeMin: {x: 0, y: 0, z: 0}
@@ -45,23 +61,7 @@ MonoBehaviour:
       m_YScaleBool: 0
       m_ZScaleBool: 0
     name: Grass1 1
-  - gameObject: {fileID: 5739486255997792774, guid: cb6784f07d566834c9d603867178dc0a, type: 3}
-    settings:
-      m_Strength: 86.268654
-      m_RotationRangeMin: {x: 0, y: 0, z: 0}
-      m_RotationRangeMax: {x: 0, y: 0, z: 0}
-      m_ScaleRangeMin: {x: 1, y: 1, z: 1}
-      m_ScaleRangeMax: {x: 1, y: 1, z: 1}
-      m_UniformScale: {x: 1, y: 1}
-      m_UniformBool: 0
-      m_XRotationBool: 0
-      m_YRotationBool: 0
-      m_ZRotationBool: 0
-      m_XScaleBool: 0
-      m_YScaleBool: 0
-      m_ZScaleBool: 0
-    name: Grass2 (1)
-  - gameObject: {fileID: 1352386431165839845, guid: 659fdbf07be05f248a50fd47fe00649c, type: 3}
+  - gameObject: {fileID: 2449551162371990373, guid: 89ef2175bb3cc8140bb1cce4071f92dd, type: 3}
     settings:
       m_Strength: 50
       m_RotationRangeMin: {x: 0, y: 0, z: 0}
@@ -76,8 +76,8 @@ MonoBehaviour:
       m_XScaleBool: 0
       m_YScaleBool: 0
       m_ZScaleBool: 0
-    name: GrassRocks 1
-  - gameObject: {fileID: 4910431718079242630, guid: 55fade292c9f3864fb6bbfac93ca6665, type: 3}
+    name: Flower1
+  - gameObject: {fileID: 4124584931098339294, guid: b11ff3f672807d846a2fd4453479898b, type: 3}
     settings:
       m_Strength: 50
       m_RotationRangeMin: {x: 0, y: 0, z: 0}
@@ -92,8 +92,8 @@ MonoBehaviour:
       m_XScaleBool: 0
       m_YScaleBool: 0
       m_ZScaleBool: 0
-    name: Flower1 1
-  - gameObject: {fileID: 105766303455111116, guid: e44ce26510c01a4458624231ddd81df6, type: 3}
+    name: RockGroup1
+  - gameObject: {fileID: 8224634039828467226, guid: 975a2dd71eccb89469e257448388a819, type: 3}
     settings:
       m_Strength: 50
       m_RotationRangeMin: {x: 0, y: 0, z: 0}
@@ -108,8 +108,8 @@ MonoBehaviour:
       m_XScaleBool: 0
       m_YScaleBool: 0
       m_ZScaleBool: 0
-    name: OBJ_RockSmall1 (1) Variant
-  - gameObject: {fileID: 423028978565773931, guid: 464ac643a0d3fa941b4d5b7c27c7032b, type: 3}
+    name: RockGroup2
+  - gameObject: {fileID: 5449101759015596257, guid: 7f0fcb31e2ead2442a84043b89272841, type: 3}
     settings:
       m_Strength: 50
       m_RotationRangeMin: {x: 0, y: 0, z: 0}
@@ -124,4 +124,36 @@ MonoBehaviour:
       m_XScaleBool: 0
       m_YScaleBool: 0
       m_ZScaleBool: 0
-    name: OBJ_RockSmall1 Variant
+    name: Rock1
+  - gameObject: {fileID: 2096791376304495823, guid: 0b92f4eca72e6954dbe95915ba09672f, type: 3}
+    settings:
+      m_Strength: 50
+      m_RotationRangeMin: {x: 0, y: 0, z: 0}
+      m_RotationRangeMax: {x: 0, y: 0, z: 0}
+      m_ScaleRangeMin: {x: 1, y: 1, z: 1}
+      m_ScaleRangeMax: {x: 1, y: 1, z: 1}
+      m_UniformScale: {x: 1, y: 1}
+      m_UniformBool: 0
+      m_XRotationBool: 0
+      m_YRotationBool: 0
+      m_ZRotationBool: 0
+      m_XScaleBool: 0
+      m_YScaleBool: 0
+      m_ZScaleBool: 0
+    name: OBJ_RockSmall1 (2) Variant
+  - gameObject: {fileID: 1769653255425332230, guid: 757c6c4007bfa87489d81da0657e4376, type: 3}
+    settings:
+      m_Strength: 100
+      m_RotationRangeMin: {x: 0, y: 0, z: 0}
+      m_RotationRangeMax: {x: 0, y: 0, z: 0}
+      m_ScaleRangeMin: {x: 1, y: 1, z: 1}
+      m_ScaleRangeMax: {x: 1, y: 1, z: 1}
+      m_UniformScale: {x: 1, y: 1}
+      m_UniformBool: 0
+      m_XRotationBool: 0
+      m_YRotationBool: 0
+      m_ZRotationBool: 0
+      m_XScaleBool: 0
+      m_YScaleBool: 0
+      m_ZScaleBool: 0
+    name: Rock2
