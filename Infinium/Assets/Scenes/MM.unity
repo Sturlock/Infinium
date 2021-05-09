@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 3611.67, g: 5219.297, b: 8795.305, a: 1}
+  m_IndirectSpecularColor: {r: 3635.8848, g: 5261.328, b: 8876.594, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -738,7 +738,7 @@ RectTransform:
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
   m_AnchoredPosition: {x: 2, y: 191}
-  m_SizeDelta: {x: 320, y: 20}
+  m_SizeDelta: {x: 320, y: 15}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &304716752
 MonoBehaviour:
@@ -815,6 +815,7 @@ GameObject:
   - component: {fileID: 332743654}
   - component: {fileID: 332743653}
   - component: {fileID: 332743652}
+  - component: {fileID: 332743655}
   m_Layer: 5
   m_Name: BGSFXRight
   m_TagString: Untagged
@@ -884,7 +885,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 332743653}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 332743655}
+        m_TargetAssemblyTypeName: RightAudioArrow, Assembly-CSharp
+        m_MethodName: OnClick
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &332743653
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -923,6 +936,19 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 332743650}
   m_CullTransparentMesh: 1
+--- !u!114 &332743655
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 332743650}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9208c54f47b01bb469f5f82da8822b83, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  sliderValue: {fileID: 1254106931}
 --- !u!1 &364917932
 GameObject:
   m_ObjectHideFlags: 0
@@ -1358,7 +1384,7 @@ RectTransform:
   m_GameObject: {fileID: 438039514}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalScale: {x: 0.95, y: 1.25, z: 1}
   m_Children: []
   m_Father: {fileID: 1254106930}
   m_RootOrder: 0
@@ -1490,6 +1516,7 @@ GameObject:
   - component: {fileID: 631393120}
   - component: {fileID: 631393119}
   - component: {fileID: 631393118}
+  - component: {fileID: 631393121}
   m_Layer: 5
   m_Name: BGSFXLeft
   m_TagString: Untagged
@@ -1559,7 +1586,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 631393119}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 631393121}
+        m_TargetAssemblyTypeName: LeftAudioArrow, Assembly-CSharp
+        m_MethodName: OnClick
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &631393119
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1598,6 +1637,19 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 631393116}
   m_CullTransparentMesh: 1
+--- !u!114 &631393121
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 631393116}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8f0ce63e0c5b92f4085d3e0e25582b76, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  sliderValue: {fileID: 304716752}
 --- !u!1 &691047285
 GameObject:
   m_ObjectHideFlags: 0
@@ -1625,7 +1677,7 @@ RectTransform:
   m_GameObject: {fileID: 691047285}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalScale: {x: 0.95, y: 1.25, z: 1}
   m_Children: []
   m_Father: {fileID: 304716751}
   m_RootOrder: 0
@@ -1685,6 +1737,7 @@ GameObject:
   - component: {fileID: 764024205}
   - component: {fileID: 764024204}
   - component: {fileID: 764024203}
+  - component: {fileID: 764024206}
   m_Layer: 5
   m_Name: BGSFXLeft
   m_TagString: Untagged
@@ -1754,7 +1807,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 764024204}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 764024206}
+        m_TargetAssemblyTypeName: LeftAudioArrow, Assembly-CSharp
+        m_MethodName: OnClick
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &764024204
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1793,6 +1858,19 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 764024201}
   m_CullTransparentMesh: 1
+--- !u!114 &764024206
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 764024201}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8f0ce63e0c5b92f4085d3e0e25582b76, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  sliderValue: {fileID: 1254106931}
 --- !u!1 &765649736
 GameObject:
   m_ObjectHideFlags: 0
@@ -2140,6 +2218,7 @@ GameObject:
   - component: {fileID: 941571069}
   - component: {fileID: 941571068}
   - component: {fileID: 941571067}
+  - component: {fileID: 941571070}
   m_Layer: 5
   m_Name: BGSFXRight
   m_TagString: Untagged
@@ -2209,7 +2288,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 941571068}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 941571070}
+        m_TargetAssemblyTypeName: RightAudioArrow, Assembly-CSharp
+        m_MethodName: OnClick
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &941571068
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2248,6 +2339,19 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 941571065}
   m_CullTransparentMesh: 1
+--- !u!114 &941571070
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 941571065}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9208c54f47b01bb469f5f82da8822b83, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  sliderValue: {fileID: 304716752}
 --- !u!1 &1029656091
 GameObject:
   m_ObjectHideFlags: 0
@@ -2673,7 +2777,7 @@ RectTransform:
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
   m_AnchoredPosition: {x: 2, y: -88}
-  m_SizeDelta: {x: 320, y: 20}
+  m_SizeDelta: {x: 320, y: 15}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1254106931
 MonoBehaviour:
@@ -2777,7 +2881,7 @@ RectTransform:
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
   m_AnchoredPosition: {x: 2, y: -370.3}
-  m_SizeDelta: {x: 320, y: 20}
+  m_SizeDelta: {x: 320, y: 15}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1298544876
 MonoBehaviour:
@@ -2818,7 +2922,7 @@ MonoBehaviour:
     m_PressedTrigger: Pressed
     m_SelectedTrigger: Selected
     m_DisabledTrigger: Disabled
-  m_Interactable: 1
+  m_Interactable: 0
   m_TargetGraphic: {fileID: 1132717581}
   m_FillRect: {fileID: 1617208489}
   m_HandleRect: {fileID: 1132717580}
@@ -2933,6 +3037,7 @@ GameObject:
   - component: {fileID: 1471993422}
   - component: {fileID: 1471993421}
   - component: {fileID: 1471993420}
+  - component: {fileID: 1471993423}
   m_Layer: 5
   m_Name: BGSFXLeft
   m_TagString: Untagged
@@ -2998,11 +3103,23 @@ MonoBehaviour:
     m_PressedTrigger: Pressed
     m_SelectedTrigger: Selected
     m_DisabledTrigger: Disabled
-  m_Interactable: 1
+  m_Interactable: 0
   m_TargetGraphic: {fileID: 1471993421}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1471993423}
+        m_TargetAssemblyTypeName: LeftAudioArrow, Assembly-CSharp
+        m_MethodName: OnClick
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &1471993421
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3041,6 +3158,19 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1471993418}
   m_CullTransparentMesh: 1
+--- !u!114 &1471993423
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1471993418}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8f0ce63e0c5b92f4085d3e0e25582b76, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  sliderValue: {fileID: 1298544876}
 --- !u!114 &1497368714 stripped
 MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 6634901401202821867, guid: 80b8f3dea61014342b45b34aa9bd53f4, type: 3}
@@ -3338,7 +3468,7 @@ RectTransform:
   m_GameObject: {fileID: 1734885137}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalScale: {x: 0.95, y: 1.25, z: 1}
   m_Children: []
   m_Father: {fileID: 1298544875}
   m_RootOrder: 0
@@ -3618,6 +3748,7 @@ GameObject:
   - component: {fileID: 1820382846}
   - component: {fileID: 1820382845}
   - component: {fileID: 1820382844}
+  - component: {fileID: 1820382847}
   m_Layer: 5
   m_Name: BGSFXRight
   m_TagString: Untagged
@@ -3683,14 +3814,14 @@ MonoBehaviour:
     m_PressedTrigger: Pressed
     m_SelectedTrigger: Selected
     m_DisabledTrigger: Disabled
-  m_Interactable: 1
+  m_Interactable: 0
   m_TargetGraphic: {fileID: 1820382845}
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 3948387331474615214, guid: 231bec77a939ee94c9720486ac1452a0, type: 3}
-        m_TargetAssemblyTypeName: UnityEngine.AudioSource, UnityEngine
-        m_MethodName: Play
+      - m_Target: {fileID: 1820382847}
+        m_TargetAssemblyTypeName: RightAudioArrow, Assembly-CSharp
+        m_MethodName: OnClick
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -3738,6 +3869,19 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1820382842}
   m_CullTransparentMesh: 1
+--- !u!114 &1820382847
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1820382842}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9208c54f47b01bb469f5f82da8822b83, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  sliderValue: {fileID: 1298544876}
 --- !u!1 &1823909218
 GameObject:
   m_ObjectHideFlags: 0
