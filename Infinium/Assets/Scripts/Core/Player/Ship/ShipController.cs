@@ -203,6 +203,7 @@ public class ShipController : MonoBehaviour
                     //Debug.Log(springForce);
                 }
                 //Debug.Log(hit.disToGround);
+                Debug.DrawRay(spring.transform.position, transform.TransformDirection(Vector3.down), Color.red) ;
             }
             rb.AddForce(-Time.deltaTime * transform.TransformVector(Vector3.right) * transform.InverseTransformVector(rb.velocity).x * (thrusterStrength * 10f));
         }

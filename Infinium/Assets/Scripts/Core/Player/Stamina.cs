@@ -8,13 +8,13 @@ namespace Infinium.Core
 	public class Stamina : MonoBehaviour, ISaveable
 	{
 	    // Start is called before the first frame update
-	    [SerializeField] int stamaina = 100;
-		[SerializeField] int currentStamina;
+	    [SerializeField] float stamaina = 100;
+		[SerializeField] float currentStamina;
 
 		WaitForSeconds regenTick = new WaitForSeconds(.01f);
 		public bool regen = false;
 
-		public int GetStamina()
+		public float GetStamina()
         {
 			return currentStamina;
         }
@@ -24,9 +24,9 @@ namespace Infinium.Core
 			currentStamina = stamaina;
 			regen = false;
 		}
-        public void UseStamina(bool usingStaminia, int amount)
+        public void UseStamina(bool usingStaminia, float amount)
 	    {
-			if (currentStamina - amount >= 0 && usingStaminia)
+			if (currentStamina - amount >= 0f && usingStaminia)
 			{
                 if (regen)
                 {
@@ -46,7 +46,7 @@ namespace Infinium.Core
 			{
 				while(currentStamina < stamaina)
 	            {
-					currentStamina += stamaina / 100;
+					currentStamina += stamaina / 100f;
 					yield return regenTick;
 
 				}

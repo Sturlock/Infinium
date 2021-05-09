@@ -83,21 +83,6 @@ public class PlayerController : MonoBehaviour, ISaveable
             currentSpeed = Mathf.SmoothDamp(currentSpeed, targetSpeed, ref speedSmoothVelocity, speedSmoothTime);
 
             transform.Translate(transform.forward * currentSpeed * Time.deltaTime, Space.World);
-            if (targetSpeed == 0)
-            {
-                animator.SetBool("IsWalking", false);
-                animator.SetBool("IsRunning", false);
-            }
-            else if (targetSpeed == walkSpeed)
-            {
-                animator.SetBool("IsWalking", true);
-                animator.SetBool("IsRunning", false);
-            }
-            else if (targetSpeed == runSpeed)
-            {
-                animator.SetBool("IsWalking", false);
-                animator.SetBool("IsRunning", true);
-            }
 
             float animationSpeedPercent = ((running && stamina.GetStamina() > 0) ? 1 : .5f) * inputDir.magnitude;
             animator.SetFloat("speedPercent", animationSpeedPercent, speedSmoothTime, Time.deltaTime);
@@ -125,7 +110,7 @@ public class PlayerController : MonoBehaviour, ISaveable
     {
         if (running && targetSpeed == runSpeed)
         {
-            stamina.UseStamina(running, 1);
+            stamina.UseStamina(running, 0.5f);
         }
         if (!running)
         {
