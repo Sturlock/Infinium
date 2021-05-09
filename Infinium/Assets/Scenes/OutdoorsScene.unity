@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 5610.8203, g: 7866.4297, b: 13216.656, a: 1}
+  m_IndirectSpecularColor: {r: 1817.0703, g: 4402.633, b: 8605.391, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -1567,6 +1567,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 674899721}
+  - component: {fileID: 674899722}
   m_Layer: 0
   m_Name: trash
   m_TagString: Untagged
@@ -1588,6 +1589,19 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 12
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &674899722
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 674899720}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d33ffcdb16f4f2b4ebe3bffb5755c5c5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  persistentObjectPrefab: {fileID: 5729630110793053226, guid: 9574150978b4d644fbd4fea1a351df8f, type: 3}
 --- !u!1 &712049769
 GameObject:
   m_ObjectHideFlags: 0
@@ -2974,7 +2988,7 @@ MeshRenderer:
   m_RenderingLayerMask: 257
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: 73c176f402d2c2f4d929aa5da7585d17, type: 2}
+  - {fileID: 2100000, guid: 3c578c4e796604d4fb22f9dd5c5666f5, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -3361,6 +3375,23 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
+--- !u!1 &1844595169 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 2832113135747363163, guid: 3bedd480197ca9545bfdd050a125108a, type: 3}
+  m_PrefabInstance: {fileID: 9074634039148032681}
+  m_PrefabAsset: {fileID: 0}
+--- !u!225 &1844595174
+CanvasGroup:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1844595169}
+  m_Enabled: 1
+  m_Alpha: 1
+  m_Interactable: 1
+  m_BlocksRaycasts: 1
+  m_IgnoreParentGroups: 0
 --- !u!1 &1876512270
 GameObject:
   m_ObjectHideFlags: 0
@@ -3609,7 +3640,7 @@ MeshRenderer:
   m_RenderingLayerMask: 257
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: 73c176f402d2c2f4d929aa5da7585d17, type: 2}
+  - {fileID: -4973734387028869240, guid: 23c5b72af1ab18b40b78d3ee717a4b94, type: 3}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -4348,6 +4379,10 @@ PrefabInstance:
       propertyPath: m_AnchorMax.y
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 395482646924640551, guid: 3bedd480197ca9545bfdd050a125108a, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 395482646924640569, guid: 3bedd480197ca9545bfdd050a125108a, type: 3}
       propertyPath: m_Alpha
       value: 0
@@ -4857,6 +4892,10 @@ PrefabInstance:
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 852652436824276582, guid: 3bedd480197ca9545bfdd050a125108a, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 865064108061240829, guid: 3bedd480197ca9545bfdd050a125108a, type: 3}
       propertyPath: m_IsActive
       value: 1
       objectReference: {fileID: 0}

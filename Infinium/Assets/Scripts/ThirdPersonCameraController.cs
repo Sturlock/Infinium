@@ -12,7 +12,7 @@ public class ThirdPersonCameraController : MonoBehaviour
     public Transform target;
     public float dstFromTarget = 2;
     public Vector2 pitchMinMax = new Vector2(-40, 85);
-
+    PlayerConversant playerConversant;
     public float rotationSmoothTime = 0.12f;
     Vector3 rotationSmoothVelocity;
     Vector3 currentRotation;
@@ -21,6 +21,7 @@ public class ThirdPersonCameraController : MonoBehaviour
     float pitch;
     private void Start()
     {
+        playerConversant = GameObject.FindObjectOfType<PlayerConversant>();
         if (lockCursor)
         {
             Cursor.lockState = CursorLockMode.Locked;
@@ -29,7 +30,6 @@ public class ThirdPersonCameraController : MonoBehaviour
     }
     void LateUpdate()
     {
-        PlayerConversant playerConversant = GameObject.FindObjectOfType<PlayerConversant>();
         if(!playerConversant.IsConversing())
         {
             
@@ -50,15 +50,9 @@ public class ThirdPersonCameraController : MonoBehaviour
             {
                 Cursor.lockState = CursorLockMode.None;
                 Cursor.visible = true;
-
-               
             }
-            
-
             transform.eulerAngles = currentRotation;
             transform.position = target.position - transform.forward * dstFromTarget;
-        }
-        
-        
+        } 
     }
 }
