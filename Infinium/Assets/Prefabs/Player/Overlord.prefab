@@ -940,7 +940,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6024336985946725206, guid: 8a658de89237e3c49b68e4ac6ec4b9bc, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 1342.744
+      value: 1354.4
       objectReference: {fileID: 0}
     - target: {fileID: 6024336985946725206, guid: 8a658de89237e3c49b68e4ac6ec4b9bc, type: 3}
       propertyPath: m_LocalPosition.y
@@ -948,7 +948,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6024336985946725206, guid: 8a658de89237e3c49b68e4ac6ec4b9bc, type: 3}
       propertyPath: m_LocalPosition.z
-      value: -1387.308
+      value: -1387.04
       objectReference: {fileID: 0}
     - target: {fileID: 6024336985946725206, guid: 8a658de89237e3c49b68e4ac6ec4b9bc, type: 3}
       propertyPath: m_LocalRotation.w
@@ -1020,7 +1020,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6024336985946725210, guid: 8a658de89237e3c49b68e4ac6ec4b9bc, type: 3}
       propertyPath: disToGround
-      value: 32
+      value: 10
       objectReference: {fileID: 0}
     - target: {fileID: 6024336985946725212, guid: 8a658de89237e3c49b68e4ac6ec4b9bc, type: 3}
       propertyPath: m_Name
@@ -1142,7 +1142,9 @@ PrefabInstance:
       propertyPath: m_Mesh
       value: 
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 6024336985946725209, guid: 8a658de89237e3c49b68e4ac6ec4b9bc, type: 3}
+    - {fileID: 6024336985946725208, guid: 8a658de89237e3c49b68e4ac6ec4b9bc, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: 8a658de89237e3c49b68e4ac6ec4b9bc, type: 3}
 --- !u!4 &4136991611292987595 stripped
 Transform:
