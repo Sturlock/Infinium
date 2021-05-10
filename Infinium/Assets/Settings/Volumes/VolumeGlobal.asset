@@ -595,7 +595,7 @@ MonoBehaviour:
     showEyeDropper: 1
   tint:
     m_OverrideState: 1
-    m_Value: {r: 0.21867208, g: 0.8317893, b: 0.990566, a: 1}
+    m_Value: {r: 0.58462083, g: 0.72996795, b: 0.8679245, a: 1}
     hdr: 1
     showAlpha: 0
     showEyeDropper: 1
@@ -624,7 +624,7 @@ MonoBehaviour:
     m_Value: 683.16
   meanFreePath:
     m_OverrideState: 1
-    m_Value: 10000
+    m_Value: 1000
     min: 1
   enableVolumetricFog:
     m_OverrideState: 1
@@ -698,7 +698,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5e17fad69ea181b4483974138b566975, type: 3}
   m_Name: ScreenSpaceRefraction
   m_EditorClassIdentifier: 
-  active: 0
+  active: 1
   m_AdvancedMode: 0
   screenFadeDistance:
     m_OverrideState: 1

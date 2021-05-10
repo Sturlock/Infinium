@@ -77,7 +77,6 @@ GameObject:
   - component: {fileID: 7726042233722651903}
   - component: {fileID: 2480817791264636352}
   - component: {fileID: 3409316763421943844}
-  - component: {fileID: 4376032953867555808}
   m_Layer: 0
   m_Name: CloudFlat2_LOD0
   m_TagString: Untagged
@@ -148,20 +147,6 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
---- !u!64 &4376032953867555808
-MeshCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 3730294292625268984}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 1
-  serializedVersion: 4
-  m_Convex: 0
-  m_CookingOptions: 30
-  m_Mesh: {fileID: -5545923138137956349, guid: 83c4e96f6914b964bb4c5413d72c09b0, type: 3}
 --- !u!1 &6617692456844377113
 GameObject:
   m_ObjectHideFlags: 0

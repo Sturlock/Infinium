@@ -239,7 +239,6 @@ GameObject:
   - component: {fileID: 3202242207740252113}
   - component: {fileID: 7982724114296756307}
   - component: {fileID: 9130416497571015568}
-  - component: {fileID: 7269658570979102588}
   m_Layer: 0
   m_Name: CloudFlat3_LOD0
   m_TagString: Untagged
@@ -310,19 +309,6 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
---- !u!65 &7269658570979102588
-BoxCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 5658003016060279045}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 1
-  serializedVersion: 2
-  m_Size: {x: 144074.95, y: 14937.443, z: 79226.63}
-  m_Center: {x: 7.234375, y: -0.0009765625, z: 0}
 --- !u!1 &5852599580716088321
 GameObject:
   m_ObjectHideFlags: 0
