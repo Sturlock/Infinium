@@ -1072,6 +1072,7 @@ GameObject:
   - component: {fileID: 1531315454412933290}
   - component: {fileID: 2185227659278464580}
   - component: {fileID: 1374215304803914468}
+  - component: {fileID: 764881046627334242}
   m_Layer: 10
   m_Name: CharacterNEW
   m_TagString: Player
@@ -1250,7 +1251,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ce584ed428eec3543b2a7fda8dfa19df, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  healthPoints: 100
 --- !u!114 &2185227659278464580
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1278,6 +1278,19 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   currentStamina: 100
   regen: 1
+--- !u!114 &764881046627334242
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2213746435277981153}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b471c6f147a36f3499661e9f7f9adc24, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  goldPieces: 0
 --- !u!1 &2249326791482848738
 GameObject:
   m_ObjectHideFlags: 0

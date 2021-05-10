@@ -1645,6 +1645,7 @@ GameObject:
   m_Component:
   - component: {fileID: 3335720012853067198}
   - component: {fileID: 3008513200039771180}
+  - component: {fileID: 1352590834}
   m_Layer: 0
   m_Name: Disgruntled Parent
   m_TagString: Untagged
@@ -1659,7 +1660,7 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2666424554359154436}
-  m_LocalRotation: {x: -0, y: -0.9193455, z: -0, w: 0.39345127}
+  m_LocalRotation: {x: 0, y: -0.9193449, z: 0, w: 0.39345267}
   m_LocalPosition: {x: 1471.905, y: 173.3467, z: 1267.742}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
@@ -1688,6 +1689,19 @@ Animator:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorControllerStateOnDisable: 0
+--- !u!114 &1352590834
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2666424554359154436}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f19c1fe3438e901419c72f40dcdcd910, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  uniqueIdentifier: 4772fea3-ac65-45d7-8577-9046c0b8319e
 --- !u!1 &2725942547872207639
 GameObject:
   m_ObjectHideFlags: 0

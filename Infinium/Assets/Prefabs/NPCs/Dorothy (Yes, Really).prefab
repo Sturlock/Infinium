@@ -5113,6 +5113,10 @@ GameObject:
   m_Component:
   - component: {fileID: 8544713234663605381}
   - component: {fileID: 2338713728704962303}
+  - component: {fileID: 357342365}
+  - component: {fileID: 357342366}
+  - component: {fileID: 357342367}
+  - component: {fileID: 357342368}
   m_Layer: 0
   m_Name: Dorothy (Yes, Really)
   m_TagString: Untagged
@@ -5127,7 +5131,7 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 9070033899777973823}
-  m_LocalRotation: {x: -0, y: 0.9512482, z: -0, w: 0.3084266}
+  m_LocalRotation: {x: 0, y: 0.9512478, z: 0, w: 0.30842772}
   m_LocalPosition: {x: 1489.9, y: 168.72414, z: 1268.75}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
@@ -5156,6 +5160,75 @@ Animator:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorControllerStateOnDisable: 0
+--- !u!114 &357342365
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 9070033899777973823}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9216d7017964abd4380b0914624651ed, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  action: GiveQuest
+  onTrigger:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 357342366}
+        m_TargetAssemblyTypeName: Infinium.Quests.QuestGiver, Assembly-CSharp
+        m_MethodName: GiveQuest
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+--- !u!114 &357342366
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 9070033899777973823}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5b7b87c498973804eafe70ce1f75fc28, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  quest: {fileID: 11400000, guid: a30eed46f17cfec4ca8bec1dae5b2b48, type: 2}
+--- !u!114 &357342367
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 9070033899777973823}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 070d1aee2dc807e4d9c1bf47a2ba2f28, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  AIName: Dorothy
+  dialogue: {fileID: 11400000, guid: 0efe358100cd2b0408ee3faa84211e16, type: 2}
+  near: 0
+--- !u!114 &357342368
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 9070033899777973823}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f19c1fe3438e901419c72f40dcdcd910, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  uniqueIdentifier: cf00ea22-40db-49d4-8d80-9e9cb38bdb10
 --- !u!1 &9213257897681556742
 GameObject:
   m_ObjectHideFlags: 0
