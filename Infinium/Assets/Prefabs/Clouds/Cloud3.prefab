@@ -320,7 +320,6 @@ GameObject:
   - component: {fileID: 653841753112884973}
   - component: {fileID: 387871419589715848}
   - component: {fileID: 2977458494242711939}
-  - component: {fileID: 7159053256816877717}
   m_Layer: 0
   m_Name: Cloud3_LOD0
   m_TagString: Untagged
@@ -391,17 +390,3 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
---- !u!64 &7159053256816877717
-MeshCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 8112401451036110869}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 1
-  serializedVersion: 4
-  m_Convex: 0
-  m_CookingOptions: 30
-  m_Mesh: {fileID: -1989800425738698553, guid: f769b7140b22c704cb9b2ab3b43a62f8, type: 3}

@@ -320,7 +320,6 @@ GameObject:
   - component: {fileID: 4870862736867875754}
   - component: {fileID: 9069242702816468164}
   - component: {fileID: 5408875085515189936}
-  - component: {fileID: 4891973507803003987}
   m_Layer: 0
   m_Name: Cloud2_LOD0
   m_TagString: Untagged
@@ -391,17 +390,3 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
---- !u!64 &4891973507803003987
-MeshCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 9180760137048364430}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 1
-  serializedVersion: 4
-  m_Convex: 0
-  m_CookingOptions: 30
-  m_Mesh: {fileID: -3515964865705726110, guid: 4623393947470184cb4ddd73596b1895, type: 3}
