@@ -77,38 +77,6 @@ MonoBehaviour:
       m_YScaleBool: 0
       m_ZScaleBool: 0
     name: Flower1
-  - gameObject: {fileID: 4124584931098339294, guid: b11ff3f672807d846a2fd4453479898b, type: 3}
-    settings:
-      m_Strength: 50
-      m_RotationRangeMin: {x: 0, y: 0, z: 0}
-      m_RotationRangeMax: {x: 0, y: 0, z: 0}
-      m_ScaleRangeMin: {x: 1, y: 1, z: 1}
-      m_ScaleRangeMax: {x: 1, y: 1, z: 1}
-      m_UniformScale: {x: 1, y: 1}
-      m_UniformBool: 0
-      m_XRotationBool: 0
-      m_YRotationBool: 0
-      m_ZRotationBool: 0
-      m_XScaleBool: 0
-      m_YScaleBool: 0
-      m_ZScaleBool: 0
-    name: RockGroup1
-  - gameObject: {fileID: 8224634039828467226, guid: 975a2dd71eccb89469e257448388a819, type: 3}
-    settings:
-      m_Strength: 50
-      m_RotationRangeMin: {x: 0, y: 0, z: 0}
-      m_RotationRangeMax: {x: 0, y: 0, z: 0}
-      m_ScaleRangeMin: {x: 1, y: 1, z: 1}
-      m_ScaleRangeMax: {x: 1, y: 1, z: 1}
-      m_UniformScale: {x: 1, y: 1}
-      m_UniformBool: 0
-      m_XRotationBool: 0
-      m_YRotationBool: 0
-      m_ZRotationBool: 0
-      m_XScaleBool: 0
-      m_YScaleBool: 0
-      m_ZScaleBool: 0
-    name: RockGroup2
   - gameObject: {fileID: 5449101759015596257, guid: 7f0fcb31e2ead2442a84043b89272841, type: 3}
     settings:
       m_Strength: 50
@@ -141,19 +109,3 @@ MonoBehaviour:
       m_YScaleBool: 0
       m_ZScaleBool: 0
     name: OBJ_RockSmall1 (2) Variant
-  - gameObject: {fileID: 1769653255425332230, guid: 757c6c4007bfa87489d81da0657e4376, type: 3}
-    settings:
-      m_Strength: 100
-      m_RotationRangeMin: {x: 0, y: 0, z: 0}
-      m_RotationRangeMax: {x: 0, y: 0, z: 0}
-      m_ScaleRangeMin: {x: 1, y: 1, z: 1}
-      m_ScaleRangeMax: {x: 1, y: 1, z: 1}
-      m_UniformScale: {x: 1, y: 1}
-      m_UniformBool: 0
-      m_XRotationBool: 0
-      m_YRotationBool: 0
-      m_ZRotationBool: 0
-      m_XScaleBool: 0
-      m_YScaleBool: 0
-      m_ZScaleBool: 0
-    name: Rock2

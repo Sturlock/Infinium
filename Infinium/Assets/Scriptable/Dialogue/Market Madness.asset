@@ -18,8 +18,8 @@ MonoBehaviour:
   - 46a8146c-c756-47de-a0a9-fcba951785ed
   rect:
     serializedVersion: 2
-    x: 1008
-    y: 168
+    x: 1015
+    y: 344
     width: 250
     height: 100
   onBeginAction: 
@@ -27,6 +27,35 @@ MonoBehaviour:
   condition:
     predicate: 
     parameters: []
+--- !u!114 &-6434775375886255418
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c12b9ff7e20c77b478d3f6f94022d2eb, type: 3}
+  m_Name: b5c083e1-022e-4ad8-b595-250b4b1f7197
+  m_EditorClassIdentifier: 
+  isPlayerSpeaking: 0
+  text: You're Back! Have you had any luck finding them?
+  children:
+  - 9be4effd-44a8-456d-85ae-1226af6f8a30
+  - 380bee4c-6c73-4738-9fd1-8bf90df7a328
+  rect:
+    serializedVersion: 2
+    x: 374
+    y: 220
+    width: 250
+    height: 100
+  onBeginAction: 
+  onExitAction: 
+  condition:
+    predicate: HasQuest
+    parameters:
+    - MarketMadness
 --- !u!114 &-6434452179592545219
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -45,8 +74,8 @@ MonoBehaviour:
   - 5f28ccc1-ed16-4bc8-85c3-945f76b490b9
   rect:
     serializedVersion: 2
-    x: 1131
-    y: 409
+    x: 1016
+    y: 549
     width: 250
     height: 100
   onBeginAction: 
@@ -67,16 +96,43 @@ MonoBehaviour:
   m_Name: 46a8146c-c756-47de-a0a9-fcba951785ed
   m_EditorClassIdentifier: 
   isPlayerSpeaking: 0
-  text: He was just here! he couldn't have gone far.
+  text: He was just here! he couldn't have gone far. He always had a fondness of
+    caves.
   children: []
   rect:
     serializedVersion: 2
-    x: 1909
-    y: 113
+    x: 1902
+    y: 226
     width: 250
     height: 100
   onBeginAction: 
   onExitAction: GiveQuest
+  condition:
+    predicate: 
+    parameters: []
+--- !u!114 &-3948996792581942915
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c12b9ff7e20c77b478d3f6f94022d2eb, type: 3}
+  m_Name: a28e54ab-cfbf-449e-8fc5-28b5e3d73057
+  m_EditorClassIdentifier: 
+  isPlayerSpeaking: 0
+  text: Oh thank goodness! He's some money for your troubles.
+  children: []
+  rect:
+    serializedVersion: 2
+    x: 1102
+    y: 38
+    width: 250
+    height: 100
+  onBeginAction: 
+  onExitAction: QuestComplete
   condition:
     predicate: 
     parameters: []
@@ -98,8 +154,35 @@ MonoBehaviour:
   - 46a8146c-c756-47de-a0a9-fcba951785ed
   rect:
     serializedVersion: 2
-    x: 1634
-    y: 190
+    x: 1632
+    y: 326
+    width: 250
+    height: 100
+  onBeginAction: 
+  onExitAction: 
+  condition:
+    predicate: 
+    parameters: []
+--- !u!114 &-1928643957594734990
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c12b9ff7e20c77b478d3f6f94022d2eb, type: 3}
+  m_Name: 9be4effd-44a8-456d-85ae-1226af6f8a30
+  m_EditorClassIdentifier: 
+  isPlayerSpeaking: 1
+  text: No.
+  children:
+  - 07c40011-83b7-4509-895c-04e9b33c1535
+  rect:
+    serializedVersion: 2
+    x: 733
+    y: 163
     width: 250
     height: 100
   onBeginAction: 
@@ -125,15 +208,16 @@ MonoBehaviour:
   - 23a365e8-d59c-4308-a449-772e820f1865
   rect:
     serializedVersion: 2
-    x: 384
-    y: 217
+    x: 373
+    y: 336
     width: 250
     height: 100
   onBeginAction: 
   onExitAction: 
   condition:
-    predicate: 
-    parameters: []
+    predicate: '!HasQuest'
+    parameters:
+    - MarketMadness
 --- !u!114 &-1055475495097693106
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -154,8 +238,35 @@ MonoBehaviour:
   - 034e09ad-b7f2-4c16-8ee3-d669fe3b2a78
   rect:
     serializedVersion: 2
-    x: 695
-    y: 275
+    x: 690
+    y: 382
+    width: 250
+    height: 100
+  onBeginAction: 
+  onExitAction: 
+  condition:
+    predicate: 
+    parameters: []
+--- !u!114 &-175156510684774086
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c12b9ff7e20c77b478d3f6f94022d2eb, type: 3}
+  m_Name: 380bee4c-6c73-4738-9fd1-8bf90df7a328
+  m_EditorClassIdentifier: 
+  isPlayerSpeaking: 1
+  text: Yep, Is this the child your looking for?
+  children:
+  - a28e54ab-cfbf-449e-8fc5-28b5e3d73057
+  rect:
+    serializedVersion: 2
+    x: 743
+    y: 38
     width: 250
     height: 100
   onBeginAction: 
@@ -188,6 +299,11 @@ MonoBehaviour:
   - {fileID: -3141394204225233634}
   - {fileID: 223367004636988301}
   - {fileID: 6839151182010987822}
+  - {fileID: -6434775375886255418}
+  - {fileID: -1928643957594734990}
+  - {fileID: -175156510684774086}
+  - {fileID: -3948996792581942915}
+  - {fileID: 6236809886025107073}
   newNodeOffset: {x: 250, y: 0}
 --- !u!114 &223367004636988301
 MonoBehaviour:
@@ -207,8 +323,8 @@ MonoBehaviour:
   - 5f28ccc1-ed16-4bc8-85c3-945f76b490b9
   rect:
     serializedVersion: 2
-    x: 1634
-    y: 347
+    x: 1632
+    y: 431
     width: 250
     height: 100
   onBeginAction: 
@@ -234,8 +350,8 @@ MonoBehaviour:
   - f8ba8d41-9f47-45bf-80ae-edc4c938c6d3
   rect:
     serializedVersion: 2
-    x: 1013
-    y: 277
+    x: 1015
+    y: 451
     width: 250
     height: 100
   onBeginAction: 
@@ -261,8 +377,36 @@ MonoBehaviour:
   - 23a365e8-d59c-4308-a449-772e820f1865
   rect:
     serializedVersion: 2
-    x: 379
-    y: 337
+    x: 378
+    y: 437
+    width: 250
+    height: 100
+  onBeginAction: 
+  onExitAction: 
+  condition:
+    predicate: '!HasQuest'
+    parameters:
+    - MarketMadness
+--- !u!114 &6236809886025107073
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c12b9ff7e20c77b478d3f6f94022d2eb, type: 3}
+  m_Name: 07c40011-83b7-4509-895c-04e9b33c1535
+  m_EditorClassIdentifier: 
+  isPlayerSpeaking: 0
+  text: Well please keep looking, I'm sure is exploring one of those dangerous caves
+    littered around this island right now.
+  children: []
+  rect:
+    serializedVersion: 2
+    x: 1110
+    y: 179
     width: 250
     height: 100
   onBeginAction: 
@@ -287,6 +431,7 @@ MonoBehaviour:
   children:
   - d1a386e1-d1d7-4838-af78-7bc3671ad293
   - 3b4f9fd5-d6aa-46c5-98a6-c34f0869ea57
+  - b5c083e1-022e-4ad8-b595-250b4b1f7197
   rect:
     serializedVersion: 2
     x: 56
@@ -315,8 +460,8 @@ MonoBehaviour:
   children: []
   rect:
     serializedVersion: 2
-    x: 1984
-    y: 447
+    x: 1897
+    y: 547
     width: 250
     height: 100
   onBeginAction: 
@@ -344,8 +489,8 @@ MonoBehaviour:
   - b41fa0cf-9132-4e17-bfa9-92460f2aa5ea
   rect:
     serializedVersion: 2
-    x: 1327
-    y: 265
+    x: 1329
+    y: 451
     width: 250
     height: 100
   onBeginAction: 
