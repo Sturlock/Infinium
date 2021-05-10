@@ -20,8 +20,8 @@ MonoBehaviour:
   - 06c8e909-81f9-4324-9db2-0457c211c949
   rect:
     serializedVersion: 2
-    x: 1946
-    y: 228
+    x: 1952
+    y: 217
     width: 250
     height: 100
   onBeginAction: 
@@ -100,8 +100,8 @@ MonoBehaviour:
   - 5cb871bd-9820-45fc-84e2-b5de880535eb
   rect:
     serializedVersion: 2
-    x: 2811
-    y: 213
+    x: 2828
+    y: 215
     width: 250
     height: 100
   onBeginAction: 
@@ -122,15 +122,15 @@ MonoBehaviour:
   m_Name: 8f6f193c-d067-4337-92b2-e53eb8b4c1d9
   m_EditorClassIdentifier: 
   isPlayerSpeaking: 0
-  text: Well I'm currently cleaning my house. If I find anything you might like its
+  text: Well I'm currently cleaning my house. If I find anything you might like it's
     yours. Not to mention you'll get a slice of apple crumble.
   children:
   - d98e706f-e7a9-40c2-b966-d09c549d9484
   - 9395c3c1-10af-4925-9bed-8108c5e7c5ba
   rect:
     serializedVersion: 2
-    x: 2543
-    y: 317
+    x: 2547
+    y: 298
     width: 250
     height: 100
   onBeginAction: 
@@ -152,13 +152,13 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   isPlayerSpeaking: 0
   text: Well you see, I was thinking about baking something delicious, the only thing
-    is I missing some apples!
+    I'm missing are some apples!
   children:
   - cea5f736-6ad1-4b59-8ba5-f6da361f370c
   rect:
     serializedVersion: 2
-    x: 1369
-    y: 149
+    x: 1394
+    y: 217
     width: 250
     height: 100
   onBeginAction: 
@@ -206,14 +206,14 @@ MonoBehaviour:
   m_Name: 6213fcee-a518-4696-ae97-58ec89f0bc2e
   m_EditorClassIdentifier: 
   isPlayerSpeaking: 0
-  text: Hello there sunshine, I don't suppose you could help your grandmother?
+  text: Hello there sunshine, I don't suppose you could help your Grandmother?
   children:
   - 44f9b966-38ee-45b6-9fbd-cc1d1fb87995
   - 04708f27-04b2-411e-bd98-9d6e3e736f60
   - d2485c5e-d450-4660-9182-fa7e3c983b3e
   rect:
     serializedVersion: 2
-    x: 19
+    x: 15
     y: 396
     width: 250
     height: 100
@@ -324,13 +324,13 @@ MonoBehaviour:
   m_Name: af4e518a-706b-4fa1-aa63-5a25f3d91ad0
   m_EditorClassIdentifier: 
   isPlayerSpeaking: 0
-  text: Well I be! You certainly know how to disapoint an old woman. Be off with
+  text: Well I be! You certainly know how to disappoint an old woman. Be off with
     you then.
   children: []
   rect:
     serializedVersion: 2
-    x: 3166
-    y: 550
+    x: 3170
+    y: 622
     width: 250
     height: 100
   onBeginAction: 
@@ -351,13 +351,13 @@ MonoBehaviour:
   m_Name: d98e706f-e7a9-40c2-b966-d09c549d9484
   m_EditorClassIdentifier: 
   isPlayerSpeaking: 1
-  text: All this for an antique and tart? No thank you.
+  text: All this for an antique and tart? No thankyou.
   children:
   - af4e518a-706b-4fa1-aa63-5a25f3d91ad0
   rect:
     serializedVersion: 2
-    x: 2843
-    y: 401
+    x: 2848
+    y: 408
     width: 250
     height: 100
   onBeginAction: 
@@ -384,8 +384,8 @@ MonoBehaviour:
   - ad650c7a-fab3-40a0-bb85-c69922cccf4d
   rect:
     serializedVersion: 2
-    x: 1666
-    y: 85
+    x: 1680
+    y: 217
     width: 250
     height: 100
   onBeginAction: 
@@ -411,8 +411,8 @@ MonoBehaviour:
   - af4e518a-706b-4fa1-aa63-5a25f3d91ad0
   rect:
     serializedVersion: 2
-    x: 2201
-    y: 420
+    x: 2230
+    y: 433
     width: 250
     height: 100
   onBeginAction: 
@@ -465,8 +465,8 @@ MonoBehaviour:
   - 37222f90-e68d-42e8-be40-d00beaf34a65
   rect:
     serializedVersion: 2
-    x: 1054
-    y: 211
+    x: 852
+    y: 206
     width: 250
     height: 100
   onBeginAction: 
@@ -492,8 +492,8 @@ MonoBehaviour:
   - 8f6f193c-d067-4337-92b2-e53eb8b4c1d9
   rect:
     serializedVersion: 2
-    x: 2243
-    y: 257
+    x: 2264
+    y: 291
     width: 250
     height: 100
   onBeginAction: 
@@ -519,8 +519,8 @@ MonoBehaviour:
   - 5cb871bd-9820-45fc-84e2-b5de880535eb
   rect:
     serializedVersion: 2
-    x: 2229
-    y: 117
+    x: 2223
+    y: 166
     width: 250
     height: 100
   onBeginAction: 
@@ -547,7 +547,7 @@ MonoBehaviour:
   rect:
     serializedVersion: 2
     x: 1086
-    y: 330
+    y: 310
     width: 250
     height: 100
   onBeginAction: 

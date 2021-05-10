@@ -1,0 +1,585 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &-6918970158100455066
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c12b9ff7e20c77b478d3f6f94022d2eb, type: 3}
+  m_Name: da451cda-738e-4797-b6f5-b3cd9e77adcd
+  m_EditorClassIdentifier: 
+  isPlayerSpeaking: 1
+  text: They're all useless junk anyway.
+  children:
+  - 1d2feabf-4af6-4a41-9dca-9d16560a1268
+  rect:
+    serializedVersion: 2
+    x: 1005
+    y: 363
+    width: 250
+    height: 100
+  onBeginAction: 
+  onExitAction: 
+  condition:
+    predicate: 
+    parameters: []
+--- !u!114 &-6207354801194243385
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c12b9ff7e20c77b478d3f6f94022d2eb, type: 3}
+  m_Name: 33efcec1-f49a-4abe-aee7-8ac36b5cdbfb
+  m_EditorClassIdentifier: 
+  isPlayerSpeaking: 0
+  text: Well then, I believe our conversation is over, Good day to you.
+  children: []
+  rect:
+    serializedVersion: 2
+    x: 3145
+    y: 385
+    width: 250
+    height: 100
+  onBeginAction: 
+  onExitAction: 
+  condition:
+    predicate: 
+    parameters: []
+--- !u!114 &-6197101267240945981
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c12b9ff7e20c77b478d3f6f94022d2eb, type: 3}
+  m_Name: 814f9800-ef33-4f39-98ca-12a2b7a9f1d2
+  m_EditorClassIdentifier: 
+  isPlayerSpeaking: 1
+  text: Try me.
+  children:
+  - 9e4f22cb-309f-40a0-85f8-66c88f92a885
+  rect:
+    serializedVersion: 2
+    x: 1002
+    y: 242
+    width: 250
+    height: 100
+  onBeginAction: 
+  onExitAction: 
+  condition:
+    predicate: 
+    parameters: []
+--- !u!114 &-5677391062133637492
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c12b9ff7e20c77b478d3f6f94022d2eb, type: 3}
+  m_Name: 515a6c5a-097d-4277-b63f-03403e958eeb
+  m_EditorClassIdentifier: 
+  isPlayerSpeaking: 0
+  text: I have quite a few items of considerable value. They are all far beyond what
+    you can pay I'm sure.
+  children:
+  - 814f9800-ef33-4f39-98ca-12a2b7a9f1d2
+  - da451cda-738e-4797-b6f5-b3cd9e77adcd
+  rect:
+    serializedVersion: 2
+    x: 714
+    y: 283
+    width: 250
+    height: 100
+  onBeginAction: 
+  onExitAction: 
+  condition:
+    predicate: 
+    parameters: []
+--- !u!114 &-3461558642132301819
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c12b9ff7e20c77b478d3f6f94022d2eb, type: 3}
+  m_Name: db9b3aa9-0b67-4fe8-ab5b-6a31c71bf85d
+  m_EditorClassIdentifier: 
+  isPlayerSpeaking: 1
+  text: I'm not doing your dirty work
+  children:
+  - 33efcec1-f49a-4abe-aee7-8ac36b5cdbfb
+  rect:
+    serializedVersion: 2
+    x: 2219
+    y: 312
+    width: 250
+    height: 100
+  onBeginAction: 
+  onExitAction: 
+  condition:
+    predicate: 
+    parameters: []
+--- !u!114 &-2971146413465368194
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c12b9ff7e20c77b478d3f6f94022d2eb, type: 3}
+  m_Name: f562622f-ff9e-4010-bcdf-7187cf47bff8
+  m_EditorClassIdentifier: 
+  isPlayerSpeaking: 1
+  text: All the items you sell are trash.
+  children:
+  - 1d2feabf-4af6-4a41-9dca-9d16560a1268
+  rect:
+    serializedVersion: 2
+    x: 403
+    y: 386
+    width: 250
+    height: 100
+  onBeginAction: 
+  onExitAction: 
+  condition:
+    predicate: 
+    parameters: []
+--- !u!114 &-2760483997721732194
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c12b9ff7e20c77b478d3f6f94022d2eb, type: 3}
+  m_Name: 3c33e6df-6054-4578-a964-f3924cadc0be
+  m_EditorClassIdentifier: 
+  isPlayerSpeaking: 1
+  text: Alright then, I'll just head out
+  children:
+  - 5681e59d-0170-45f4-9ecb-7f0c9f178cbc
+  rect:
+    serializedVersion: 2
+    x: 2819
+    y: 159
+    width: 250
+    height: 100
+  onBeginAction: 
+  onExitAction: 
+  condition:
+    predicate: 
+    parameters: []
+--- !u!114 &-1878144589925662896
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c12b9ff7e20c77b478d3f6f94022d2eb, type: 3}
+  m_Name: 1d2feabf-4af6-4a41-9dca-9d16560a1268
+  m_EditorClassIdentifier: 
+  isPlayerSpeaking: 0
+  text: If you're going to be rude, you can take it elsewhere. Good day to you.
+  children: []
+  rect:
+    serializedVersion: 2
+    x: 1926
+    y: 500
+    width: 250
+    height: 100
+  onBeginAction: 
+  onExitAction: 
+  condition:
+    predicate: 
+    parameters: []
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f1e1761072c2d9e48acf0d38f54a64c5, type: 3}
+  m_Name: ThingsIDoForApples
+  m_EditorClassIdentifier: 
+  nodes:
+  - {fileID: 5461667829746544556}
+  - {fileID: 754845785261116723}
+  - {fileID: 8566091269438240117}
+  - {fileID: -2971146413465368194}
+  - {fileID: -1878144589925662896}
+  - {fileID: -5677391062133637492}
+  - {fileID: -6197101267240945981}
+  - {fileID: -6918970158100455066}
+  - {fileID: 3850048751421400424}
+  - {fileID: 1226313050461816622}
+  - {fileID: 3994229317362205742}
+  - {fileID: 5037592257673723819}
+  - {fileID: 3504267787601335905}
+  - {fileID: 7155446585262917600}
+  - {fileID: -3461558642132301819}
+  - {fileID: -6207354801194243385}
+  - {fileID: 5334028410271682291}
+  - {fileID: 8571010262579464348}
+  - {fileID: -2760483997721732194}
+  - {fileID: 8428870295561986366}
+  newNodeOffset: {x: 250, y: 0}
+--- !u!114 &754845785261116723
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c12b9ff7e20c77b478d3f6f94022d2eb, type: 3}
+  m_Name: f81e06b3-da54-45a0-9c93-129a59a6245d
+  m_EditorClassIdentifier: 
+  isPlayerSpeaking: 1
+  text: Hey do you have any apples?
+  children:
+  - cfc6d026-8964-49e6-a2a3-53a43c1f350d
+  rect:
+    serializedVersion: 2
+    x: 1531
+    y: 64
+    width: 250
+    height: 100
+  onBeginAction: 
+  onExitAction: 
+  condition:
+    predicate: 
+    parameters: []
+--- !u!114 &1226313050461816622
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c12b9ff7e20c77b478d3f6f94022d2eb, type: 3}
+  m_Name: 79c7b599-1495-4ff3-ba14-19ef14fefd68
+  m_EditorClassIdentifier: 
+  isPlayerSpeaking: 1
+  text: Uh, yeah, Do you sell any apples?
+  children:
+  - cfc6d026-8964-49e6-a2a3-53a43c1f350d
+  rect:
+    serializedVersion: 2
+    x: 1579
+    y: 199
+    width: 250
+    height: 100
+  onBeginAction: 
+  onExitAction: 
+  condition:
+    predicate: 
+    parameters: []
+--- !u!114 &3504267787601335905
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c12b9ff7e20c77b478d3f6f94022d2eb, type: 3}
+  m_Name: 2df6998c-d5b8-4c1b-b581-8ab7334371ca
+  m_EditorClassIdentifier: 
+  isPlayerSpeaking: 1
+  text: Sure, I could do that
+  children:
+  - 5681e59d-0170-45f4-9ecb-7f0c9f178cbc
+  rect:
+    serializedVersion: 2
+    x: 2250
+    y: 72
+    width: 250
+    height: 100
+  onBeginAction: 
+  onExitAction: 
+  condition:
+    predicate: 
+    parameters: []
+--- !u!114 &3850048751421400424
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c12b9ff7e20c77b478d3f6f94022d2eb, type: 3}
+  m_Name: 9e4f22cb-309f-40a0-85f8-66c88f92a885
+  m_EditorClassIdentifier: 
+  isPlayerSpeaking: 0
+  text: Ha, nice try friend, ask me again when you're no longer wearing rags for
+    clothes. If there anything else I can do for you, buddy?
+  children:
+  - 79c7b599-1495-4ff3-ba14-19ef14fefd68
+  - 725203aa-291b-484e-9f87-5dbf1502c807
+  rect:
+    serializedVersion: 2
+    x: 1287
+    y: 243
+    width: 250
+    height: 100
+  onBeginAction: 
+  onExitAction: 
+  condition:
+    predicate: 
+    parameters: []
+--- !u!114 &3994229317362205742
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c12b9ff7e20c77b478d3f6f94022d2eb, type: 3}
+  m_Name: 725203aa-291b-484e-9f87-5dbf1502c807
+  m_EditorClassIdentifier: 
+  isPlayerSpeaking: 1
+  text: With an attitude like that, I'm surprised you still get customers.
+  children:
+  - 1d2feabf-4af6-4a41-9dca-9d16560a1268
+  rect:
+    serializedVersion: 2
+    x: 1594
+    y: 346
+    width: 250
+    height: 100
+  onBeginAction: 
+  onExitAction: 
+  condition:
+    predicate: 
+    parameters: []
+--- !u!114 &5037592257673723819
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c12b9ff7e20c77b478d3f6f94022d2eb, type: 3}
+  m_Name: cfc6d026-8964-49e6-a2a3-53a43c1f350d
+  m_EditorClassIdentifier: 
+  isPlayerSpeaking: 0
+  text: Unfortunatly no, my last shipment of apples has not arrived, if you'd like
+    you could go out to Tarsier's Beacon to pick them up?
+  children:
+  - 2df6998c-d5b8-4c1b-b581-8ab7334371ca
+  - 3d3d96ed-a32a-49d1-9882-25cd85977fa6
+  - db9b3aa9-0b67-4fe8-ab5b-6a31c71bf85d
+  rect:
+    serializedVersion: 2
+    x: 1950
+    y: 96
+    width: 250
+    height: 100
+  onBeginAction: 
+  onExitAction: 
+  condition:
+    predicate: 
+    parameters: []
+--- !u!114 &5334028410271682291
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c12b9ff7e20c77b478d3f6f94022d2eb, type: 3}
+  m_Name: 8f426623-747a-411f-ab9e-fa13622ddf4c
+  m_EditorClassIdentifier: 
+  isPlayerSpeaking: 0
+  text: Of Course, I always pay my helpers, I'll also throw in a couple of apples
+    since you wanted them in the first place.
+  children:
+  - 3c33e6df-6054-4578-a964-f3924cadc0be
+  - c74f0526-8121-4c43-9f63-ff665cde2cd7
+  rect:
+    serializedVersion: 2
+    x: 2532
+    y: 190
+    width: 250
+    height: 100
+  onBeginAction: 
+  onExitAction: 
+  condition:
+    predicate: 
+    parameters: []
+--- !u!114 &5461667829746544556
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c12b9ff7e20c77b478d3f6f94022d2eb, type: 3}
+  m_Name: 3fe08517-f709-43d3-a140-6ac25ed2fec4
+  m_EditorClassIdentifier: 
+  isPlayerSpeaking: 0
+  text: Hello there friend, what can I do for you this fine afternoon?
+  children:
+  - f81e06b3-da54-45a0-9c93-129a59a6245d
+  - 580d69ce-0274-47e3-97bf-2fe81985c531
+  - f562622f-ff9e-4010-bcdf-7187cf47bff8
+  rect:
+    serializedVersion: 2
+    x: 43
+    y: 298
+    width: 250
+    height: 100
+  onBeginAction: 
+  onExitAction: 
+  condition:
+    predicate: 
+    parameters: []
+--- !u!114 &7155446585262917600
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c12b9ff7e20c77b478d3f6f94022d2eb, type: 3}
+  m_Name: 3d3d96ed-a32a-49d1-9882-25cd85977fa6
+  m_EditorClassIdentifier: 
+  isPlayerSpeaking: 1
+  text: Will I get paid?
+  children:
+  - 8f426623-747a-411f-ab9e-fa13622ddf4c
+  rect:
+    serializedVersion: 2
+    x: 2247
+    y: 169
+    width: 250
+    height: 100
+  onBeginAction: 
+  onExitAction: 
+  condition:
+    predicate: 
+    parameters: []
+--- !u!114 &8428870295561986366
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c12b9ff7e20c77b478d3f6f94022d2eb, type: 3}
+  m_Name: c74f0526-8121-4c43-9f63-ff665cde2cd7
+  m_EditorClassIdentifier: 
+  isPlayerSpeaking: 1
+  text: Nah, I'm not interested, thanks.
+  children:
+  - 33efcec1-f49a-4abe-aee7-8ac36b5cdbfb
+  rect:
+    serializedVersion: 2
+    x: 2814
+    y: 286
+    width: 250
+    height: 100
+  onBeginAction: 
+  onExitAction: 
+  condition:
+    predicate: 
+    parameters: []
+--- !u!114 &8566091269438240117
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c12b9ff7e20c77b478d3f6f94022d2eb, type: 3}
+  m_Name: 580d69ce-0274-47e3-97bf-2fe81985c531
+  m_EditorClassIdentifier: 
+  isPlayerSpeaking: 1
+  text: Do you sell anything valuable?
+  children:
+  - 515a6c5a-097d-4277-b63f-03403e958eeb
+  rect:
+    serializedVersion: 2
+    x: 410
+    y: 282
+    width: 250
+    height: 100
+  onBeginAction: 
+  onExitAction: 
+  condition:
+    predicate: 
+    parameters: []
+--- !u!114 &8571010262579464348
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c12b9ff7e20c77b478d3f6f94022d2eb, type: 3}
+  m_Name: 5681e59d-0170-45f4-9ecb-7f0c9f178cbc
+  m_EditorClassIdentifier: 
+  isPlayerSpeaking: 0
+  text: Fantastic! Return to me once you've got the apples and I'll definitely pay
+    you back.
+  children: []
+  rect:
+    serializedVersion: 2
+    x: 3116
+    y: 48
+    width: 250
+    height: 100
+  onBeginAction: 
+  onExitAction: QuestComplete
+  condition:
+    predicate: 
+    parameters: []
