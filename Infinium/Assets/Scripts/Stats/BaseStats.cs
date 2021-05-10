@@ -13,7 +13,7 @@ namespace Infinium.Stats
 
         void Update()
         {
-			print(GetLevel());
+			//print(GetLevel());
         }
         public float GetStat(Stat stat)
         {

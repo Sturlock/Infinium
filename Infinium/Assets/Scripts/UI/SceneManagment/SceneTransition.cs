@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.Audio;
 using UnityEngine.SceneManagement;
+using UnityEngine.UI;
 
 namespace Infinium.SceneManagement
 {
@@ -12,12 +13,24 @@ namespace Infinium.SceneManagement
 	    public int scene = 0;
 	    public float fadeTime = 1f;
 	    public AudioMixer AM;
-	
-	    void Start()
+		SavingWrapper savingWrapper;
+		[SerializeField] Button save, load, newGame, continueGame, exit;
+
+		void Start()
 	    {
 	        StartCoroutine(FadeMixerGroup.StartFade(AM, "MainMaster", fadeTime, 100f));
 	        scene = SceneManager.GetActiveScene().buildIndex;
-	    }
+			savingWrapper = FindObjectOfType<SavingWrapper>();
+			if (scene == 1)
+			{
+                save = GameObject.FindGameObjectWithTag("Save").GetComponent<Button>();
+                load = GameObject.FindGameObjectWithTag("Load").GetComponent<Button>();
+
+                save.onClick.AddListener(() => savingWrapper.Save());
+                load.onClick.AddListener(() => savingWrapper.Load());
+            }
+            
+        }
 	    #region Getters
 	    public Animator GetAnimator()
 	    {
@@ -31,9 +44,14 @@ namespace Infinium.SceneManagement
 	    {
 	        return AM;
 	    }
-	
-	    #endregion
-	    public void onClick()
+
+        #endregion
+
+        void Update()
+        {
+			
+        }
+        public void onClick()
 	    {
 	        Transition();
 	    }
@@ -42,20 +60,33 @@ namespace Infinium.SceneManagement
 	    {
 	        if (scene == 0)
 	        {
-	            scene = 1;
+                try
+                {
+                    newGame.interactable = false;
+                }
+                catch (System.Exception ex)
+                {
+                }
+
+                scene = 1;
 	            StartCoroutine(LoadLevel(scene));
 	        }
 	        else
 	        {
-	            scene = 0;
+                try
+                {
+                    exit.interactable = false;
+                }
+                catch (System.Exception ex)
+                {
+                }
+                scene = 0;
 	            StartCoroutine(LoadLevel(scene));
 	        }
 	    }
 	
 	    IEnumerator LoadLevel(int sceneIndex)
 	    {
-	        
-	        SavingWrapper savingWrapper = FindObjectOfType<SavingWrapper>();
 	        fade.SetTrigger("Start");
 	        StartCoroutine(FadeMixerGroup.StartFade(AM,"MainMaster", fadeTime, 0f));
 	        

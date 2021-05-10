@@ -90,7 +90,7 @@ public class Transition : MonoBehaviour
         Test ts = GameObject.FindObjectOfType<Test>();
         bool inRadius = ts.GetInRange();
 
-        Debug.Log(inRadius);
+        //Debug.Log(inRadius);
 
         if (inRadius && (controllingShip && Input.GetKeyDown(KeyCode.E)))
         {

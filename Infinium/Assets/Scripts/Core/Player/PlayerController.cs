@@ -77,7 +77,7 @@ public class PlayerController : MonoBehaviour, ISaveable
             Vector2 inputDir = LookRotation();
 
             running = Input.GetKey(KeyCode.LeftShift);
-            print("Running is " + running);
+            //print("Running is " + running);
             
             targetSpeed = ((running && stamina.GetStamina() > 0) ? runSpeed : walkSpeed) * inputDir.magnitude;
             currentSpeed = Mathf.SmoothDamp(currentSpeed, targetSpeed, ref speedSmoothVelocity, speedSmoothTime);
