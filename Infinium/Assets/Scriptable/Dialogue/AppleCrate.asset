@@ -1,6 +1,6 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
---- !u!114 &-4934950923554008651
+--- !u!114 &-4691680727298712289
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -10,15 +10,15 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: c12b9ff7e20c77b478d3f6f94022d2eb, type: 3}
-  m_Name: d3ff6149-b712-4212-9290-7f8996c0ad8c
+  m_Name: f344efed-fc05-4264-8e8a-f11709e1162c
   m_EditorClassIdentifier: 
   isPlayerSpeaking: 0
-  text: You found the Apple Shipment for the vendor.
+  text: You Found the Apple Crate Shippment for the Vendor!
   children: []
   rect:
     serializedVersion: 2
-    x: 101
-    y: 163
+    x: 70
+    y: 125
     width: 250
     height: 100
   onBeginAction: 
@@ -39,5 +39,5 @@ MonoBehaviour:
   m_Name: AppleCrate
   m_EditorClassIdentifier: 
   nodes:
-  - {fileID: 0}
+  - {fileID: -4691680727298712289}
   newNodeOffset: {x: 250, y: 0}

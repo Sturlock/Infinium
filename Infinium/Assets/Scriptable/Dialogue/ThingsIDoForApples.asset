@@ -18,8 +18,8 @@ MonoBehaviour:
   - 1d2feabf-4af6-4a41-9dca-9d16560a1268
   rect:
     serializedVersion: 2
-    x: 1005
-    y: 363
+    x: 1003
+    y: 299
     width: 250
     height: 100
   onBeginAction: 
@@ -71,8 +71,8 @@ MonoBehaviour:
   - 9e4f22cb-309f-40a0-85f8-66c88f92a885
   rect:
     serializedVersion: 2
-    x: 1002
-    y: 242
+    x: 991
+    y: 186
     width: 250
     height: 100
   onBeginAction: 
@@ -100,8 +100,8 @@ MonoBehaviour:
   - da451cda-738e-4797-b6f5-b3cd9e77adcd
   rect:
     serializedVersion: 2
-    x: 714
-    y: 283
+    x: 660
+    y: 219
     width: 250
     height: 100
   onBeginAction: 
@@ -127,8 +127,8 @@ MonoBehaviour:
   - 33efcec1-f49a-4abe-aee7-8ac36b5cdbfb
   rect:
     serializedVersion: 2
-    x: 2219
-    y: 312
+    x: 2253
+    y: 290
     width: 250
     height: 100
   onBeginAction: 
@@ -154,8 +154,8 @@ MonoBehaviour:
   - 1d2feabf-4af6-4a41-9dca-9d16560a1268
   rect:
     serializedVersion: 2
-    x: 403
-    y: 386
+    x: 374
+    y: 358
     width: 250
     height: 100
   onBeginAction: 
@@ -351,8 +351,8 @@ MonoBehaviour:
   - 725203aa-291b-484e-9f87-5dbf1502c807
   rect:
     serializedVersion: 2
-    x: 1287
-    y: 243
+    x: 1296
+    y: 224
     width: 250
     height: 100
   onBeginAction: 
@@ -466,8 +466,8 @@ MonoBehaviour:
   - f562622f-ff9e-4010-bcdf-7187cf47bff8
   rect:
     serializedVersion: 2
-    x: 43
-    y: 298
+    x: 10
+    y: 285
     width: 250
     height: 100
   onBeginAction: 
@@ -520,8 +520,8 @@ MonoBehaviour:
   - 33efcec1-f49a-4abe-aee7-8ac36b5cdbfb
   rect:
     serializedVersion: 2
-    x: 2814
-    y: 286
+    x: 2810
+    y: 276
     width: 250
     height: 100
   onBeginAction: 
@@ -547,15 +547,16 @@ MonoBehaviour:
   - 515a6c5a-097d-4277-b63f-03403e958eeb
   rect:
     serializedVersion: 2
-    x: 410
-    y: 282
+    x: 374
+    y: 218
     width: 250
     height: 100
   onBeginAction: 
   onExitAction: 
   condition:
     predicate: 
-    parameters: []
+    parameters:
+    - 
 --- !u!114 &8571010262579464348
 MonoBehaviour:
   m_ObjectHideFlags: 0

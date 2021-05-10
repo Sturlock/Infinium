@@ -20,8 +20,8 @@ MonoBehaviour:
   - 06c8e909-81f9-4324-9db2-0457c211c949
   rect:
     serializedVersion: 2
-    x: 1952
-    y: 217
+    x: 1955
+    y: 415
     width: 250
     height: 100
   onBeginAction: 
@@ -47,8 +47,8 @@ MonoBehaviour:
   - 867595d3-8c2b-4a40-bcca-6b5bc6cdfbb9
   rect:
     serializedVersion: 2
-    x: 522
-    y: 200
+    x: 478
+    y: 406
     width: 250
     height: 100
   onBeginAction: 
@@ -97,11 +97,13 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   isPlayerSpeaking: 0
   text: Oh! You're back already, Have you got the apples?
-  children: []
+  children:
+  - 9ead2d9a-d293-4aba-a3f4-bde295e9f3de
+  - 05f56d07-130d-428a-94c1-8a7b3fcb862f
   rect:
     serializedVersion: 2
-    x: 443
-    y: 60
+    x: 445
+    y: 134
     width: 250
     height: 100
   onBeginAction: 
@@ -185,8 +187,8 @@ MonoBehaviour:
   - cea5f736-6ad1-4b59-8ba5-f6da361f370c
   rect:
     serializedVersion: 2
-    x: 1394
-    y: 217
+    x: 1402
+    y: 449
     width: 250
     height: 100
   onBeginAction: 
@@ -212,8 +214,8 @@ MonoBehaviour:
   - c67b6ec9-8976-4f6d-9f23-6555023d9c1c
   rect:
     serializedVersion: 2
-    x: 484
-    y: 348
+    x: 480
+    y: 504
     width: 250
     height: 100
   onBeginAction: 
@@ -252,6 +254,33 @@ MonoBehaviour:
   condition:
     predicate: 
     parameters: []
+--- !u!114 &-3790713031909986847
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c12b9ff7e20c77b478d3f6f94022d2eb, type: 3}
+  m_Name: 9ead2d9a-d293-4aba-a3f4-bde295e9f3de
+  m_EditorClassIdentifier: 
+  isPlayerSpeaking: 1
+  text: Yep, Here they are!
+  children:
+  - a6f61263-c366-4a73-b79d-8c4adbdc81fb
+  rect:
+    serializedVersion: 2
+    x: 729
+    y: 23
+    width: 250
+    height: 100
+  onBeginAction: 
+  onExitAction: 
+  condition:
+    predicate: 
+    parameters: []
 --- !u!114 &-3734063752497818825
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -270,8 +299,62 @@ MonoBehaviour:
   - af4e518a-706b-4fa1-aa63-5a25f3d91ad0
   rect:
     serializedVersion: 2
-    x: 1079
-    y: 450
+    x: 1084
+    y: 558
+    width: 250
+    height: 100
+  onBeginAction: 
+  onExitAction: 
+  condition:
+    predicate: 
+    parameters: []
+--- !u!114 &-2688238091929413345
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c12b9ff7e20c77b478d3f6f94022d2eb, type: 3}
+  m_Name: 05f56d07-130d-428a-94c1-8a7b3fcb862f
+  m_EditorClassIdentifier: 
+  isPlayerSpeaking: 1
+  text: Sorry, Grandma, I haven't been able to find some.
+  children:
+  - 30765a0e-41e2-4b49-8564-120ae20db340
+  rect:
+    serializedVersion: 2
+    x: 730
+    y: 204
+    width: 250
+    height: 100
+  onBeginAction: 
+  onExitAction: 
+  condition:
+    predicate: 
+    parameters: []
+--- !u!114 &-1310402531868347704
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c12b9ff7e20c77b478d3f6f94022d2eb, type: 3}
+  m_Name: 30765a0e-41e2-4b49-8564-120ae20db340
+  m_EditorClassIdentifier: 
+  isPlayerSpeaking: 0
+  text: Well hurry along Dear, otherwise we won't be have something nice to eat for
+    dinner.
+  children: []
+  rect:
+    serializedVersion: 2
+    x: 1050
+    y: 236
     width: 250
     height: 100
   onBeginAction: 
@@ -312,6 +395,12 @@ MonoBehaviour:
   - {fileID: 4202349237013347241}
   - {fileID: -6823129928220636727}
   - {fileID: -7403936803217579651}
+  - {fileID: -3790713031909986847}
+  - {fileID: -2688238091929413345}
+  - {fileID: -1310402531868347704}
+  - {fileID: 5729254993284084460}
+  - {fileID: 7216745336164530073}
+  - {fileID: 2132834071250657373}
   newNodeOffset: {x: 250, y: 0}
 --- !u!114 &450387380656623551
 MonoBehaviour:
@@ -333,8 +422,8 @@ MonoBehaviour:
   - 559faecb-a9ca-4442-b5e5-b7859b8bfc97
   rect:
     serializedVersion: 2
-    x: 770
-    y: 369
+    x: 772
+    y: 547
     width: 250
     height: 100
   onBeginAction: 
@@ -396,6 +485,32 @@ MonoBehaviour:
     predicate: HasQuest
     parameters:
     - Dorothy's Request
+--- !u!114 &2132834071250657373
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c12b9ff7e20c77b478d3f6f94022d2eb, type: 3}
+  m_Name: f64c25c9-b72a-4736-966c-a418bb566e61
+  m_EditorClassIdentifier: 
+  isPlayerSpeaking: 0
+  text: ;)
+  children: []
+  rect:
+    serializedVersion: 2
+    x: 1601
+    y: 75
+    width: 250
+    height: 100
+  onBeginAction: 
+  onExitAction: QuestComplete
+  condition:
+    predicate: 
+    parameters: []
 --- !u!114 &4202349237013347241
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -442,8 +557,36 @@ MonoBehaviour:
   - ad650c7a-fab3-40a0-bb85-c69922cccf4d
   rect:
     serializedVersion: 2
-    x: 1680
-    y: 217
+    x: 1674
+    y: 430
+    width: 250
+    height: 100
+  onBeginAction: 
+  onExitAction: 
+  condition:
+    predicate: 
+    parameters: []
+--- !u!114 &5729254993284084460
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c12b9ff7e20c77b478d3f6f94022d2eb, type: 3}
+  m_Name: a6f61263-c366-4a73-b79d-8c4adbdc81fb
+  m_EditorClassIdentifier: 
+  isPlayerSpeaking: 0
+  text: Splendid, thankyou my dear, while I was cleaning I found you're father's
+    old Sword, here take it, and also have a slice of apple crumble
+  children:
+  - af26d965-21b4-451a-a678-8ad41036d50a
+  rect:
+    serializedVersion: 2
+    x: 1028
+    y: 60
     width: 250
     height: 100
   onBeginAction: 
@@ -496,8 +639,8 @@ MonoBehaviour:
   - af4e518a-706b-4fa1-aa63-5a25f3d91ad0
   rect:
     serializedVersion: 2
-    x: 486
-    y: 510
+    x: 483
+    y: 599
     width: 250
     height: 100
   onBeginAction: 
@@ -506,6 +649,33 @@ MonoBehaviour:
     predicate: '!HasQuest'
     parameters:
     - Dorothy's Request
+--- !u!114 &7216745336164530073
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c12b9ff7e20c77b478d3f6f94022d2eb, type: 3}
+  m_Name: af26d965-21b4-451a-a678-8ad41036d50a
+  m_EditorClassIdentifier: 
+  isPlayerSpeaking: 1
+  text: Wait. You already had apples?
+  children:
+  - f64c25c9-b72a-4736-966c-a418bb566e61
+  rect:
+    serializedVersion: 2
+    x: 1324
+    y: 37
+    width: 250
+    height: 100
+  onBeginAction: 
+  onExitAction: 
+  condition:
+    predicate: 
+    parameters: []
 --- !u!114 &7294988708978390834
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -524,8 +694,8 @@ MonoBehaviour:
   - 37222f90-e68d-42e8-be40-d00beaf34a65
   rect:
     serializedVersion: 2
-    x: 852
-    y: 206
+    x: 773
+    y: 450
     width: 250
     height: 100
   onBeginAction: 
@@ -605,8 +775,8 @@ MonoBehaviour:
   - 37222f90-e68d-42e8-be40-d00beaf34a65
   rect:
     serializedVersion: 2
-    x: 1086
-    y: 310
+    x: 1094
+    y: 463
     width: 250
     height: 100
   onBeginAction: 

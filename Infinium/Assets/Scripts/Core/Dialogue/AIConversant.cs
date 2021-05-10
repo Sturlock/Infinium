@@ -7,7 +7,7 @@ namespace Infinium.Dialogue
         [SerializeField] private string AIName;
         [SerializeField] private Dialogue dialogue = null;
         [SerializeField] private bool near = false;
-        private float radius = 3f;
+        [SerializeField] private float radius = 3f;
         private LayerMask playerLayer;
 
         private void OnDrawGizmosSelected()
