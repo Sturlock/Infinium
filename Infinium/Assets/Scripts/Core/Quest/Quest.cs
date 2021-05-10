@@ -69,7 +69,7 @@ namespace Infinium.Quests
 
         public static Quest GetByName(string questName)
         {
-            foreach (Quest quest in Resources.LoadAll<Quest>(""))
+            foreach (Quest quest in UnityEngine.Resources.LoadAll<Quest>(""))
             {
                 if (quest.name == questName)
                 {

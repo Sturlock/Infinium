@@ -1,4 +1,4 @@
-﻿using Infinium.Core;
+﻿using Infinium.Resources;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;

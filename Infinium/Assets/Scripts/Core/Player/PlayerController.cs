@@ -3,7 +3,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using Infinium.Saving;
-using Infinium.Core;
+using Infinium.Resources;
 
 [RequireComponent(typeof(Rigidbody))]
 public class PlayerController : MonoBehaviour, ISaveable

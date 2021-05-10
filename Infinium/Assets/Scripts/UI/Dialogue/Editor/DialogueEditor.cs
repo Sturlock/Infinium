@@ -98,7 +98,7 @@ namespace Infinium.Dialogue.Editor
                 scrollPos = EditorGUILayout.BeginScrollView(scrollPos);
                 
                 Rect canvas = GUILayoutUtility.GetRect(canvasSize,canvasSize);
-                Texture2D backgroundTex = Resources.Load("background") as Texture2D;
+                Texture2D backgroundTex = UnityEngine.Resources.Load("background") as Texture2D;
                 Rect textCoords = new Rect(0, 0, canvasSize/backgroundSize, canvasSize/backgroundSize);
                 GUI.DrawTextureWithTexCoords(canvas, backgroundTex, textCoords);
                 foreach (DialogueNode node in selectedDialogue.GetAllNodes())
