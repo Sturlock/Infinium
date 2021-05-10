@@ -65,6 +65,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: -6545840006894607928, guid: c19e90cbf60e8b54bb8cd43ff8e7a352, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
     - target: {fileID: -1653557976163144662, guid: c19e90cbf60e8b54bb8cd43ff8e7a352, type: 3}
       propertyPath: m_Materials.Array.data[0]
       value: 
@@ -73,10 +77,18 @@ PrefabInstance:
       propertyPath: m_Name
       value: IslandFinal Variant
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: c19e90cbf60e8b54bb8cd43ff8e7a352, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
     - target: {fileID: 3912677074988046331, guid: c19e90cbf60e8b54bb8cd43ff8e7a352, type: 3}
       propertyPath: m_Materials.Array.data[0]
       value: 
       objectReference: {fileID: 2100000, guid: 4fe01376d9fae354eaa8d4fd03cc77ae, type: 2}
+    - target: {fileID: 4088630099000250744, guid: c19e90cbf60e8b54bb8cd43ff8e7a352, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
     - target: {fileID: 4685345525822031663, guid: c19e90cbf60e8b54bb8cd43ff8e7a352, type: 3}
       propertyPath: m_Materials.Array.data[0]
       value: 
@@ -85,6 +97,14 @@ PrefabInstance:
       propertyPath: m_Materials.Array.data[0]
       value: 
       objectReference: {fileID: 2100000, guid: 4fe01376d9fae354eaa8d4fd03cc77ae, type: 2}
+    - target: {fileID: 6760817564505473027, guid: c19e90cbf60e8b54bb8cd43ff8e7a352, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
+    - target: {fileID: 7797034370549025654, guid: c19e90cbf60e8b54bb8cd43ff8e7a352, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: c19e90cbf60e8b54bb8cd43ff8e7a352, type: 3}
 --- !u!1 &4346938713287353758 stripped

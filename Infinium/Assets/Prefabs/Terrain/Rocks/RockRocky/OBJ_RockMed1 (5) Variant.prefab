@@ -61,7 +61,11 @@ PrefabInstance:
       objectReference: {fileID: 2100000, guid: 4fe01376d9fae354eaa8d4fd03cc77ae, type: 2}
     - target: {fileID: 7216821758619329464, guid: c0107bc050e0f874889be96dbfa63643, type: 3}
       propertyPath: m_Name
-      value: OBJ_RockMed1 (5)
+      value: OBJ_RockMed1 (5) Variant
+      objectReference: {fileID: 0}
+    - target: {fileID: 7216821758619329464, guid: c0107bc050e0f874889be96dbfa63643, type: 3}
+      propertyPath: m_TagString
+      value: Walkable
       objectReference: {fileID: 0}
     - target: {fileID: 7291472947672110066, guid: c0107bc050e0f874889be96dbfa63643, type: 3}
       propertyPath: m_Name
