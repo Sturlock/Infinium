@@ -15,14 +15,13 @@ MonoBehaviour:
   isPlayerSpeaking: 0
   text: Would you be a dear and fetch me some?
   children:
-  - cea5f736-6ad1-4b59-8ba5-f6da361f370c
   - 5fd6b3c2-6caf-4b66-8528-99ced58ef4a4
   - 3966e914-3142-4fbd-a169-340427d63a7a
   - 06c8e909-81f9-4324-9db2-0457c211c949
   rect:
     serializedVersion: 2
-    x: 1934
-    y: 254
+    x: 1946
+    y: 228
     width: 250
     height: 100
   onBeginAction: 
@@ -79,7 +78,7 @@ MonoBehaviour:
     width: 250
     height: 100
   onBeginAction: 
-  onExitAction: 
+  onExitAction: GiveQuest
   condition:
     predicate: 
     parameters: []
@@ -130,8 +129,8 @@ MonoBehaviour:
   - 9395c3c1-10af-4925-9bed-8108c5e7c5ba
   rect:
     serializedVersion: 2
-    x: 2530
-    y: 299
+    x: 2543
+    y: 317
     width: 250
     height: 100
   onBeginAction: 
@@ -155,12 +154,11 @@ MonoBehaviour:
   text: Well you see, I was thinking about baking something delicious, the only thing
     is I missing some apples!
   children:
-  - 867595d3-8c2b-4a40-bcca-6b5bc6cdfbb9
-  - 1cdedc21-24c0-4827-a799-cfc049e3aa7e
+  - cea5f736-6ad1-4b59-8ba5-f6da361f370c
   rect:
     serializedVersion: 2
-    x: 1381
-    y: 251
+    x: 1369
+    y: 149
     width: 250
     height: 100
   onBeginAction: 
@@ -328,13 +326,11 @@ MonoBehaviour:
   isPlayerSpeaking: 0
   text: Well I be! You certainly know how to disapoint an old woman. Be off with
     you then.
-  children:
-  - 3966e914-3142-4fbd-a169-340427d63a7a
-  - d98e706f-e7a9-40c2-b966-d09c549d9484
+  children: []
   rect:
     serializedVersion: 2
-    x: 2919
-    y: 625
+    x: 3166
+    y: 550
     width: 250
     height: 100
   onBeginAction: 
@@ -355,12 +351,13 @@ MonoBehaviour:
   m_Name: d98e706f-e7a9-40c2-b966-d09c549d9484
   m_EditorClassIdentifier: 
   isPlayerSpeaking: 1
-  text: All this for an antique and tart? No thankyou.
-  children: []
+  text: All this for an antique and tart? No thank you.
+  children:
+  - af4e518a-706b-4fa1-aa63-5a25f3d91ad0
   rect:
     serializedVersion: 2
-    x: 2848
-    y: 449
+    x: 2843
+    y: 401
     width: 250
     height: 100
   onBeginAction: 
@@ -384,11 +381,11 @@ MonoBehaviour:
   text: Because of my bad knee its difficult to climb the hill to purchace some apples
     from the market.
   children:
-  - 37222f90-e68d-42e8-be40-d00beaf34a65
+  - ad650c7a-fab3-40a0-bb85-c69922cccf4d
   rect:
     serializedVersion: 2
-    x: 1665
-    y: 251
+    x: 1666
+    y: 85
     width: 250
     height: 100
   onBeginAction: 
@@ -410,11 +407,12 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   isPlayerSpeaking: 1
   text: Really? You can't go get them yourself. Pathetic.
-  children: []
+  children:
+  - af4e518a-706b-4fa1-aa63-5a25f3d91ad0
   rect:
     serializedVersion: 2
-    x: 2230
-    y: 433
+    x: 2201
+    y: 420
     width: 250
     height: 100
   onBeginAction: 
@@ -463,11 +461,12 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   isPlayerSpeaking: 0
   text: I knew you were my favourite grandchild for a reason.
-  children: []
+  children:
+  - 37222f90-e68d-42e8-be40-d00beaf34a65
   rect:
     serializedVersion: 2
-    x: 1047
-    y: 212
+    x: 1054
+    y: 211
     width: 250
     height: 100
   onBeginAction: 
@@ -493,8 +492,8 @@ MonoBehaviour:
   - 8f6f193c-d067-4337-92b2-e53eb8b4c1d9
   rect:
     serializedVersion: 2
-    x: 2223
-    y: 298
+    x: 2243
+    y: 257
     width: 250
     height: 100
   onBeginAction: 
@@ -520,8 +519,8 @@ MonoBehaviour:
   - 5cb871bd-9820-45fc-84e2-b5de880535eb
   rect:
     serializedVersion: 2
-    x: 2223
-    y: 166
+    x: 2229
+    y: 117
     width: 250
     height: 100
   onBeginAction: 
@@ -543,11 +542,12 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   isPlayerSpeaking: 1
   text: What do you need help with?
-  children: []
+  children:
+  - 37222f90-e68d-42e8-be40-d00beaf34a65
   rect:
     serializedVersion: 2
-    x: 1073
-    y: 333
+    x: 1086
+    y: 330
     width: 250
     height: 100
   onBeginAction: 

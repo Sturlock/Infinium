@@ -63,7 +63,7 @@ namespace Infinium.Core
         }
         public void RestoreState(object state)
         {
-            stamaina = (int)state;
+            stamaina = (float)state;
 			StartCoroutine(RegenStamina());
         }
     }
