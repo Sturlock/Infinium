@@ -14,7 +14,7 @@ GameObject:
   - component: {fileID: 9106835102083225214}
   m_Layer: 0
   m_Name: Crate 1
-  m_TagString: Untagged
+  m_TagString: Walkable
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -151,6 +151,10 @@ PrefabInstance:
     - target: {fileID: 7828723078817845766, guid: fec5577bcb01a3e4c871e0d0ffc6fcf0, type: 3}
       propertyPath: m_Name
       value: Cover
+      objectReference: {fileID: 0}
+    - target: {fileID: 7828723078817845766, guid: fec5577bcb01a3e4c871e0d0ffc6fcf0, type: 3}
+      propertyPath: m_TagString
+      value: Walkable
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: fec5577bcb01a3e4c871e0d0ffc6fcf0, type: 3}

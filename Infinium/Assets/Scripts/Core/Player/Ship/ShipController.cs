@@ -134,13 +134,13 @@ public class ShipController : MonoBehaviour
 
             #region Camera Distance
             if (noSail)
-                tPCC.dstFromTarget = 6f;
+                tPCC.dstFromTarget = 35f;
             if (sailOne)
-                tPCC.dstFromTarget = 8f;
+                tPCC.dstFromTarget = 37f;
             if (sailTwo)
-                tPCC.dstFromTarget = 15f;
-            if (sailTravel)
                 tPCC.dstFromTarget = 40f;
+            if (sailTravel)
+                tPCC.dstFromTarget = 45f;
             #endregion
         }
         #region Gears Speeds

@@ -9,7 +9,11 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 1712335848990803912, guid: fbc09ffa8da9cc24bb847e0f4312f48a, type: 3}
       propertyPath: m_Name
-      value: OBJ_RockStairs1 (2)
+      value: OBJ_RockStairs1 (2) Variant
+      objectReference: {fileID: 0}
+    - target: {fileID: 1712335848990803912, guid: fbc09ffa8da9cc24bb847e0f4312f48a, type: 3}
+      propertyPath: m_TagString
+      value: Walkable
       objectReference: {fileID: 0}
     - target: {fileID: 2056070033396981106, guid: fbc09ffa8da9cc24bb847e0f4312f48a, type: 3}
       propertyPath: m_RootOrder
