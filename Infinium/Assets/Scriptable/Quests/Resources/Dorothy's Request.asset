@@ -13,11 +13,16 @@ MonoBehaviour:
   m_Name: Dorothy's Request
   m_EditorClassIdentifier: 
   objectives:
-  - reference: Get some Appless
-    description: Dorothy has a bad knee and would like you to get some apples from
-      the market.
+  - reference: Talk to the Vendor
+    description: Dorothy wants  you to get some apples from the market.
+  - reference: Travel to Tarsier's Beacon
+    description: 'The apple shipment is at Tarsier''s Beacon. '
+  - reference: Find Apple crate
+    description: Locate the apple crate
+  - reference: Deliver the Apple crate to Vender
+    description: 'With the apple crate in hand, best to give them to the Vendor. '
   - reference: Return
-    description: now you've got the apple, it might be time to return to Dorothy
+    description: Now you've got the apple, it's time to return to Dorothy.
   rewards:
   - number: 1
   - number: 1

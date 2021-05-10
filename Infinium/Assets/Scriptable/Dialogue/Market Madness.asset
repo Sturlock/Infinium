@@ -1,0 +1,355 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &-6908835452558165291
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c12b9ff7e20c77b478d3f6f94022d2eb, type: 3}
+  m_Name: 3de3a7c5-cd8c-4305-910b-b8004bbd6d82
+  m_EditorClassIdentifier: 
+  isPlayerSpeaking: 1
+  text: Goodness! Where did you last see him?
+  children:
+  - 46a8146c-c756-47de-a0a9-fcba951785ed
+  rect:
+    serializedVersion: 2
+    x: 1008
+    y: 168
+    width: 250
+    height: 100
+  onBeginAction: 
+  onExitAction: 
+  condition:
+    predicate: 
+    parameters: []
+--- !u!114 &-6434452179592545219
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c12b9ff7e20c77b478d3f6f94022d2eb, type: 3}
+  m_Name: 034e09ad-b7f2-4c16-8ee3-d669fe3b2a78
+  m_EditorClassIdentifier: 
+  isPlayerSpeaking: 1
+  text: Pfft, Seems like that is a you problem.
+  children:
+  - 5f28ccc1-ed16-4bc8-85c3-945f76b490b9
+  rect:
+    serializedVersion: 2
+    x: 1131
+    y: 409
+    width: 250
+    height: 100
+  onBeginAction: 
+  onExitAction: 
+  condition:
+    predicate: 
+    parameters: []
+--- !u!114 &-6180407343414470128
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c12b9ff7e20c77b478d3f6f94022d2eb, type: 3}
+  m_Name: 46a8146c-c756-47de-a0a9-fcba951785ed
+  m_EditorClassIdentifier: 
+  isPlayerSpeaking: 0
+  text: He was just here! he couldn't have gone far.
+  children: []
+  rect:
+    serializedVersion: 2
+    x: 1909
+    y: 113
+    width: 250
+    height: 100
+  onBeginAction: 
+  onExitAction: GiveQuest
+  condition:
+    predicate: 
+    parameters: []
+--- !u!114 &-3141394204225233634
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c12b9ff7e20c77b478d3f6f94022d2eb, type: 3}
+  m_Name: 90f0e2e2-20d7-4d50-8c99-c16c686d9aee
+  m_EditorClassIdentifier: 
+  isPlayerSpeaking: 1
+  text: Alright, where did you last see him
+  children:
+  - 46a8146c-c756-47de-a0a9-fcba951785ed
+  rect:
+    serializedVersion: 2
+    x: 1634
+    y: 190
+    width: 250
+    height: 100
+  onBeginAction: 
+  onExitAction: 
+  condition:
+    predicate: 
+    parameters: []
+--- !u!114 &-1207459517488265070
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c12b9ff7e20c77b478d3f6f94022d2eb, type: 3}
+  m_Name: d1a386e1-d1d7-4838-af78-7bc3671ad293
+  m_EditorClassIdentifier: 
+  isPlayerSpeaking: 1
+  text: What's wrong?
+  children:
+  - 23a365e8-d59c-4308-a449-772e820f1865
+  rect:
+    serializedVersion: 2
+    x: 384
+    y: 217
+    width: 250
+    height: 100
+  onBeginAction: 
+  onExitAction: 
+  condition:
+    predicate: 
+    parameters: []
+--- !u!114 &-1055475495097693106
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c12b9ff7e20c77b478d3f6f94022d2eb, type: 3}
+  m_Name: 23a365e8-d59c-4308-a449-772e820f1865
+  m_EditorClassIdentifier: 
+  isPlayerSpeaking: 0
+  text: Please! My child has wondered off. Could you help me find them?
+  children:
+  - 3de3a7c5-cd8c-4305-910b-b8004bbd6d82
+  - 23c8600b-6f20-4ba1-9a5b-ee68c30867e5
+  - 034e09ad-b7f2-4c16-8ee3-d669fe3b2a78
+  rect:
+    serializedVersion: 2
+    x: 695
+    y: 275
+    width: 250
+    height: 100
+  onBeginAction: 
+  onExitAction: 
+  condition:
+    predicate: 
+    parameters: []
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f1e1761072c2d9e48acf0d38f54a64c5, type: 3}
+  m_Name: Market Madness
+  m_EditorClassIdentifier: 
+  nodes:
+  - {fileID: 6656941161270789852}
+  - {fileID: -1207459517488265070}
+  - {fileID: 4395644313812164508}
+  - {fileID: -1055475495097693106}
+  - {fileID: -6908835452558165291}
+  - {fileID: 4389848808817129770}
+  - {fileID: -6434452179592545219}
+  - {fileID: -6180407343414470128}
+  - {fileID: 7013453867251050151}
+  - {fileID: -3141394204225233634}
+  - {fileID: 223367004636988301}
+  - {fileID: 6839151182010987822}
+  newNodeOffset: {x: 250, y: 0}
+--- !u!114 &223367004636988301
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c12b9ff7e20c77b478d3f6f94022d2eb, type: 3}
+  m_Name: b41fa0cf-9132-4e17-bfa9-92460f2aa5ea
+  m_EditorClassIdentifier: 
+  isPlayerSpeaking: 1
+  text: Not worth it. You're on your own.
+  children:
+  - 5f28ccc1-ed16-4bc8-85c3-945f76b490b9
+  rect:
+    serializedVersion: 2
+    x: 1634
+    y: 347
+    width: 250
+    height: 100
+  onBeginAction: 
+  onExitAction: 
+  condition:
+    predicate: 
+    parameters: []
+--- !u!114 &4389848808817129770
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c12b9ff7e20c77b478d3f6f94022d2eb, type: 3}
+  m_Name: 23c8600b-6f20-4ba1-9a5b-ee68c30867e5
+  m_EditorClassIdentifier: 
+  isPlayerSpeaking: 1
+  text: Hmmm, Will I get anything for helping you find the kid?
+  children:
+  - f8ba8d41-9f47-45bf-80ae-edc4c938c6d3
+  rect:
+    serializedVersion: 2
+    x: 1013
+    y: 277
+    width: 250
+    height: 100
+  onBeginAction: 
+  onExitAction: 
+  condition:
+    predicate: 
+    parameters: []
+--- !u!114 &4395644313812164508
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c12b9ff7e20c77b478d3f6f94022d2eb, type: 3}
+  m_Name: 3b4f9fd5-d6aa-46c5-98a6-c34f0869ea57
+  m_EditorClassIdentifier: 
+  isPlayerSpeaking: 1
+  text: I don't have to do anything
+  children:
+  - 23a365e8-d59c-4308-a449-772e820f1865
+  rect:
+    serializedVersion: 2
+    x: 379
+    y: 337
+    width: 250
+    height: 100
+  onBeginAction: 
+  onExitAction: 
+  condition:
+    predicate: 
+    parameters: []
+--- !u!114 &6656941161270789852
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c12b9ff7e20c77b478d3f6f94022d2eb, type: 3}
+  m_Name: 1f18828b-7fec-4b6a-ac0a-344f1272ae9a
+  m_EditorClassIdentifier: 
+  isPlayerSpeaking: 0
+  text: Please, you have to help me!
+  children:
+  - d1a386e1-d1d7-4838-af78-7bc3671ad293
+  - 3b4f9fd5-d6aa-46c5-98a6-c34f0869ea57
+  rect:
+    serializedVersion: 2
+    x: 56
+    y: 281
+    width: 250
+    height: 100
+  onBeginAction: 
+  onExitAction: 
+  condition:
+    predicate: 
+    parameters: []
+--- !u!114 &6839151182010987822
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c12b9ff7e20c77b478d3f6f94022d2eb, type: 3}
+  m_Name: 5f28ccc1-ed16-4bc8-85c3-945f76b490b9
+  m_EditorClassIdentifier: 
+  isPlayerSpeaking: 0
+  text: How could you! My child's life could be in danger! Leave me alone.
+  children: []
+  rect:
+    serializedVersion: 2
+    x: 1984
+    y: 447
+    width: 250
+    height: 100
+  onBeginAction: 
+  onExitAction: 
+  condition:
+    predicate: 
+    parameters: []
+--- !u!114 &7013453867251050151
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c12b9ff7e20c77b478d3f6f94022d2eb, type: 3}
+  m_Name: f8ba8d41-9f47-45bf-80ae-edc4c938c6d3
+  m_EditorClassIdentifier: 
+  isPlayerSpeaking: 0
+  text: What? Surely finding my child take priority? I can give you what money I
+    have on me. Please help me find them.
+  children:
+  - 90f0e2e2-20d7-4d50-8c99-c16c686d9aee
+  - b41fa0cf-9132-4e17-bfa9-92460f2aa5ea
+  rect:
+    serializedVersion: 2
+    x: 1327
+    y: 265
+    width: 250
+    height: 100
+  onBeginAction: 
+  onExitAction: 
+  condition:
+    predicate: 
+    parameters: []

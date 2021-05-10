@@ -13,10 +13,7 @@ MonoBehaviour:
   m_Name: MarketMadness
   m_EditorClassIdentifier: 
   objectives:
-  - reference: Talk to Parent
-    description: Perphaps asking the man might reveal clues to the whereabouts to
-      his kid.
-  - reference: Locate the child
+  - reference: Locate the Kid
     description: His dad says he likes to explore caves, see if you can find him
       in one.
   - reference: Return the Kid
