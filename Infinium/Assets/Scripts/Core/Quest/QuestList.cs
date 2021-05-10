@@ -79,8 +79,10 @@ namespace Infinium.Quests
 
         public bool? Evaluate(string predicate, string[] parameters)
         {
-            if (predicate != "HasQuest") return null;
+            if (predicate == "!HasQuest")
+                return !HasQuest(Quest.GetByName(parameters[0]));
 
+            if (predicate != "HasQuest") return null;
             return HasQuest(Quest.GetByName(parameters[0]));
         }
 

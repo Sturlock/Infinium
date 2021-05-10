@@ -47,15 +47,16 @@ MonoBehaviour:
   - 867595d3-8c2b-4a40-bcca-6b5bc6cdfbb9
   rect:
     serializedVersion: 2
-    x: 508
-    y: 212
+    x: 506
+    y: 211
     width: 250
     height: 100
   onBeginAction: 
   onExitAction: 
   condition:
-    predicate: 
-    parameters: []
+    predicate: '!HasQuest'
+    parameters:
+    - Dorothy's Request
 --- !u!114 &-8503285697329768255
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -191,8 +192,9 @@ MonoBehaviour:
   onBeginAction: 
   onExitAction: 
   condition:
-    predicate: 
-    parameters: []
+    predicate: '!HasQuest'
+    parameters:
+    - Dorothy's Request
 --- !u!114 &-3934553332853576880
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -211,6 +213,7 @@ MonoBehaviour:
   - 44f9b966-38ee-45b6-9fbd-cc1d1fb87995
   - 04708f27-04b2-411e-bd98-9d6e3e736f60
   - d2485c5e-d450-4660-9182-fa7e3c983b3e
+  - 435d3931-0f91-48d0-93e8-9e051b88eb74
   rect:
     serializedVersion: 2
     x: 19
@@ -281,6 +284,7 @@ MonoBehaviour:
   - {fileID: -6461470901429854629}
   - {fileID: 4202349237013347241}
   - {fileID: -6823129928220636727}
+  - {fileID: 1904697449363573525}
   newNodeOffset: {x: 250, y: 0}
 --- !u!114 &450387380656623551
 MonoBehaviour:
@@ -338,6 +342,33 @@ MonoBehaviour:
   condition:
     predicate: 
     parameters: []
+--- !u!114 &1904697449363573525
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c12b9ff7e20c77b478d3f6f94022d2eb, type: 3}
+  m_Name: 435d3931-0f91-48d0-93e8-9e051b88eb74
+  m_EditorClassIdentifier: 
+  isPlayerSpeaking: 0
+  text: Oh sorry I forgot, I already give you a job didn't I dear
+  children: []
+  rect:
+    serializedVersion: 2
+    x: 396
+    y: 55
+    width: 250
+    height: 100
+  onBeginAction: 
+  onExitAction: 
+  condition:
+    predicate: HasQuest
+    parameters:
+    - Dorothy's Request
 --- !u!114 &4202349237013347241
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -438,15 +469,16 @@ MonoBehaviour:
   - af4e518a-706b-4fa1-aa63-5a25f3d91ad0
   rect:
     serializedVersion: 2
-    x: 486
+    x: 489
     y: 510
     width: 250
     height: 100
   onBeginAction: 
   onExitAction: 
   condition:
-    predicate: 
-    parameters: []
+    predicate: '!HasQuest'
+    parameters:
+    - Dorothy's Request
 --- !u!114 &7294988708978390834
 MonoBehaviour:
   m_ObjectHideFlags: 0

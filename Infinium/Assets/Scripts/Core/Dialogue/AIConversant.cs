@@ -1,40 +1,40 @@
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 
 namespace Infinium.Dialogue
 {
     public class AIConversant : MonoBehaviour
     {
-        [SerializeField] string AIName;
-        [SerializeField] Dialogue dialogue = null;
-        [SerializeField] bool near = false;
-        float radius = 3f;
-        LayerMask playerLayer;
+        [SerializeField] private string AIName;
+        [SerializeField] private Dialogue dialogue = null;
+        [SerializeField] private bool near = false;
+        private float radius = 3f;
+        private LayerMask playerLayer;
 
-        void OnDrawGizmosSelected()
+        private void OnDrawGizmosSelected()
         {
             Gizmos.color = Color.blue;
             Gizmos.DrawWireSphere(transform.position, radius);
         }
-        void Start()
+
+        private void Start()
         {
             playerLayer = LayerMask.GetMask("Player");
         }
-        void Update()
-        {
-            TriggerDialogue();
-        }
 
-        private void TriggerDialogue()
+        private void Update()
         {
             near = Physics.CheckSphere(transform.position, radius, playerLayer);
             if (near && Input.GetKeyDown(KeyCode.E))
             {
-                GameObject.FindGameObjectWithTag("Player")
-                    .GetComponent<PlayerConversant>()
-                    .StartDialogue(this,dialogue);
+                TriggerDialogue();
             }
+        }
+
+        public void TriggerDialogue()
+        {
+            GameObject.FindGameObjectWithTag("Player")
+                .GetComponent<PlayerConversant>()
+                .StartDialogue(this, dialogue);
         }
 
         public string GetName()
