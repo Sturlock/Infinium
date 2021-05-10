@@ -14,5 +14,7 @@ namespace Infinium.Quests
             QuestList questList = GameObject.FindGameObjectWithTag("Player").GetComponent<QuestList>();
             questList.CompleteObjective(quest, objective);
         }
+
+        
     }
 }

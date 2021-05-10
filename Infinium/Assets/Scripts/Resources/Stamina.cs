@@ -8,7 +8,7 @@ namespace Infinium.Resources
 	public class Stamina : MonoBehaviour, ISaveable
 	{
 	    // Start is called before the first frame update
-	    [SerializeField] float stamaina = 100;
+	    float stamaina = 100;
 		[SerializeField] float currentStamina;
 
 		WaitForSeconds regenTick = new WaitForSeconds(.01f);

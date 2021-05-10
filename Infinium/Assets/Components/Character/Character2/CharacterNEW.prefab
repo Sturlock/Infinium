@@ -1068,9 +1068,10 @@ GameObject:
   - component: {fileID: 1331279293465024417}
   - component: {fileID: 1331279293465024416}
   - component: {fileID: 1331279293465024419}
-  - component: {fileID: 1374215304803914468}
-  - component: {fileID: 1531315454412933290}
   - component: {fileID: 6517397395041042591}
+  - component: {fileID: 1531315454412933290}
+  - component: {fileID: 2185227659278464580}
+  - component: {fileID: 1374215304803914468}
   m_Layer: 10
   m_Name: CharacterNEW
   m_TagString: Player
@@ -1222,34 +1223,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   playerName: Hoffman
---- !u!114 &1374215304803914468
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2213746435277981153}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 796b2d494d139b347a61ce4a71c27081, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  stamaina: 100
-  currentStamina: 100
-  regen: 1
---- !u!114 &1531315454412933290
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2213746435277981153}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ce584ed428eec3543b2a7fda8dfa19df, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  healthPoints: 100
 --- !u!114 &6517397395041042591
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1265,6 +1238,46 @@ MonoBehaviour:
   startingLevel: 1
   characterClass: 0
   progression: {fileID: 11400000, guid: d889ccc703439294a958ab48aada64e6, type: 2}
+--- !u!114 &1531315454412933290
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2213746435277981153}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ce584ed428eec3543b2a7fda8dfa19df, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  healthPoints: 100
+--- !u!114 &2185227659278464580
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2213746435277981153}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 96c5387545690cb4a906128913d3f098, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  experiencePoints: 0
+--- !u!114 &1374215304803914468
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2213746435277981153}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 796b2d494d139b347a61ce4a71c27081, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  currentStamina: 100
+  regen: 1
 --- !u!1 &2249326791482848738
 GameObject:
   m_ObjectHideFlags: 0

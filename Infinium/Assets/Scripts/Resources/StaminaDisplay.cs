@@ -16,7 +16,7 @@ namespace Infinium.Resources
         void Update()
         {
             GetComponent<Image>().fillAmount = stamina.GetPercentage() / 100;
-            print(GetComponent<Image>().fillAmount);
+            //print(GetComponent<Image>().fillAmount);
 
         }
     }

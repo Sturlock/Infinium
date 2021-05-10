@@ -2,6 +2,7 @@ using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using Infinium.Stats;
 
 namespace Infinium.Quests
 {
@@ -28,6 +29,7 @@ namespace Infinium.Quests
             [Min(1)]
             public int number;
             //public InventoryItem item;
+            public Experience experience;
         }
 
         [System.Serializable]

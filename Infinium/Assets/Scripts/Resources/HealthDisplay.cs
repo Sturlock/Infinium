@@ -7,9 +7,7 @@ namespace Infinium.Resources
 {
 	public class HealthDisplay : MonoBehaviour
 	{
-		Health health;
-        
-
+        Health health;
         private void Awake()
         {
             health = GameObject.FindGameObjectWithTag("Player").GetComponent<Health>();
@@ -18,7 +16,7 @@ namespace Infinium.Resources
         void Update()
         {
             GetComponent<Image>().fillAmount = health.GetPercentage() / 100;
-            print(GetComponent<Image>().fillAmount);
+            //print(GetComponent<Image>().fillAmount);
 
         }
     }
