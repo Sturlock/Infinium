@@ -15,10 +15,11 @@ namespace Infinium.SceneManagement
 
         [SerializeField] float fadeInTime = 0.2f;
 
-        void Start()
+        void Awake()
         {
             save = GameObject.FindGameObjectWithTag("Save").GetComponent<Button>();
             load = GameObject.FindGameObjectWithTag("Load").GetComponent<Button>();
+
         }
 
         public IEnumerator LoadLastSave()

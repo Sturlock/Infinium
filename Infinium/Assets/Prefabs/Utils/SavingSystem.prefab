@@ -56,5 +56,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c2efa8a52f115ec40b0fc284a8e8e33e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  SaveButton: 286
-  LoadButton: 287
+  saveButton: 286
+  loadButton: 287
+  fadeInTime: 0.2

@@ -8,6 +8,7 @@ public class QuestListUI : MonoBehaviour
     [SerializeField] QuestItemUI questPrefab;
     QuestList questList;
     // Start is called before the first frame update
+
     void Start()
     {
         questList = GameObject.FindGameObjectWithTag("Player").GetComponent<QuestList>();
