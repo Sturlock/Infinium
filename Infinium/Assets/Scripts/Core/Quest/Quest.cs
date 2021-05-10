@@ -28,7 +28,8 @@ namespace Infinium.Quests
             [Min(1)]
             public int number;
             //public InventoryItem item;
-            public Experience experience;
+            public float experience;
+            public int gold;
         }
 
         [System.Serializable]

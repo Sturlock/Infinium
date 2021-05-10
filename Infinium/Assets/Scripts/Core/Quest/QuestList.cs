@@ -68,6 +68,8 @@ namespace Infinium.Quests
             foreach (var reward in quest.GetRewards())
             {
                 bool success = true; // = GetComponent<Inventory>().AddToFirstEmptySlot(reward.item, reward.number);
+                GetComponent<Experience>().GainExperience(reward.experience);
+                GetComponent<GoldPieces>().GainGoldPieces(reward.gold);
                 if (!success)
                 {
                     //GetComponent<ItemDropper>().DropItem(reward.item, reward.number);
