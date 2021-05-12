@@ -16,6 +16,11 @@ namespace Infinium.Dialogue
 
         Dictionary<string, DialogueNode> nodeLookup = new Dictionary<string, DialogueNode>();
 
+        void Awake()
+        {
+            OnValidate();
+        }
+
         void OnValidate()
         {
             nodeLookup.Clear();
