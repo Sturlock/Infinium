@@ -4,6 +4,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.Audio;
 using UnityEngine.UI;
+using UnityEngine.SceneManagement;
 
 namespace Infinium.SceneManagement
 {
@@ -15,12 +16,6 @@ namespace Infinium.SceneManagement
 
         [SerializeField] float fadeInTime = 0.2f;
 
-        void Awake()
-        {
-            save = GameObject.FindGameObjectWithTag("Save").GetComponent<Button>();
-            load = GameObject.FindGameObjectWithTag("Load").GetComponent<Button>();
-
-        }
 
         public IEnumerator LoadLastSave()
         {
@@ -34,8 +29,6 @@ namespace Infinium.SceneManagement
         void Update()
         {
 
-            save.onClick.AddListener(() => Save());
-            load.onClick.AddListener(() => Load());
 
             if (Input.GetKeyDown(saveButton))
             {

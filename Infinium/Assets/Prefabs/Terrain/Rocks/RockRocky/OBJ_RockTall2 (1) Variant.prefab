@@ -15,6 +15,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: OBJ_RockTall2
       objectReference: {fileID: 0}
+    - target: {fileID: 4055011062523517888, guid: fce12646717b1fd4abdb712b86f2618a, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
     - target: {fileID: 5007708471087228764, guid: fce12646717b1fd4abdb712b86f2618a, type: 3}
       propertyPath: m_RootOrder
       value: 0
@@ -66,6 +70,10 @@ PrefabInstance:
     - target: {fileID: 5178546919170510564, guid: fce12646717b1fd4abdb712b86f2618a, type: 3}
       propertyPath: m_TagString
       value: Walkable
+      objectReference: {fileID: 0}
+    - target: {fileID: 5178546919170510564, guid: fce12646717b1fd4abdb712b86f2618a, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
       objectReference: {fileID: 0}
     - target: {fileID: 5518655915809199198, guid: fce12646717b1fd4abdb712b86f2618a, type: 3}
       propertyPath: m_RootOrder

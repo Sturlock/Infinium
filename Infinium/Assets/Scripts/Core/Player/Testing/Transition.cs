@@ -90,7 +90,7 @@ public class Transition : MonoBehaviour
         Test ts = GameObject.FindObjectOfType<Test>();
         bool inRadius = ts.GetInRange();
 
-        Debug.Log(inRadius);
+        //Debug.Log(inRadius);
 
         if (inRadius && (controllingShip && Input.GetKeyDown(KeyCode.E)))
         {
@@ -151,9 +151,9 @@ public class Transition : MonoBehaviour
 
     private void DockDistance()
     {
-        Vector3 plus = new Vector3(-7.5f, 0, 0);
+        
         startMarker = SC.transform.position;
-        endMartker = dockTarget.transform.position + plus;
+        endMartker = dockTarget.transform.position;
         journeyLength = Vector3.Distance(startMarker, endMartker);
     }
 }

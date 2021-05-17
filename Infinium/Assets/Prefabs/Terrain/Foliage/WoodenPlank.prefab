@@ -11,6 +11,7 @@ GameObject:
   - component: {fileID: 3735756214294841217}
   - component: {fileID: 5113048222484611005}
   - component: {fileID: 8814063712767632718}
+  - component: {fileID: 2748084699620965131}
   m_Layer: 0
   m_Name: WoodPlank_LOD0
   m_TagString: Untagged
@@ -81,6 +82,20 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
+--- !u!64 &2748084699620965131
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 150615948447669970}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 4
+  m_Convex: 1
+  m_CookingOptions: 30
+  m_Mesh: {fileID: -7209708751827543845, guid: 66d80a94c7ca0534a8c9571898b0919b, type: 3}
 --- !u!1 &2041567257364596382
 GameObject:
   m_ObjectHideFlags: 0

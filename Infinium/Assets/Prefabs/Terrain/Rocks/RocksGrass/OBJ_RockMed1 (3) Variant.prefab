@@ -57,7 +57,7 @@ PrefabInstance:
       objectReference: {fileID: 2100000, guid: f08699eca8970834d8bb014b045758cd, type: 2}
     - target: {fileID: 7216821758619329464, guid: c0107bc050e0f874889be96dbfa63643, type: 3}
       propertyPath: m_Name
-      value: OBJ_RockMed1 (3)
+      value: OBJ_RockMed1 (3) Variant
       objectReference: {fileID: 0}
     - target: {fileID: 7291472947672110066, guid: c0107bc050e0f874889be96dbfa63643, type: 3}
       propertyPath: m_Name

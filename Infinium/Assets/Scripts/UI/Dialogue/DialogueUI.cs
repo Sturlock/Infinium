@@ -35,6 +35,8 @@ namespace Infinium.UI
             
         }
 
+        
+
         // Update is called once per frame
         void UpdateUI()
         {
@@ -56,6 +58,7 @@ namespace Infinium.UI
             {
                 AIText.text = playerConversant.GetText();
                 nextButton.gameObject.SetActive(playerConversant.HasNext());
+                Debug.Log(playerConversant.HasNext());
             }
 
             

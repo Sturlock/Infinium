@@ -61,7 +61,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5178546919170510564, guid: fce12646717b1fd4abdb712b86f2618a, type: 3}
       propertyPath: m_Name
-      value: OBJ_RockTall2 (2)
+      value: OBJ_RockTall2 (2) Variant
       objectReference: {fileID: 0}
     - target: {fileID: 5518655915809199198, guid: fce12646717b1fd4abdb712b86f2618a, type: 3}
       propertyPath: m_RootOrder

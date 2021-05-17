@@ -157,6 +157,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 2627433942792465299, guid: dfe0d41f1ee23b44fb3d5419e22cde3f, type: 3}
+      propertyPath: m_Enabled
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 2627433942792465309, guid: dfe0d41f1ee23b44fb3d5419e22cde3f, type: 3}
       propertyPath: m_Name
       value: SavingSystem

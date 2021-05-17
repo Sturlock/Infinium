@@ -32,6 +32,7 @@ namespace Infinium.Dialogue
             OnConversationUpdate();
         }
 
+
         public void Quit()
         {
             conversing = false;

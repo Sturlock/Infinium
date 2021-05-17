@@ -1,27 +1,31 @@
-using System.Collections;
-using System.Collections.Generic;
-using UnityEngine;
-using UnityEditor;
-using System;
 using Infinium.Core;
+using System.Collections.Generic;
+using UnityEditor;
+using UnityEngine;
 
 namespace Infinium.Dialogue
 {
     public class DialogueNode : ScriptableObject
     {
         [SerializeField]
-        bool isPlayerSpeaking = false;
-        [SerializeField] string text;
+        private bool isPlayerSpeaking = false;
+
+        [SerializeField] private string text;
+
         [SerializeField]
-        List<string> children = new List<string>();
+        private List<string> children = new List<string>();
+
         [SerializeField]
-        Rect rect = new Rect(0, 0, 250, 100);
+        private Rect rect = new Rect(0, 0, 250, 100);
+
         [SerializeField]
-        string onBeginAction;
+        private string onBeginAction;
+
         [SerializeField]
-        string onExitAction;
+        private string onExitAction;
+
         [SerializeField]
-        Condition condition;
+        private Condition condition;
 
         public Rect GetRect()
         {
@@ -32,39 +36,46 @@ namespace Infinium.Dialogue
         {
             return text;
         }
+
         public List<string> GetChildren()
         {
             return children;
         }
+
         public bool IsPlayerSpeaking()
         {
             return isPlayerSpeaking;
         }
+
         public string GetOnBeginAction()
         {
             return onBeginAction;
         }
+
         public string GetOnExitAction()
         {
             return onExitAction;
         }
+
         public bool CheckCondition(IEnumerable<IPredicateEvaluator> evaluators)
         {
             return condition.Check(evaluators);
         }
 
 #if UNITY_EDITOR
+
         public void SetPos(Vector2 newPos)
         {
             Undo.RecordObject(this, "Move Dialogue Node");
             rect.position = newPos;
             EditorUtility.SetDirty(this);
         }
+
         public void SetText(string newText)
         {
-           if(newText != text)
+            if (newText != text)
             {
-                if(newText != text)
+                if (newText != text)
                 {
                     Undo.RecordObject(this, "Update Dialogue Text");
                     text = newText;
@@ -79,6 +90,7 @@ namespace Infinium.Dialogue
             children.Add(childID);
             EditorUtility.SetDirty(this);
         }
+
         public void RemoveChild(string childID)
         {
             Undo.RecordObject(this, "Remove Dialogue Link");
@@ -93,9 +105,6 @@ namespace Infinium.Dialogue
             EditorUtility.SetDirty(this);
         }
 
-        
-
 #endif
     }
 }
-

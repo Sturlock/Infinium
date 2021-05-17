@@ -28,7 +28,7 @@ GameObject:
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 4294967295
   m_IsActive: 1
 --- !u!4 &6793118903114958719
 Transform:
@@ -76,7 +76,7 @@ GameObject:
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 4294967295
   m_IsActive: 1
 --- !u!4 &8345302199792699362
 Transform:
@@ -173,6 +173,18 @@ PrefabInstance:
       propertyPath: m_Name
       value: Lighthouse_L
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 9059f441c9c12fc41a73fe25290db4da, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
+    - target: {fileID: 3121778906339889086, guid: 9059f441c9c12fc41a73fe25290db4da, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
+    - target: {fileID: 3587788796799408565, guid: 9059f441c9c12fc41a73fe25290db4da, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 9059f441c9c12fc41a73fe25290db4da, type: 3}
 --- !u!1 &1266409228453989947 stripped
@@ -253,6 +265,10 @@ PrefabInstance:
       propertyPath: m_TagString
       value: Walkable
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 4ac4e6f7cf4ec5c4284d3b33ef0a10d7, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 4ac4e6f7cf4ec5c4284d3b33ef0a10d7, type: 3}
 --- !u!1 &5255119889361850494 stripped
@@ -321,6 +337,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: -7976277815971783107, guid: 151b2623d7881bd44aeeacaa21900bc5, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
     - target: {fileID: 692447249871354435, guid: 151b2623d7881bd44aeeacaa21900bc5, type: 3}
       propertyPath: m_Materials.Array.data[0]
       value: 
@@ -328,6 +348,26 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: 151b2623d7881bd44aeeacaa21900bc5, type: 3}
       propertyPath: m_Name
       value: Lighthouse_exterior
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 151b2623d7881bd44aeeacaa21900bc5, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
+    - target: {fileID: 1715282808159706237, guid: 151b2623d7881bd44aeeacaa21900bc5, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
+    - target: {fileID: 4810330673336176450, guid: 151b2623d7881bd44aeeacaa21900bc5, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
+    - target: {fileID: 7503526307140469533, guid: 151b2623d7881bd44aeeacaa21900bc5, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
+    - target: {fileID: 8805198056303308676, guid: 151b2623d7881bd44aeeacaa21900bc5, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 151b2623d7881bd44aeeacaa21900bc5, type: 3}

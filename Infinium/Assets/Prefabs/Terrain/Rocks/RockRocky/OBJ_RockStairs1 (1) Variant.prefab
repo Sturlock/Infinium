@@ -15,6 +15,10 @@ PrefabInstance:
       propertyPath: m_TagString
       value: Walkable
       objectReference: {fileID: 0}
+    - target: {fileID: 1712335848990803912, guid: fbc09ffa8da9cc24bb847e0f4312f48a, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
     - target: {fileID: 2056070033396981106, guid: fbc09ffa8da9cc24bb847e0f4312f48a, type: 3}
       propertyPath: m_RootOrder
       value: 0
@@ -50,6 +54,10 @@ PrefabInstance:
     - target: {fileID: 4151686759740544955, guid: fbc09ffa8da9cc24bb847e0f4312f48a, type: 3}
       propertyPath: m_Name
       value: OBJ_RockStairs1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6254210692114916933, guid: fbc09ffa8da9cc24bb847e0f4312f48a, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
       objectReference: {fileID: 0}
     - target: {fileID: 7198627466223528198, guid: fbc09ffa8da9cc24bb847e0f4312f48a, type: 3}
       propertyPath: m_Materials.Array.data[0]

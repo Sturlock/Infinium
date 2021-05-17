@@ -9,7 +9,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 537055053574107625, guid: 790ee57fac0114b41b70da0e26d2a161, type: 3}
       propertyPath: m_Name
-      value: OBJ_RockFlat2 (2)
+      value: OBJ_RockFlat2 (2) Variant
       objectReference: {fileID: 0}
     - target: {fileID: 882652842071731027, guid: 790ee57fac0114b41b70da0e26d2a161, type: 3}
       propertyPath: m_RootOrder

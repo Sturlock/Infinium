@@ -16,7 +16,7 @@ namespace Infinium.Stats
         void Update()
         {
             GetComponent<Image>().fillAmount = experience.GetPercentage();
-            print(GetComponent<Image>().fillAmount);
+            //print(GetComponent<Image>().fillAmount);
 
         }
     }

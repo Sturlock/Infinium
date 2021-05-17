@@ -15,7 +15,7 @@ GameObject:
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 4294967295
   m_IsActive: 1
 --- !u!4 &1293030495936470205
 Transform:
@@ -123,6 +123,10 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: d851105314cd0564ab1082bf37e4e8c7, type: 3}
       propertyPath: m_Name
       value: wood_L
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: d851105314cd0564ab1082bf37e4e8c7, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: d851105314cd0564ab1082bf37e4e8c7, type: 3}

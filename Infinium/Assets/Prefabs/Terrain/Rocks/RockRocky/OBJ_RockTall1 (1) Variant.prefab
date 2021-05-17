@@ -47,6 +47,14 @@ PrefabInstance:
       propertyPath: m_TagString
       value: Walkable
       objectReference: {fileID: 0}
+    - target: {fileID: 1038672843252506274, guid: 5867692c95575064aa3c61ab5cf9b0b3, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
+    - target: {fileID: 1239744258875334116, guid: 5867692c95575064aa3c61ab5cf9b0b3, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
     - target: {fileID: 6186989482878814579, guid: 5867692c95575064aa3c61ab5cf9b0b3, type: 3}
       propertyPath: m_Name
       value: OBJ_RockTall1
