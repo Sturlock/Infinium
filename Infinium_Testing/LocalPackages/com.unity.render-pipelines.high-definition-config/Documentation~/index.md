@@ -1,7 +1,3 @@
-# High Definition Render Pipeline Configuration Package
-
-The High Definition Render Pipeline (HDRP) uses this package to control the availability of some of its features. If you want to use this package to configure HDRP, you must link it as a local package.
-
-* For information on how to set up and use the HDRP Config package, see [HDRP Config](https://docs.unity3d.com/Packages/com.unity.render-pipelines.high-definition@latest/index.html?subfolder=/manual/HDRP-Config-Package.html).
-* For documentation on HDRP itself, see [HDRP documentation](https://docs.unity3d.com/Packages/com.unity.render-pipelines.high-definition@latest/index.html).
-
+version https://git-lfs.github.com/spec/v1
+oid sha256:e2efab10977809344639760f84040faf46e161ac9fce231c829112b7d18e64e8
+size 645

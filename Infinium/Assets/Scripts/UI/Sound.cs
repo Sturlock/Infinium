@@ -1,22 +1,3 @@
-﻿using System.Collections;
-using System.Collections.Generic;
-using UnityEngine.Audio;
-using UnityEngine;
-
-[System.Serializable]
-public class Sound
-{
-    public string name;
-     
-    public AudioClip clip;
-    [Range(0f,1f)]
-    public float volume;
-    [Range(.1f, 3f)]
-    public float pitch;
-
-    public bool loop;
-    public bool playOnAwake;
-
-    [HideInInspector]
-    public AudioSource source;
-}
+version https://git-lfs.github.com/spec/v1
+oid sha256:5df35ef61380d712c091e1d23c64f8502cd2d8f96fc95c34cc61e77a60e7b5b8
+size 405

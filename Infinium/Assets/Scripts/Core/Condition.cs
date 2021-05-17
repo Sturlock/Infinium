@@ -1,30 +1,3 @@
-using System.Collections;
-using System.Collections.Generic;
-using UnityEngine;
-
-namespace Infinium.Core
-{
-    [System.Serializable]
-    public class Condition
-    {
-        [SerializeField]
-        string predicate;
-        [SerializeField]
-        string[] parameters;
-
-        public bool Check(IEnumerable<IPredicateEvaluator> evaluators)
-        {
-            foreach (var evaluator in evaluators)
-            {
-                bool? result = evaluator.Evaluate(predicate, parameters);
-                if(result == null)
-                {
-                    continue;
-                }
-
-                if (result == false) return false;
-            }
-            return true;
-        }
-    }
-}
+version https://git-lfs.github.com/spec/v1
+oid sha256:7b178439d937c15246c1e677059e3a2bfff7826012f98eddfc05204827611351
+size 700

@@ -1,22 +1,3 @@
-﻿using System.Collections;
-using System.Collections.Generic;
-using UnityEngine;
-using UnityEngine.AI;
-
-public class CharacterAnimator : MonoBehaviour
-{
-    NavMeshAgent agent;
-    Animator animator;
-    void Start()
-    {
-        agent = GetComponent<NavMeshAgent>();
-        animator = GetComponentInChildren<Animator>();
-    }
-
-    
-    void Update()
-    {
-        float speedPercent = agent.velocity.magnitude / agent.speed;
-        animator.SetFloat("speedPercent" , speedPercent);
-    }
-}
+version https://git-lfs.github.com/spec/v1
+oid sha256:d1744366f3bbe461c559ca72146c8b34d8c9ee0f7e33ebf239a14cd1eb448a4e
+size 496

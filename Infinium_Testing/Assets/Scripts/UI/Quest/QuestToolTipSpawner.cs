@@ -1,22 +1,3 @@
-using Infinium.Core.UI.Tooltips;
-using System.Collections;
-using System.Collections.Generic;
-using UnityEngine;
-using Infinium.Quests;
-
-namespace Infinium.UI.Quests
-{
-    public class QuestToolTipSpawner : TooltipSpawner
-    {
-        public override bool CanCreateTooltip()
-        {
-            return true;
-        }
-
-        public override void UpdateTooltip(GameObject tooltip)
-        {
-            QuestStatus status = GetComponent<QuestItemUI>().GetQuestStatus();
-            tooltip.GetComponent<QuestToolTipUI>().Setup(status);
-        }
-    }
-}
+version https://git-lfs.github.com/spec/v1
+oid sha256:6bd0cece0eba31793b25411e32cc4d5987b0c67c0a8815de4cb4011a6fbd21e5
+size 557

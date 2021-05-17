@@ -1,29 +1,3 @@
-﻿using System.Collections;
-using System.Collections.Generic;
-using UnityEngine;
-
-[System.Serializable]
-public class Stat 
-{
-    [SerializeField]
-    private int baseValue;
-
-    private List<int> modifiers = new List<int>();
-    public int GetValue()
-    {
-        int finalValue = baseValue;
-        modifiers.ForEach(x => finalValue += x);
-        return finalValue;
-    }
-
-    public void AddModifier (int modifier)
-    {
-        if (modifier != 0)
-            modifiers.Add(modifier);
-    }
-    public void RemoveModifier (int modifier)
-    {
-        if (modifier != 0)
-            modifiers.Remove(modifier);
-    }
-}
+version https://git-lfs.github.com/spec/v1
+oid sha256:6fba01d4e330f6abf866d0841dd7e456b852accee324df8d80888ed3dbdd4618
+size 623

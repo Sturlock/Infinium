@@ -1,21 +1,3 @@
-using System.Collections;
-using System.Collections.Generic;
-using UnityEngine;
-
-public class PlayAnimation : MonoBehaviour
-{
-    public Animator anim;
-    public bool retract = false;
-
-    void Start()
-    {
-        anim = GetComponent<Animator>();
-    }
-
-    public void onClick()
-    {
-        retract = !retract;
-        anim.SetBool("retract", retract);
-    }
-
-}
+version https://git-lfs.github.com/spec/v1
+oid sha256:e3e57660ec7948d1a8ff3ffe9bb5d6a655d5caa483a1705d06dce8c75727d03a
+size 367

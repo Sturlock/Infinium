@@ -1,27 +1,3 @@
-using System.Collections;
-using System.Collections.Generic;
-using UnityEngine;
-
-public enum WeaponType
-{
-    Light,
-    Medium,
-    Heavy
-}
-[CreateAssetMenu(fileName = "UnnamedWeaponConfig", menuName = "Infinium/WeaponConfig", order = 0)]
-public class WeaponScriptable : ScriptableObject
-{
-    public string weaponName;
-    public string weaponDescription;
-    public WeaponType weaponType;
-    public float damage;
-    public float attackSpeed;
-    //Possibly not needed
-    public float weight;
-
-    public string GetName()
-    {
-        return weaponName;
-    }
-}
-
+version https://git-lfs.github.com/spec/v1
+oid sha256:d944d9e46f08b4e8ccfcbd9e6ef9bd69bf92620da284ca6fbb9473f1fe1d7f50
+size 568

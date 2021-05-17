@@ -1,23 +1,3 @@
-using System.Collections;
-using System.Collections.Generic;
-using Infinium.Quests;
-using TMPro;
-using UnityEngine;
-
-public class QuestItemUI : MonoBehaviour
-{
-    [SerializeField] TextMeshProUGUI title;
-    [SerializeField] TextMeshProUGUI progress;
-    QuestStatus status;
-    public void Setup(QuestStatus status)
-    {
-        this.status = status;
-        title.text = status.GetQuest().GetTitle();
-        progress.text = status.GetCompleteedCount() + "/" + status.GetQuest().GetObjectiveCount();
-    }
-
-    public QuestStatus GetQuestStatus()
-    {
-        return status;
-    }
-}
+version https://git-lfs.github.com/spec/v1
+oid sha256:e3389c25b25c180ea362d75296160e3d52ba6602a2e18aec89b26ab0c30c2ecd
+size 585

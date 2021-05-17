@@ -1,27 +1,3 @@
-﻿using System.Collections;
-using System.Collections.Generic;
-using UnityEngine;
-using UnityEngine.SceneManagement;
-
-public class MenuController : MonoBehaviour
-{
-    public GameObject startCanvas;
-
-
-    public void StartGame(string lvlName)
-    {
-        SceneManager.LoadScene(lvlName);
-    }
-
-    public void QuitGame()
-    {
-        Application.Quit();
-    }
-
-    public void NextMenu(GameObject nxtCanvas)
-
-    {
-        nxtCanvas.SetActive(true);
-        startCanvas.SetActive(false);
-    }
-}
+version https://git-lfs.github.com/spec/v1
+oid sha256:2310d1962411189310ee31c6dba715be1e48a51862e71df0d619e755ea1b1449
+size 500

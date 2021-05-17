@@ -1,26 +1,3 @@
-using System;
-using System.Collections;
-using UnityEngine;
-
-#pragma warning disable 649
-namespace UnityStandardAssets.Vehicles.Car
-{
-    public class SkidTrail : MonoBehaviour
-    {
-        [SerializeField] private float m_PersistTime;
-
-
-        private IEnumerator Start()
-        {
-			while (true)
-            {
-                yield return null;
-
-                if (transform.parent.parent == null)
-                {
-					Destroy(gameObject, m_PersistTime);
-                }
-            }
-        }
-    }
-}
+version https://git-lfs.github.com/spec/v1
+oid sha256:44d6326a539360cc5ef65823f5885a0e543b0b34571530da53b5c67eed781729
+size 512

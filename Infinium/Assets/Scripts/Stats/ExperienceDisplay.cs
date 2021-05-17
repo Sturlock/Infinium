@@ -1,23 +1,3 @@
-using System.Collections;
-using System.Collections.Generic;
-using UnityEngine;
-using UnityEngine.UI;
-
-namespace Infinium.Stats
-{
-	public class ExperienceDisplay : MonoBehaviour
-	{
-        Experience experience;
-        private void Awake()
-        {
-            experience = GameObject.FindGameObjectWithTag("Player").GetComponent<Experience>();
-        }
-
-        void Update()
-        {
-            GetComponent<Image>().fillAmount = experience.GetPercentage();
-            //print(GetComponent<Image>().fillAmount);
-
-        }
-    }
-}
+version https://git-lfs.github.com/spec/v1
+oid sha256:27a2ed4e96dbdbf93d997a7ecdbc843452ca1b24e9924ddf8c27d4fb9ec65a2f
+size 538

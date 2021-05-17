@@ -1,22 +1,3 @@
-using System.Collections;
-using System.Collections.Generic;
-using UnityEngine;
-using UnityEngine.UI;
-
-public class RightAudioArrow : MonoBehaviour
-{
-    public Slider sliderValue;
-    public void OnClick()
-    {
-
-        if (sliderValue.value < 1)
-        {
-            sliderValue.value += .1f;
-            if (sliderValue.value >= 1)
-            {
-                sliderValue.value = 1;
-            }
-        }
-        //Debug.Log(sliderValue.value);
-    }
-}
+version https://git-lfs.github.com/spec/v1
+oid sha256:4af1da66774935506919d203d53f9cce540fce9837a0dc5a5177d9cf4e6558cc
+size 461

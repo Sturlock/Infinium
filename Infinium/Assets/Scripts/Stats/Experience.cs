@@ -1,34 +1,3 @@
-using System.Collections;
-using System.Collections.Generic;
-using UnityEngine;
-using Infinium.Saving;
-
-namespace Infinium.Stats
-{
-	public class Experience : MonoBehaviour, ISaveable
-	{
-	    [SerializeField] float experiencePoints = 0;
-
-        public float GetExperiencePoints()
-        {
-            return experiencePoints;
-        }
-        public float GetPercentage()
-        {
-            return experiencePoints / GetComponent<BaseStats>().GetStat(Stat.ExperienceToLevelup);
-        }
-        public void GainExperience(float experience)
-	    {
-	        experiencePoints += experience;
-	    }
-
-        public object CaptureState()
-        {
-            return experiencePoints;
-        }
-        public void RestoreState(object state)
-        {
-            experiencePoints = (float)state;
-        }
-    }
-}
+version https://git-lfs.github.com/spec/v1
+oid sha256:929207b9bea0270fa0cd733fc1a091b21b5c817bd29b2e389561f84a157036b4
+size 815

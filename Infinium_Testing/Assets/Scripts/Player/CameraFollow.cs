@@ -1,18 +1,3 @@
-﻿using UnityEngine;
-
-public class CameraFollow : MonoBehaviour
-{
-    public Transform target;
-
-    public float smoothSpeed = 0.125f;
-    public Vector3 offset;
-
-    private void Update()
-    {
-        Vector3 desiredPosition = target.position + offset;
-        //Vector3 smoothedPosition = Vector3.Lerp(transform.position, desiredPosition, smoothSpeed);
-        transform.position = desiredPosition;
-
-   
-    }
-}
+version https://git-lfs.github.com/spec/v1
+oid sha256:a7bde54c7d39a67ace036e60f1029366def1f4a4a04938cc6da587d55fbaaa8b
+size 416
