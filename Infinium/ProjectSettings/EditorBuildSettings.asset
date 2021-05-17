@@ -6,7 +6,7 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 1
-    path: Assets/Scenes/MainMenu.unity
+    path: Assets/Scenes/MM.unity
     guid: 285e0a956e96743448997f8527790b2f
   - enabled: 1
     path: Assets/Scenes/ShipController.unity
