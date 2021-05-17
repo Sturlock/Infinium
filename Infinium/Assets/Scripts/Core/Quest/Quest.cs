@@ -11,7 +11,8 @@ namespace Infinium.Quests
     {
         [SerializeField] List<Objectives> objectives = new List<Objectives>();
         [SerializeField] List<Reward> rewards = new List<Reward>();
-        [SerializeField] int gold;
+        public float experience;
+        public int gold;
 
         [System.Serializable]
         class QuestStatusRecord
@@ -28,8 +29,7 @@ namespace Infinium.Quests
             [Min(1)]
             public int number;
             //public InventoryItem item;
-            public float experience;
-            public int gold;
+            
         }
 
         [System.Serializable]
@@ -38,6 +38,7 @@ namespace Infinium.Quests
             public string reference;
             public string description;
         }
+
         public string GetTitle()
         {
             return name;
@@ -79,11 +80,6 @@ namespace Infinium.Quests
                 }
             }
             return null;
-        }
-
-        public int GetGold()
-        {
-            return gold;
         }
     }
 }

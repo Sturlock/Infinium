@@ -376,24 +376,12 @@ PrefabInstance:
       value: 29.5
       objectReference: {fileID: 0}
     - target: {fileID: 6024336985946725210, guid: 8a658de89237e3c49b68e4ac6ec4b9bc, type: 3}
-      propertyPath: travelSpeed
-      value: 14000
-      objectReference: {fileID: 0}
-    - target: {fileID: 6024336985946725210, guid: 8a658de89237e3c49b68e4ac6ec4b9bc, type: 3}
       propertyPath: sailOneSpeed
       value: 5000
       objectReference: {fileID: 0}
     - target: {fileID: 6024336985946725210, guid: 8a658de89237e3c49b68e4ac6ec4b9bc, type: 3}
       propertyPath: sailTwoSpeed
       value: 10000
-      objectReference: {fileID: 0}
-    - target: {fileID: 6024336985946725210, guid: 8a658de89237e3c49b68e4ac6ec4b9bc, type: 3}
-      propertyPath: thrusterStrength
-      value: 8000
-      objectReference: {fileID: 0}
-    - target: {fileID: 6024336985946725211, guid: 8a658de89237e3c49b68e4ac6ec4b9bc, type: 3}
-      propertyPath: m_Mass
-      value: 50
       objectReference: {fileID: 0}
     - target: {fileID: 6024336985946725212, guid: 8a658de89237e3c49b68e4ac6ec4b9bc, type: 3}
       propertyPath: m_Name

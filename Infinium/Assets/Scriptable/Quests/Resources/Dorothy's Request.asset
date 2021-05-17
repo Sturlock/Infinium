@@ -25,6 +25,5 @@ MonoBehaviour:
     description: Now you've got the apple, it's time to return to Dorothy.
   rewards:
   - number: 1
-  - number: 1
+  experience: 250
   gold: 75
-  experiance: 150

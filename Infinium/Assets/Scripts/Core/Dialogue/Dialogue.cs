@@ -1,5 +1,4 @@
 using System;
-using System.Collections;
 using System.Collections.Generic;
 using UnityEditor;
 using UnityEngine;
@@ -10,36 +9,36 @@ namespace Infinium.Dialogue
     public class Dialogue : ScriptableObject, ISerializationCallbackReceiver
     {
         [SerializeField]
-        List<DialogueNode> nodes = new List<DialogueNode>();
+        private List<DialogueNode> nodes = new List<DialogueNode>();
+
         [SerializeField]
-        Vector2 newNodeOffset = new Vector2(250, 0);
+        private Vector2 newNodeOffset = new Vector2(250, 0);
 
-        Dictionary<string, DialogueNode> nodeLookup = new Dictionary<string, DialogueNode>();
+        private Dictionary<string, DialogueNode> nodeLookup = new Dictionary<string, DialogueNode>();
 
-        void Awake()
+        private void Awake()
         {
             OnValidate();
         }
 
-        void OnValidate()
+        private void OnValidate()
         {
             nodeLookup.Clear();
-            foreach(DialogueNode node in GetAllNodes())
+            foreach (DialogueNode node in GetAllNodes())
             {
                 nodeLookup[node.name] = node;
-                
             }
         }
+
         public IEnumerable<DialogueNode> GetAllNodes()
         {
             return nodes;
         }
+
         public DialogueNode GetRootNode()
         {
             return nodes[0];
         }
-
-        
 
         public IEnumerable<DialogueNode> GetAllChildren(DialogueNode parentNode)
         {
@@ -51,6 +50,7 @@ namespace Infinium.Dialogue
                 }
             }
         }
+
         public IEnumerable<DialogueNode> GetPlayerChildren(DialogueNode currentNode)
         {
             foreach (DialogueNode node in GetAllChildren(currentNode))
@@ -72,15 +72,15 @@ namespace Infinium.Dialogue
                 }
             }
         }
-#if UNITY_EDITOR
 
+#if UNITY_EDITOR
 
         public void CreateNode(DialogueNode parent)
         {
             DialogueNode newNode = MakeNode(parent);
             AddNode(newNode);
         }
-       
+
         public void DeleteNode(DialogueNode nodeToDelete)
         {
             Undo.RecordObject(this, "Removed Dialogue Node");
@@ -89,7 +89,8 @@ namespace Infinium.Dialogue
             CleanDanglingChildren(nodeToDelete);
             Undo.DestroyObjectImmediate(nodeToDelete);
         }
-         private DialogueNode MakeNode(DialogueNode parent)
+
+        private DialogueNode MakeNode(DialogueNode parent)
         {
             DialogueNode newNode = CreateInstance<DialogueNode>();
             newNode.name = Guid.NewGuid().ToString();
@@ -103,11 +104,13 @@ namespace Infinium.Dialogue
 
             return newNode;
         }
+
         private void AddNode(DialogueNode newNode)
         {
             nodes.Add(newNode);
             OnValidate();
         }
+
         private void CleanDanglingChildren(DialogueNode nodeToDelete)
         {
             foreach (DialogueNode node in GetAllNodes())
@@ -117,6 +120,7 @@ namespace Infinium.Dialogue
         }
 
 #endif
+
         public void OnBeforeSerialize()
         {
 #if UNITY_EDITOR
@@ -129,7 +133,7 @@ namespace Infinium.Dialogue
             {
                 foreach (DialogueNode node in GetAllNodes())
                 {
-                    if(AssetDatabase.GetAssetPath(node) == "")
+                    if (AssetDatabase.GetAssetPath(node) == "")
                     {
                         AssetDatabase.AddObjectToAsset(node, this);
                     }
@@ -139,9 +143,7 @@ namespace Infinium.Dialogue
         }
 
         public void OnAfterDeserialize()
-        { 
+        {
         }
     }
 }
-
-

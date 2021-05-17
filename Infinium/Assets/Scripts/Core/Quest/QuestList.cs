@@ -11,7 +11,7 @@ namespace Infinium.Quests
 {
     public class QuestList : MonoBehaviour, IPredicateEvaluator, ISaveable
     {
-        List<QuestStatus> statuses = new List<QuestStatus>();
+        public List<QuestStatus> statuses = new List<QuestStatus>();
         public event Action onUpdate;
 
         public void AddQuest(Quest quest)
@@ -67,9 +67,10 @@ namespace Infinium.Quests
         {
             foreach (var reward in quest.GetRewards())
             {
+                GetComponent<Experience>().GainExperience(quest.experience);
+                GetComponent<GoldPieces>().GainGoldPieces(quest.gold);
                 bool success = true; // = GetComponent<Inventory>().AddToFirstEmptySlot(reward.item, reward.number);
-                GetComponent<Experience>().GainExperience(reward.experience);
-                GetComponent<GoldPieces>().GainGoldPieces(reward.gold);
+                
                 if (!success)
                 {
                     //GetComponent<ItemDropper>().DropItem(reward.item, reward.number);

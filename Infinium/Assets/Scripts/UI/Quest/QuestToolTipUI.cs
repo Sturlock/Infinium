@@ -42,16 +42,21 @@ namespace Infinium.UI.Quests
             string rewardText = "";
             foreach(var reward in quest.GetRewards())
             {
+                
                 if (rewardText != "")
                 {
                     rewardText += ", ";
                 }
-                if(reward.number > 1)
+                
+                if (reward.number > 1)
                 {
                     rewardText += reward.number + " ";
                 }
                 //reward += reward.item.GetDisplayName();
             }
+            rewardText += quest.experience.ToString() + "exp";
+            rewardText += ", ";
+            rewardText += quest.gold.ToString() + "gp";
             if (rewardText == "")
             {
                 rewardText = "No reward";

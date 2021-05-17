@@ -15,10 +15,7 @@ MonoBehaviour:
   objectives:
   - reference: a
     description: Go to Blah blah
-  - reference: b
-    description: Explore blah blah
-  - reference: c
-    description: Get map of blah blah
   rewards:
   - number: 1
-    gold: 0
+  experience: 250
+  gold: 75

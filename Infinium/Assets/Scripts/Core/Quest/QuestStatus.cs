@@ -4,11 +4,11 @@ using System.Collections.Generic;
 using UnityEngine;
 namespace Infinium.Quests
 {
-    
+    [System.Serializable]
     public class QuestStatus
     {
         Quest quest;
-        List<string> completedObjectives = new List<string>();
+        public List<string> completedObjectives = new List<string>();
         private object objectState;
 
         [System.Serializable]

@@ -1828,10 +1828,6 @@ PrefabInstance:
       propertyPath: m_Name
       value: QuestUI
       objectReference: {fileID: 0}
-    - target: {fileID: 3198425997232068634, guid: e7362493639964e488e8f88c0f34b1f5, type: 3}
-      propertyPath: m_IsActive
-      value: 1
-      objectReference: {fileID: 0}
     - target: {fileID: 3333663806575992035, guid: e7362493639964e488e8f88c0f34b1f5, type: 3}
       propertyPath: m_AnchorMax.y
       value: 0
