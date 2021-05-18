@@ -1,26 +1,3 @@
-﻿using System;
-using System.Collections;
-using System.Collections.Generic;
-using UnityEngine;
-
-public class PlayFX : MonoBehaviour
-{
-    public ParticleSystem fx;
-
-    // Start is called before the first frame update
-    public void Start()
-    {
-        fx = GetComponentInChildren<ParticleSystem>();
-    }
-
-   
-    public void PlayEffect()
-    {
-        fx.Play();
-    }
-
-    public void StopEffect()
-    {
-        fx.Stop();
-    }
-}
+version https://git-lfs.github.com/spec/v1
+oid sha256:f9d42491b4e40e4efb5f6d14d2c933183265e0511f7ee1ec2b4867997c437842
+size 438

@@ -1,14 +1,3 @@
-using System.Collections;
-using System.Collections.Generic;
-using UnityEngine;
-using UnityEngine.UI;
-
-public class QuestMarker : MonoBehaviour
-{
-    public Sprite icon;
-    public Image image;
-
-    // Start is called before the first frame update
-    public Vector2 position {  get { return new Vector2(transform.position.x, transform.position.z); } }
-
-}
+version https://git-lfs.github.com/spec/v1
+oid sha256:ecaee96abe987d29f075ec55a35ff911ea2cc3d0620c51a523e367dc7b7dde85
+size 355

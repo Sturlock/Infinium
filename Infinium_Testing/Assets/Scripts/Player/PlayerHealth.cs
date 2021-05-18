@@ -1,19 +1,3 @@
-﻿using System.Collections;
-using System.Collections.Generic;
-using UnityEngine;
-using UnityEngine.SceneManagement;
-
-public class PlayerHealth : MonoBehaviour
-{
-    [SerializeField] float hitPoints = 100f;
-
-    public void PlayerTakeDamage(float damage)
-    {
-        hitPoints -= damage;
-        if (hitPoints <= 0)
-        {
-            //SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
-            GetComponent<DeathHandler>().HandleDeath();
-        }
-    }
-}
+version https://git-lfs.github.com/spec/v1
+oid sha256:cda4384cc314fd1351563dbbb4b3d5770ed8320459e365edb23788f9145c3f65
+size 482

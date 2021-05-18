@@ -1,26 +1,3 @@
-﻿using System.Collections;
-using System.Collections.Generic;
-using UnityEngine;
-
-public class PlayerInventory : MonoBehaviour
-{
-    public List<Inventory> myInventory;
-
-    public class InvetoryItem
-    {
-        string item;
-        int number;
-
-    }
-    // Start is called before the first frame update
-    void Start()
-    {
-        
-    }
-
-    // Update is called once per frame
-    void Update()
-    {
-        
-    }
-}
+version https://git-lfs.github.com/spec/v1
+oid sha256:9f0e7fa01b885aa59d1a7ebce1f4bbff122a6e7516f11f30c5e3a1d89b5b17a3
+size 427

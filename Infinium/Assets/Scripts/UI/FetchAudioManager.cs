@@ -1,26 +1,3 @@
-using System.Collections;
-using System.Collections.Generic;
-using UnityEngine;
-
-public class FetchAudioManager : MonoBehaviour
-{
-    // Start is called before the first frame update
-    public IEnumerator Start()
-    {
-        yield return new WaitForSeconds(.5f);
-        FindObjectOfType<AudioManager>().Start();
-        //FindObjectOfType<AudioManager>().UpdateSound();
-    }
-
-    // Update is called once per frame
-    public void Updating()
-    {
-        if (FindObjectOfType<AudioManager>() != null)
-        {
-            FindObjectOfType<AudioManager>().UpdateSound();
-        }
-    }
-
-
-
-}
+version https://git-lfs.github.com/spec/v1
+oid sha256:78b145c2ba290c4ff16434d3e63610ef295a58043bcc17bc29263df25c6b4944
+size 597

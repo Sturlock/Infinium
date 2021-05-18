@@ -1,20 +1,3 @@
-using System.Collections;
-using System.Collections.Generic;
-using UnityEngine;
-
-namespace Infinium.Quests
-{
-    public class QuestCompletion : MonoBehaviour
-    {
-        [SerializeField] Quest quest;
-        [SerializeField] string objective;
-
-        public void CompleteObjective()
-        {
-            QuestList questList = GameObject.FindGameObjectWithTag("Player").GetComponent<QuestList>();
-            questList.CompleteObjective(quest, objective);
-        }
-
-        
-    }
-}
+version https://git-lfs.github.com/spec/v1
+oid sha256:5599599f8bc684e1ccdc64f5d080f8a598cbba11a728ca9b5224b65e847730e9
+size 486

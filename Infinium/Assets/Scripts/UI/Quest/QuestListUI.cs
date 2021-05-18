@@ -1,33 +1,3 @@
-using System.Collections;
-using System.Collections.Generic;
-using Infinium.Quests;
-using UnityEngine;
-
-public class QuestListUI : MonoBehaviour
-{
-    [SerializeField] QuestItemUI questPrefab;
-    QuestList questList;
-    // Start is called before the first frame update
-
-    void Start()
-    {
-        questList = GameObject.FindGameObjectWithTag("Player").GetComponent<QuestList>();
-        questList.onUpdate += Redraw;
-        Redraw();
-    }
-
-    private void Redraw()
-    {
-        foreach (Transform item in transform)
-        {
-            Destroy(item.gameObject);
-        }
-        foreach (QuestStatus status in questList.GetStatuses())
-        {
-            QuestItemUI uiInstance = Instantiate<QuestItemUI>(questPrefab, transform);
-            uiInstance.Setup(status);
-        }
-    }
-}
-
-
+version https://git-lfs.github.com/spec/v1
+oid sha256:f6001d3f54092774070dc67d056182adccf9996efd45c62f2d48dc9829a1b1e9
+size 802

@@ -1,32 +1,3 @@
-using System;
-using UnityEngine;
-
-
-namespace UnityStandardAssets.SceneUtils
-{
-    public class PlaceTargetWithMouse : MonoBehaviour
-    {
-        public float surfaceOffset = 1.5f;
-        public GameObject setTargetOn;
-
-        // Update is called once per frame
-        private void Update()
-        {
-            if (!Input.GetMouseButtonDown(0))
-            {
-                return;
-            }
-            Ray ray = Camera.main.ScreenPointToRay(Input.mousePosition);
-            RaycastHit hit;
-            if (!Physics.Raycast(ray, out hit))
-            {
-                return;
-            }
-            transform.position = hit.point + hit.normal*surfaceOffset;
-            if (setTargetOn != null)
-            {
-                setTargetOn.SendMessage("SetTarget", transform);
-            }
-        }
-    }
-}
+version https://git-lfs.github.com/spec/v1
+oid sha256:79b02bf517c0c665080829efcd8d8ed735196f2090d63e471cf1f1c60fe314a9
+size 822

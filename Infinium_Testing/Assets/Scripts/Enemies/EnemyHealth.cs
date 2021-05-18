@@ -1,35 +1,3 @@
-﻿using System;
-using System.Collections;
-using System.Collections.Generic;
-using UnityEngine;
-
-
-public class EnemyHealth : MonoBehaviour
-{
-    [SerializeField] float hitPoints = 100f;
-
-    bool isDead = false;
-
-    public bool IsDead()
-    {
-        return isDead;
-    }
-
-    public void TakeDamage(float damage)
-    {
-        BroadcastMessage("OnDamageTaken");
-        hitPoints -= damage;
-        if (hitPoints <= 0)
-        {
-            Die();
-        }
-    }
-
-    private void Die()
-    {
-        if (isDead) return;
-        isDead = true;
-        Destroy(gameObject);
-    }
-}
-
+version https://git-lfs.github.com/spec/v1
+oid sha256:96c6479e35c4b81807ca2c3323416a52c5c1bf3508c51c7fb2e398e0c743b00c
+size 585

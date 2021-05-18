@@ -1,36 +1,3 @@
-using System.Collections;
-using System.Collections.Generic;
-using UnityEngine;
-
-namespace Infinium.Dialogue
-{
-    public class AiForcedConversation : MonoBehaviour
-    {
-        public AIConversant ThatGuy;
-        private float radius = 3f;
-        [SerializeField] private LayerMask playerLayer;
-        private bool isActive;
-
-        // Start is called before the first frame update
-        void Start()
-        {
-            ThatGuy = GetComponent<AIConversant>();
-            isActive = true;
-        }
-
-        // Update is called once per frame
-        void Update()
-        {
-            if (isActive)
-            {
-                bool isNear = Physics.CheckSphere(transform.position, radius, playerLayer);
-                if (isNear)
-                {
-                    ThatGuy.TriggerDialogue();
-                    isActive = false;
-                }
-            }
-        }
-    }
-
-}
+version https://git-lfs.github.com/spec/v1
+oid sha256:e72988a13217f2ee5fa2a510d89adb400a604ddc01b3ba46cd9bde2544f1fabf
+size 898

@@ -1,29 +1,3 @@
-using System;
-using UnityEngine;
-using UnityEngine.SceneManagement;
-
-public class SceneAndURLLoader : MonoBehaviour
-{
-    private PauseMenu m_PauseMenu;
-
-
-    private void Awake ()
-    {
-        m_PauseMenu = GetComponentInChildren <PauseMenu> ();
-    }
-
-
-    public void SceneLoad(string sceneName)
-	{
-		//PauseMenu pauseMenu = (PauseMenu)FindObjectOfType(typeof(PauseMenu));
-		m_PauseMenu.MenuOff ();
-		SceneManager.LoadScene(sceneName);
-	}
-
-
-	public void LoadURL(string url)
-	{
-		Application.OpenURL(url);
-	}
-}
-
+version https://git-lfs.github.com/spec/v1
+oid sha256:659f97bf7133e42afca5cab3068da6a10e6734eac955fbb6918bfdbc4e1e13b3
+size 515

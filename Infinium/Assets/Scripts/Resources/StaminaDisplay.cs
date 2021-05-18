@@ -1,23 +1,3 @@
-using System.Collections;
-using System.Collections.Generic;
-using UnityEngine;
-using UnityEngine.UI;
-
-namespace Infinium.Resources
-{
-	public class StaminaDisplay : MonoBehaviour
-	{
-        Stamina stamina;
-        private void Awake()
-        {
-            stamina = GameObject.FindGameObjectWithTag("Player").GetComponent<Stamina>();
-        }
-
-        void Update()
-        {
-            GetComponent<Image>().fillAmount = stamina.GetPercentage() / 100;
-            //print(GetComponent<Image>().fillAmount);
-
-        }
-    }
-}
+version https://git-lfs.github.com/spec/v1
+oid sha256:1467eae3afe03643635dd3aeb9322ddadf491a8b64babd2dc82f7b0c92754ce4
+size 530

@@ -1,29 +1,3 @@
-using System.Collections;
-using System.Collections.Generic;
-using UnityEngine;
-
-public class ShowHideUI_Canvas : MonoBehaviour
-{
-    [SerializeField] KeyCode toggleKey = KeyCode.Escape;
-    [SerializeField] GameObject uiContainer = null;
-    [SerializeField] public bool retract = false;
-    // Start is called before the first frame update
-    void Start()
-    {
-        uiContainer = this.gameObject;
-    }
-
-    // Update is called once per frame
-    void Update()
-    {
-        if (Input.GetKeyDown(toggleKey))
-        {
-            Toggle();
-        }
-    }
-    public void Toggle()
-    {
-        retract = !retract;
-        uiContainer.GetComponent<Animator>().SetBool("retract", retract);
-    }
-}
+version https://git-lfs.github.com/spec/v1
+oid sha256:0187c3a01ca8e0617fab2075e99620205150a0a34cee47ae00ebdfaee59ac828
+size 703
